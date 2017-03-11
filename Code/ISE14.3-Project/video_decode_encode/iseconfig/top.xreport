@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-01T14:57:33</DateModified>
+  <DateModified>2017-03-11T16:41:31</DateModified>
   <ModuleName>top</ModuleName>
   <SummaryTimeStamp>2016-12-20T15:08:01</SummaryTimeStamp>
-  <SavedFilePath>D:/workspace/video_decode_encode/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/workspace/video_decode_encode\</ImplementationReportsDirectory>
+  <SavedFilePath>E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/iseconfig/top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode\</ImplementationReportsDirectory>
   <DateInitialized>2016-12-08T09:00:57</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
