@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj video_decode_encode -o D:/workspace/video_decode_encode/adv7180_video_in.tfi -lib work D:/workspace/video_decode_encode//adv7180_video_in.v -module adv7180_video_in -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj video_decode_encode -o D:/workspace/video_decode_encode/adv7180_video_in.tfi -lib work D:/workspace/video_decode_encode//adv7180_video_in.v -module adv7180_video_in -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 

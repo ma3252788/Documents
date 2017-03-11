@@ -1,0 +1,148 @@
+stCheckODD:	
+								begin
+									if(qd_dly[6:4] == 3'b000)
+										begin
+											STATE <= stACTIVE;
+
+											field <= 1'b0;
+							
+											rd_ce <= 1'b0;
+											rd_oe <= 1'b0;
+											rd_we <= 1'b1;
+											rd_addr <= 1'b0;
+
+											//SRAM 使能
+											ce_saaSRAM<=1'b0;
+											oe_saaSRAM<=1'b0;
+											we_saaSRAM<=1'b1;
+											addr_saaSRAM <= 20'h00000;
+
+											databuffer4zoom<= 0;
+										end
+									else
+										begin
+											STATE <= stWaitForEscape;
+											nextSTATE <= stCheckODD;
+										end
+								end
+						stACTIVE: 
+								begin
+									if(qd_dly==8'hff)
+										begin
+											STATE <= stCheckEscape1;
+											nextSTATE <= stCheckForEndLine;
+										end	
+									else
+										begin					
+											if(qfv_cnt == 11'd1439)//读取的第一个有效数据在下面先被标记为1再进行的操作，
+												begin						//我觉得应该改为1440而不是1439
+													qfv_cnt <= 11'b00000000000;
+													qfv <= 1'b0;
+								
+													databuffer4zoom<= 0;
+
+													STATE <= stWaitForEscape;
+													nextSTATE <= stCheckForEndLine;
+												end
+											else
+												begin	
+													qfv <= 1'b1;								
+													qfv_cnt <= qfv_cnt + 1'b1;	
+													qfv_cnt_2 <= (qfv_cnt>>1);
+													line_cnt_2 <= 2*line_cnt;
+																						
+													if(qfv_cnt%2==0)
+														begin							
+															if( (cross_output_dly1 == 1)&&(( (((line_cnt == 145)&&(field==1'b0))||((line_cnt == 144)&&(field==1'b1))) && (qfv_cnt_2 >= 341) && (qfv_cnt_2 <= 381) ) || ( ((qfv_cnt_2 == 361) ) && (line_cnt >= 134) && (line_cnt <= 154) )) )//画电十字
+																begin
+																	MP <= (data_saaSRAM[7:0] > 'd128)? 'd15 : 'd245;
+																end
+															else 
+																begin
+																	if(video_zoom_dly1 && video_switch_dly1)
+																		begin
+																			if(((qfv_cnt_2 % 4) == 1) || ((qfv_cnt_2 % 4) == 2))
+																				begin
+																				   if (data_saaSRAM[7:0]==8'hFF)
+																					   MP<=data_saaSRAM[7:0]-1;
+																					else
+																					   MP <= data_saaSRAM[7:0];													
+																				end
+																			else if((qfv_cnt_2 % 4) == 3)
+																				begin
+																				   if (data_saaSRAM[15:8]==8'hFF)
+																					   MP <= data_saaSRAM[15:8]-1;
+																				   else
+																					   MP <= data_saaSRAM[15:8];
+																				end
+																			else if((qfv_cnt_2 % 4) == 0)
+																				begin
+																				   if (data_saaSRAM[15:8]==8'hFF)
+																					   MP <= data_saaSRAM[15:8]-1;
+																				   else
+																					   MP <= data_saaSRAM[15:8];
+																						
+																					addr_saaSRAM <= 20'h40000*(field)+(line_cnt>>1)*360 + 26010 + ((qfv_cnt_2)>>2);											
+																				end	
+//                                                         if (MP==8'hFF)  MP<=MP-1;																		
+																		end
+																	else if(video_pip2_dly1||video_pip4_dly1||video_pip8_dly1) 
+																		begin
+																			if((line_cnt < 96) && (qfv_cnt < 16))  
+																				begin
+																					MP <= 8'h00;																															
+																				end
+																			else if((line_cnt < 96) && (qfv_cnt >= 16) && (qfv_cnt < 496)) 
+																				begin
+																					MP <= rd_dout;
+																					
+																					rd_addr <= (240*(2*line_cnt+field))+(qfv_cnt_2-6);
+																				end										 
+																			else if( ((line_cnt == 96) && (qfv_cnt >= 16) && (qfv_cnt <= 496) ) || ( ((qfv_cnt == 494)||(qfv_cnt == 496)) && (line_cnt >= 0) && (line_cnt <= 96) ) )
+																				begin
+																					MP <= 240;
+																					
+																					if(qfv_cnt == 496)
+																						addr_saaSRAM <= 20'h40000*field + (line_cnt*360) + (qfv_cnt_2>>1);//addr_saaSRAM + 1;
+																				end
+																			else
+																				begin
+																					if(qfv_cnt_2 % 2 == 0)
+																						begin
+																							MP <= data_saaSRAM[7:0];
+																						end
+																					else
+																						begin
+																							MP <= data_saaSRAM[15:8];				
+																							
+																							addr_saaSRAM <= 20'h40000*field + (line_cnt*360) + (qfv_cnt_2>>1);//addr_saaSRAM + 1;
+																						end
+																				end			
+																		end
+																	else
+																		begin
+																			MP <= data_saaSRAM[7:0];//																								
+																			addr_saaSRAM <= (20'h40000*field) + (line_cnt*720) + (qfv_cnt_2);//
+																			/*	
+																			if(qfv_cnt_2 % 2 == 0)
+																				begin
+																					MP <= data_saaSRAM[7:0];			
+																				end
+																			else
+																				begin
+																					MP <= data_saaSRAM[15:8];			
+																					
+																					addr_saaSRAM <= (20'h40000*field) + (line_cnt*720) + (qfv_cnt_2>>1);//addr_saaSRAM + 1;
+																				end*/
+																		end
+																end			
+														end
+													else	
+														begin
+															MP <= data_saaSRAM[15:8];//8'h80;
+														end
+													
+													STATE <= stACTIVE;
+												end
+										end
+								end

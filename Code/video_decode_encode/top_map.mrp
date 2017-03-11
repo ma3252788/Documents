@@ -1,0 +1,381 @@
+Release 14.6 Map P.68d (nt64)
+Xilinx Mapping Report File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s4000-fg676-5 -cm area -ir off -pr off
+-c 100 -o top_map.ncd top.ngd top.pcf 
+Target Device  : xc3s4000
+Target Package : fg676
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Fri Feb 24 10:01:20 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           526 out of  55,296    1%
+  Number of 4 input LUTs:             1,069 out of  55,296    1%
+Logic Distribution:
+  Number of occupied Slices:            663 out of  27,648    2%
+    Number of Slices containing only related logic:     663 out of     663 100%
+    Number of Slices containing unrelated logic:          0 out of     663   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,143 out of  55,296    2%
+    Number used as logic:             1,069
+    Number used as a route-thru:         74
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                193 out of     489   39%
+  Number of MULT18X18s:                   2 out of      96    2%
+  Number of BUFGMUXs:                     2 out of       8   25%
+
+Average Fanout of Non-Clock Nets:                3.63
+
+Peak Memory Usage:  338 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network ADV7179_P has no load.
+INFO:LIT:395 - The above info message is repeated 1 more times for the following
+   (max. 5 shown):
+   ADV7180_P
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   6 block(s) removed
+   2 block(s) optimized away
+   6 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "dcm27m/CLKDV_BUFG_INST" (CKBUF) removed.
+ The signal "dcm27m/CLKDV_BUF" is loadless and has been removed.
+Loadless block "dcm59m/CLKDV_BUFG_INST" (CKBUF) removed.
+ The signal "dcm59m/CLKDV_BUF" is loadless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "dcm27m/CLK0_BUF" is unused and has been removed.
+The signal "dcm27m/CLKFB_IN" is unused and has been removed.
+ Unused block "dcm27m/CLK0_BUFG_INST" (CKBUF) removed.
+The signal "dcm59m/CLK0_BUF" is unused and has been removed.
+The signal "dcm59m/CLKFB_IN" is unused and has been removed.
+ Unused block "dcm59m/CLK0_BUFG_INST" (CKBUF) removed.
+Unused block "dcm27m/DCM_INST" (DCM) removed.
+Unused block "dcm59m/DCM_INST" (DCM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| AD1<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| AD1<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| AD1<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| AD1<3>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| AD1<4>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| AD1<5>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| AD1<6>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| AD1<7>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ADV7179_BLANK                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7179_CLK                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7179_HS                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7179_RST                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7179_SCL                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7179_SCRESET                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7179_SDA                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7179_TTX                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7179_TTXREQ                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7179_VS                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7180_LLC                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| ADV7180_PWDOWN                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7180_RST                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7180_SCL                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ADV7180_SDA                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA<2>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA<3>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA<4>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA<5>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA<6>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| DA<7>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk_59m                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| rst                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| sram1_Ab<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<10>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<11>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<12>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<13>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<14>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<15>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<16>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<17>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<18>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Ab<19>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<0>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<1>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<2>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<3>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<4>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<5>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<6>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<7>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<8>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<9>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<10>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<11>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<12>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<13>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<14>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_Db<15>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_LB                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_UB                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_ce                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_oe                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram1_we                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<10>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<11>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<12>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<13>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<14>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<15>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<16>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<17>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<18>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Ab<19>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<0>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<1>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<2>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<3>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<4>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<5>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<6>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<7>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<8>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<9>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<10>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<11>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<12>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<13>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<14>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_Db<15>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_LB                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_UB                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_ce                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_oe                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram2_we                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<10>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<11>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<12>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<13>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<14>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<15>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<16>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<17>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<18>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Ab<19>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<10>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<11>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<12>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<13>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<14>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_Db<15>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_ce                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_oe                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram3_we                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<10>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<11>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<12>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<13>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<14>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<15>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<16>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<17>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<18>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Ab<19>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<10>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<11>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<12>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<13>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<14>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_Db<15>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_ce                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_oe                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| sram4_we                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

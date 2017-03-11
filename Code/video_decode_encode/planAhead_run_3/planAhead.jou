@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Wed Dec 21 12:11:54 2016
+# Process ID: 3532
+# Log file: D:/workspace/video_decode_encode/planAhead_run_3/planAhead.log
+# Journal file: D:/workspace/video_decode_encode/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/workspace/video_decode_encode/pa.fromNetlist.tcl
