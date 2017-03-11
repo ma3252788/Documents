@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "E:/Hardware/ISE14.3-Project/DSP-RET-TO-1/top1.xst" -ofn "E:/Hardware/ISE14.3-Project/DSP-RET-TO-1/top1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top-rst.ucf -p xc3s4000-fg676-5 top1.ngc top1.ngd  

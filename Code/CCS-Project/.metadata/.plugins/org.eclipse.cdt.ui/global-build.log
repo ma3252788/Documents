@@ -1,0 +1,135 @@
+
+**** Build of configuration Debug for project ccs²âÊÔ ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: C6000 Compiler'
+"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv64+ --abi=coffabi -g --include_path="E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --define=c6421 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 11: warning #225-D: function declared implicitly
+"../main.c", line 12: warning #118-D: non-void function "main" should return a value
+'Finished building: ../main.c'
+' '
+'Building target: ccsæµ‹è¯•.out'
+'Invoking: C6000 Linker'
+"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv64+ --abi=coffabi -g --define=c6421 --display_error_number --diag_warning=225 --diag_wrap=off -z --stack_size=0x800 -m"ccsæµ‹è¯•.map" --heap_size=0x800 -i"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="ccsæµ‹è¯•_linkInfo.xml" --rom_model -o "ccsæµ‹è¯•.out"  "./main.obj" "../C6421.cmd" -l"libc.a" 
+<Linking>
+'Finished building target: ccsæµ‹è¯•.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ccs²âÊÔ ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: C6000 Compiler'
+"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv64+ --abi=coffabi -g --include_path="E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --define=c6421 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 11: warning #225-D: function declared implicitly
+"../main.c", line 13: error #29: expected an expression
+
+"../main.c", line 13: error #66: expected a ";"
+>> Compilation failure
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ccs²âÊÔ ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: C6000 Compiler'
+"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv64+ --abi=coffabi -g --include_path="E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --define=c6421 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 11: warning #225-D: function declared implicitly
+"../main.c", line 12: warning #118-D: non-void function "main" should return a value
+'Finished building: ../main.c'
+' '
+'Building target: ccsæµ‹è¯•.out'
+'Invoking: C6000 Linker'
+"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv64+ --abi=coffabi -g --define=c6421 --display_error_number --diag_warning=225 --diag_wrap=off -z --stack_size=0x800 -m"ccsæµ‹è¯•.map" --heap_size=0x800 -i"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="ccsæµ‹è¯•_linkInfo.xml" --rom_model -o "ccsæµ‹è¯•.out"  "./main.obj" "../C6421.cmd" -l"libc.a" 
+<Linking>
+'Finished building target: ccsæµ‹è¯•.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ccs²âÊÔ ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TMS320C6414_ma ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: C6000 Compiler'
+"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv64+ --abi=coffabi -g --include_path="E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --define=c6421 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 11: warning #225-D: function declared implicitly
+"../main.c", line 12: warning #118-D: non-void function "main" should return a value
+'Finished building: ../main.c'
+' '
+'Building target: TMS320C6414_ma.out'
+'Invoking: C6000 Linker'
+"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv64+ --abi=coffabi -g --define=c6421 --display_error_number --diag_warning=225 --diag_wrap=off -z --stack_size=0x800 -m"TMS320C6414_ma.map" --heap_size=0x800 -i"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="TMS320C6414_ma_linkInfo.xml" --rom_model -o "TMS320C6414_ma.out"  "./main.obj" "../C6421.cmd" -l"libc.a" 
+<Linking>
+'Finished building target: TMS320C6414_ma.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ccs²âÊÔ ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TMS320C6414_ma ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TMS320C6414_ma ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TMS320C6414_ma ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TMS320C6414_ma ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: C6000 Compiler'
+"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv64+ --abi=coffabi -g --include_path="E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --define=c6421 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 10: warning #225-D: function declared implicitly
+"../main.c", line 11: warning #118-D: non-void function "main" should return a value
+'Finished building: ../main.c'
+' '
+'Building target: TMS320C6414_ma.out'
+'Invoking: C6000 Linker'
+"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv64+ --abi=coffabi -g --define=c6421 --display_error_number --diag_warning=225 --diag_wrap=off -z --stack_size=0x800 -m"TMS320C6414_ma.map" --heap_size=0x800 -i"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"E:/Hardware/CCS5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="TMS320C6414_ma_linkInfo.xml" --rom_model -o "TMS320C6414_ma.out"  "./main.obj" "../C6421.cmd" -l"libc.a" 
+<Linking>
+'Finished building target: TMS320C6414_ma.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TMS320C6414_ma ****
+
+"E:\\Hardware\\CCS5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****

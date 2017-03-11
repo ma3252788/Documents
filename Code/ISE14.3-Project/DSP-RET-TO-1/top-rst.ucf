@@ -1,0 +1,4 @@
+NET "clkout" LOC = J5;
+NET "clk_div2" LOC = AD5;
+NET "clk" LOC = C14;
+NET "rst" LOC = M6;
