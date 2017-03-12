@@ -1,13 +1,13 @@
 --------------------------------------------------------------------------------
-Release 14.6 Trace  (nt64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Release 14.3 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
--n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf
+E:\Hardware\ISE14.3\14.3\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise
+-v 3 -s 5 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf
 
 Design file:              top.ncd
 Physical constraint file: top.pcf
-Device,package,speed:     xc3s4000,fg676,-5 (PRODUCTION 1.39 2013-06-08)
+Device,package,speed:     xc3s4000,fg676,-5 (PRODUCTION 1.39 2012-10-12)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -44,47 +44,47 @@ Setup/Hold to clock ADV7180_LLC
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-AD1<0>      |    3.639(R)|   -1.753(R)|clk27M_DCMed      |   0.000|
-AD1<1>      |    3.861(R)|   -1.930(R)|clk27M_DCMed      |   0.000|
-AD1<2>      |    3.722(R)|   -1.830(R)|clk27M_DCMed      |   0.000|
-AD1<3>      |    3.629(R)|   -1.755(R)|clk27M_DCMed      |   0.000|
-AD1<4>      |    3.986(R)|   -2.055(R)|clk27M_DCMed      |   0.000|
-AD1<5>      |    4.446(R)|   -2.333(R)|clk27M_DCMed      |   0.000|
-AD1<6>      |    3.974(R)|   -2.072(R)|clk27M_DCMed      |   0.000|
-AD1<7>      |    4.816(R)|   -2.746(R)|clk27M_DCMed      |   0.000|
-rst         |    8.780(R)|   -3.000(R)|clk27M_DCMed      |   0.000|
-sram1_Db<0> |    9.624(R)|   -2.451(R)|clk27M_DCMed      |   0.000|
-sram1_Db<1> |    6.686(R)|   -2.699(R)|clk27M_DCMed      |   0.000|
-sram1_Db<2> |    6.677(R)|   -3.361(R)|clk27M_DCMed      |   0.000|
-sram1_Db<3> |    8.771(R)|   -4.316(R)|clk27M_DCMed      |   0.000|
-sram1_Db<4> |    7.446(R)|   -2.135(R)|clk27M_DCMed      |   0.000|
-sram1_Db<5> |    8.775(R)|   -3.133(R)|clk27M_DCMed      |   0.000|
-sram1_Db<6> |    9.053(R)|   -3.695(R)|clk27M_DCMed      |   0.000|
-sram1_Db<7> |    7.165(R)|   -3.014(R)|clk27M_DCMed      |   0.000|
-sram1_Db<8> |    4.857(R)|   -2.766(R)|clk27M_DCMed      |   0.000|
-sram1_Db<9> |    4.295(R)|   -2.324(R)|clk27M_DCMed      |   0.000|
-sram1_Db<10>|    5.760(R)|   -3.496(R)|clk27M_DCMed      |   0.000|
-sram1_Db<11>|    5.008(R)|   -2.886(R)|clk27M_DCMed      |   0.000|
-sram1_Db<12>|    4.928(R)|   -2.836(R)|clk27M_DCMed      |   0.000|
-sram1_Db<13>|    4.236(R)|   -2.281(R)|clk27M_DCMed      |   0.000|
-sram1_Db<14>|    5.457(R)|   -3.259(R)|clk27M_DCMed      |   0.000|
-sram1_Db<15>|    6.213(R)|   -3.859(R)|clk27M_DCMed      |   0.000|
-sram2_Db<0> |   11.103(R)|   -3.669(R)|clk27M_DCMed      |   0.000|
-sram2_Db<1> |    8.803(R)|   -4.233(R)|clk27M_DCMed      |   0.000|
-sram2_Db<2> |    7.644(R)|   -4.202(R)|clk27M_DCMed      |   0.000|
-sram2_Db<3> |    7.996(R)|   -3.696(R)|clk27M_DCMed      |   0.000|
-sram2_Db<4> |    8.763(R)|   -3.189(R)|clk27M_DCMed      |   0.000|
-sram2_Db<5> |    9.644(R)|   -3.828(R)|clk27M_DCMed      |   0.000|
-sram2_Db<6> |    9.358(R)|   -3.938(R)|clk27M_DCMed      |   0.000|
-sram2_Db<7> |    7.235(R)|   -3.439(R)|clk27M_DCMed      |   0.000|
-sram2_Db<8> |    3.519(R)|   -1.696(R)|clk27M_DCMed      |   0.000|
-sram2_Db<9> |    4.540(R)|   -2.520(R)|clk27M_DCMed      |   0.000|
-sram2_Db<10>|    3.236(R)|   -1.477(R)|clk27M_DCMed      |   0.000|
-sram2_Db<11>|    4.452(R)|   -2.441(R)|clk27M_DCMed      |   0.000|
-sram2_Db<12>|    3.689(R)|   -1.845(R)|clk27M_DCMed      |   0.000|
-sram2_Db<13>|    3.323(R)|   -1.551(R)|clk27M_DCMed      |   0.000|
-sram2_Db<14>|    3.416(R)|   -1.626(R)|clk27M_DCMed      |   0.000|
-sram2_Db<15>|    3.477(R)|   -1.670(R)|clk27M_DCMed      |   0.000|
+AD1<0>      |    2.058(R)|   -0.530(R)|clk27M_DCMed      |   0.000|
+AD1<1>      |    1.988(R)|   -0.474(R)|clk27M_DCMed      |   0.000|
+AD1<2>      |    1.536(R)|   -0.107(R)|clk27M_DCMed      |   0.000|
+AD1<3>      |    1.626(R)|   -0.178(R)|clk27M_DCMed      |   0.000|
+AD1<4>      |    2.661(R)|   -1.073(R)|clk27M_DCMed      |   0.000|
+AD1<5>      |    3.237(R)|   -1.405(R)|clk27M_DCMed      |   0.000|
+AD1<6>      |    3.280(R)|   -1.523(R)|clk27M_DCMed      |   0.000|
+AD1<7>      |    2.683(R)|   -1.045(R)|clk27M_DCMed      |   0.000|
+rst         |    8.634(R)|   -2.612(R)|clk27M_DCMed      |   0.000|
+sram1_Db<0> |   10.910(R)|   -5.105(R)|clk27M_DCMed      |   0.000|
+sram1_Db<1> |    9.548(R)|   -4.461(R)|clk27M_DCMed      |   0.000|
+sram1_Db<2> |    8.307(R)|   -4.615(R)|clk27M_DCMed      |   0.000|
+sram1_Db<3> |   10.549(R)|   -4.911(R)|clk27M_DCMed      |   0.000|
+sram1_Db<4> |   11.344(R)|   -5.268(R)|clk27M_DCMed      |   0.000|
+sram1_Db<5> |   11.752(R)|   -5.254(R)|clk27M_DCMed      |   0.000|
+sram1_Db<6> |   11.755(R)|   -5.497(R)|clk27M_DCMed      |   0.000|
+sram1_Db<7> |    9.365(R)|   -5.332(R)|clk27M_DCMed      |   0.000|
+sram1_Db<8> |    6.765(R)|   -4.248(R)|clk27M_DCMed      |   0.000|
+sram1_Db<9> |    6.661(R)|   -4.172(R)|clk27M_DCMed      |   0.000|
+sram1_Db<10>|    6.418(R)|   -3.971(R)|clk27M_DCMed      |   0.000|
+sram1_Db<11>|    6.752(R)|   -4.244(R)|clk27M_DCMed      |   0.000|
+sram1_Db<12>|    8.489(R)|   -5.625(R)|clk27M_DCMed      |   0.000|
+sram1_Db<13>|    7.470(R)|   -4.812(R)|clk27M_DCMed      |   0.000|
+sram1_Db<14>|    7.531(R)|   -4.859(R)|clk27M_DCMed      |   0.000|
+sram1_Db<15>|    7.344(R)|   -4.712(R)|clk27M_DCMed      |   0.000|
+sram2_Db<0> |    9.647(R)|   -3.862(R)|clk27M_DCMed      |   0.000|
+sram2_Db<1> |    9.086(R)|   -3.719(R)|clk27M_DCMed      |   0.000|
+sram2_Db<2> |    9.997(R)|   -5.962(R)|clk27M_DCMed      |   0.000|
+sram2_Db<3> |    9.531(R)|   -4.097(R)|clk27M_DCMed      |   0.000|
+sram2_Db<4> |    8.080(R)|   -2.656(R)|clk27M_DCMed      |   0.000|
+sram2_Db<5> |    7.744(R)|   -2.049(R)|clk27M_DCMed      |   0.000|
+sram2_Db<6> |    9.137(R)|   -3.402(R)|clk27M_DCMed      |   0.000|
+sram2_Db<7> |    6.839(R)|   -3.661(R)|clk27M_DCMed      |   0.000|
+sram2_Db<8> |    7.656(R)|   -4.961(R)|clk27M_DCMed      |   0.000|
+sram2_Db<9> |    7.524(R)|   -4.862(R)|clk27M_DCMed      |   0.000|
+sram2_Db<10>|    8.233(R)|   -5.423(R)|clk27M_DCMed      |   0.000|
+sram2_Db<11>|    7.194(R)|   -4.598(R)|clk27M_DCMed      |   0.000|
+sram2_Db<12>|    6.110(R)|   -3.722(R)|clk27M_DCMed      |   0.000|
+sram2_Db<13>|    6.130(R)|   -3.741(R)|clk27M_DCMed      |   0.000|
+sram2_Db<14>|    6.216(R)|   -3.807(R)|clk27M_DCMed      |   0.000|
+sram2_Db<15>|    6.364(R)|   -3.928(R)|clk27M_DCMed      |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock ADV7180_LLC to Pad
@@ -92,92 +92,92 @@ Clock ADV7180_LLC to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-DA<0>       |   12.976(R)|clk27M_DCMed      |   0.000|
-DA<1>       |   13.408(R)|clk27M_DCMed      |   0.000|
-DA<2>       |   15.751(R)|clk27M_DCMed      |   0.000|
-DA<3>       |   14.253(R)|clk27M_DCMed      |   0.000|
-DA<4>       |   12.490(R)|clk27M_DCMed      |   0.000|
-DA<5>       |   13.656(R)|clk27M_DCMed      |   0.000|
-DA<6>       |   12.677(R)|clk27M_DCMed      |   0.000|
-DA<7>       |   12.488(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<0> |   14.497(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<1> |   13.406(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<2> |   13.349(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<3> |   13.337(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<4> |   14.389(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<5> |   13.971(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<6> |   14.298(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<7> |   13.381(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<8> |   13.138(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<9> |   12.595(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<10>|   12.471(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<11>|   12.425(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<12>|   11.459(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<13>|   13.079(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<14>|   12.325(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<15>|   13.401(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<16>|   12.825(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<17>|   14.058(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<18>|   14.456(R)|clk27M_DCMed      |   0.000|
-sram1_Ab<19>|   13.219(R)|clk27M_DCMed      |   0.000|
-sram1_Db<0> |   11.551(R)|clk27M_DCMed      |   0.000|
-sram1_Db<1> |   11.842(R)|clk27M_DCMed      |   0.000|
-sram1_Db<2> |   11.398(R)|clk27M_DCMed      |   0.000|
-sram1_Db<3> |   11.198(R)|clk27M_DCMed      |   0.000|
-sram1_Db<4> |   11.556(R)|clk27M_DCMed      |   0.000|
-sram1_Db<5> |   11.499(R)|clk27M_DCMed      |   0.000|
-sram1_Db<6> |   11.251(R)|clk27M_DCMed      |   0.000|
-sram1_Db<7> |   11.542(R)|clk27M_DCMed      |   0.000|
-sram1_Db<8> |   11.716(R)|clk27M_DCMed      |   0.000|
-sram1_Db<9> |   11.717(R)|clk27M_DCMed      |   0.000|
-sram1_Db<10>|   12.160(R)|clk27M_DCMed      |   0.000|
-sram1_Db<11>|   12.315(R)|clk27M_DCMed      |   0.000|
-sram1_Db<12>|   11.577(R)|clk27M_DCMed      |   0.000|
-sram1_Db<13>|   11.386(R)|clk27M_DCMed      |   0.000|
-sram1_Db<14>|   11.898(R)|clk27M_DCMed      |   0.000|
-sram1_Db<15>|   12.668(R)|clk27M_DCMed      |   0.000|
-sram1_ce    |   14.575(R)|clk27M_DCMed      |   0.000|
-sram1_oe    |   13.978(R)|clk27M_DCMed      |   0.000|
-sram1_we    |   12.098(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<0> |   15.028(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<1> |   14.151(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<2> |   14.246(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<3> |   15.199(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<4> |   16.123(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<5> |   12.011(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<6> |   12.310(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<7> |   11.415(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<8> |   10.978(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<9> |   12.466(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<10>|   12.421(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<11>|   12.265(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<12>|   11.087(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<13>|   12.199(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<14>|   10.703(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<15>|   12.743(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<16>|   14.306(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<17>|   13.504(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<18>|   15.057(R)|clk27M_DCMed      |   0.000|
-sram2_Ab<19>|   14.289(R)|clk27M_DCMed      |   0.000|
-sram2_Db<0> |   11.824(R)|clk27M_DCMed      |   0.000|
-sram2_Db<1> |   11.892(R)|clk27M_DCMed      |   0.000|
-sram2_Db<2> |   12.474(R)|clk27M_DCMed      |   0.000|
-sram2_Db<3> |   12.000(R)|clk27M_DCMed      |   0.000|
-sram2_Db<4> |   12.393(R)|clk27M_DCMed      |   0.000|
-sram2_Db<5> |   11.901(R)|clk27M_DCMed      |   0.000|
-sram2_Db<6> |   12.048(R)|clk27M_DCMed      |   0.000|
-sram2_Db<7> |   12.672(R)|clk27M_DCMed      |   0.000|
-sram2_Db<8> |   11.556(R)|clk27M_DCMed      |   0.000|
-sram2_Db<9> |   11.863(R)|clk27M_DCMed      |   0.000|
-sram2_Db<10>|   10.899(R)|clk27M_DCMed      |   0.000|
-sram2_Db<11>|   11.871(R)|clk27M_DCMed      |   0.000|
-sram2_Db<12>|   11.162(R)|clk27M_DCMed      |   0.000|
-sram2_Db<13>|   12.167(R)|clk27M_DCMed      |   0.000|
-sram2_Db<14>|   11.209(R)|clk27M_DCMed      |   0.000|
-sram2_Db<15>|    9.297(R)|clk27M_DCMed      |   0.000|
-sram2_ce    |   16.090(R)|clk27M_DCMed      |   0.000|
-sram2_oe    |   14.032(R)|clk27M_DCMed      |   0.000|
-sram2_we    |   15.917(R)|clk27M_DCMed      |   0.000|
+DA<0>       |   12.312(R)|clk27M_DCMed      |   0.000|
+DA<1>       |   12.441(R)|clk27M_DCMed      |   0.000|
+DA<2>       |   12.866(R)|clk27M_DCMed      |   0.000|
+DA<3>       |   13.887(R)|clk27M_DCMed      |   0.000|
+DA<4>       |   12.755(R)|clk27M_DCMed      |   0.000|
+DA<5>       |   13.181(R)|clk27M_DCMed      |   0.000|
+DA<6>       |   13.497(R)|clk27M_DCMed      |   0.000|
+DA<7>       |   13.472(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<0> |   14.732(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<1> |   17.058(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<2> |   16.412(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<3> |   16.747(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<4> |   16.631(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<5> |   14.860(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<6> |   14.801(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<7> |   15.574(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<8> |   16.726(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<9> |   15.711(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<10>|   15.490(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<11>|   15.769(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<12>|   16.537(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<13>|   14.918(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<14>|   13.993(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<15>|   14.502(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<16>|   15.362(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<17>|   16.121(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<18>|   15.931(R)|clk27M_DCMed      |   0.000|
+sram1_Ab<19>|   15.860(R)|clk27M_DCMed      |   0.000|
+sram1_Db<0> |   14.007(R)|clk27M_DCMed      |   0.000|
+sram1_Db<1> |   14.308(R)|clk27M_DCMed      |   0.000|
+sram1_Db<2> |   14.891(R)|clk27M_DCMed      |   0.000|
+sram1_Db<3> |   14.604(R)|clk27M_DCMed      |   0.000|
+sram1_Db<4> |   16.362(R)|clk27M_DCMed      |   0.000|
+sram1_Db<5> |   17.296(R)|clk27M_DCMed      |   0.000|
+sram1_Db<6> |   17.592(R)|clk27M_DCMed      |   0.000|
+sram1_Db<7> |   16.195(R)|clk27M_DCMed      |   0.000|
+sram1_Db<8> |   21.384(R)|clk27M_DCMed      |   0.000|
+sram1_Db<9> |   21.671(R)|clk27M_DCMed      |   0.000|
+sram1_Db<10>|   21.062(R)|clk27M_DCMed      |   0.000|
+sram1_Db<11>|   20.180(R)|clk27M_DCMed      |   0.000|
+sram1_Db<12>|   24.293(R)|clk27M_DCMed      |   0.000|
+sram1_Db<13>|   24.325(R)|clk27M_DCMed      |   0.000|
+sram1_Db<14>|   23.123(R)|clk27M_DCMed      |   0.000|
+sram1_Db<15>|   23.121(R)|clk27M_DCMed      |   0.000|
+sram1_ce    |   15.550(R)|clk27M_DCMed      |   0.000|
+sram1_oe    |   15.936(R)|clk27M_DCMed      |   0.000|
+sram1_we    |   16.067(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<0> |   14.596(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<1> |   15.362(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<2> |   14.847(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<3> |   15.314(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<4> |   16.328(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<5> |   16.601(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<6> |   16.415(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<7> |   15.648(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<8> |   15.778(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<9> |   16.158(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<10>|   15.830(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<11>|   15.598(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<12>|   15.615(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<13>|   16.050(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<14>|   14.438(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<15>|   13.183(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<16>|   13.863(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<17>|   14.564(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<18>|   15.337(R)|clk27M_DCMed      |   0.000|
+sram2_Ab<19>|   15.172(R)|clk27M_DCMed      |   0.000|
+sram2_Db<0> |   13.844(R)|clk27M_DCMed      |   0.000|
+sram2_Db<1> |   14.160(R)|clk27M_DCMed      |   0.000|
+sram2_Db<2> |   14.436(R)|clk27M_DCMed      |   0.000|
+sram2_Db<3> |   14.433(R)|clk27M_DCMed      |   0.000|
+sram2_Db<4> |   12.390(R)|clk27M_DCMed      |   0.000|
+sram2_Db<5> |   13.403(R)|clk27M_DCMed      |   0.000|
+sram2_Db<6> |   12.785(R)|clk27M_DCMed      |   0.000|
+sram2_Db<7> |   13.392(R)|clk27M_DCMed      |   0.000|
+sram2_Db<8> |   14.685(R)|clk27M_DCMed      |   0.000|
+sram2_Db<9> |   15.093(R)|clk27M_DCMed      |   0.000|
+sram2_Db<10>|   14.933(R)|clk27M_DCMed      |   0.000|
+sram2_Db<11>|   15.362(R)|clk27M_DCMed      |   0.000|
+sram2_Db<12>|   12.824(R)|clk27M_DCMed      |   0.000|
+sram2_Db<13>|   14.294(R)|clk27M_DCMed      |   0.000|
+sram2_Db<14>|   14.292(R)|clk27M_DCMed      |   0.000|
+sram2_Db<15>|   14.587(R)|clk27M_DCMed      |   0.000|
+sram2_ce    |   14.610(R)|clk27M_DCMed      |   0.000|
+sram2_oe    |   14.362(R)|clk27M_DCMed      |   0.000|
+sram2_we    |   14.338(R)|clk27M_DCMed      |   0.000|
 ------------+------------+------------------+--------+
 
 Clock clk_59m to Pad
@@ -185,11 +185,11 @@ Clock clk_59m to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-ADV7179_RST |    8.707(R)|clk59M_DCMed      |   0.000|
-ADV7179_SCL |    9.584(R)|clk59M_DCMed      |   0.000|
-ADV7179_SDA |    9.672(R)|clk59M_DCMed      |   0.000|
-ADV7180_SCL |    9.832(R)|clk59M_DCMed      |   0.000|
-ADV7180_SDA |   10.283(R)|clk59M_DCMed      |   0.000|
+ADV7179_RST |   10.153(R)|clk59M_DCMed      |   0.000|
+ADV7179_SCL |    8.529(R)|clk59M_DCMed      |   0.000|
+ADV7179_SDA |    8.967(R)|clk59M_DCMed      |   0.000|
+ADV7180_SCL |    8.583(R)|clk59M_DCMed      |   0.000|
+ADV7180_SDA |    8.592(R)|clk59M_DCMed      |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock ADV7180_LLC
@@ -197,8 +197,8 @@ Clock to Setup on destination clock ADV7180_LLC
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ADV7180_LLC    |    9.105|         |         |         |
-clk_59m        |   11.420|         |         |         |
+ADV7180_LLC    |    9.121|         |         |         |
+clk_59m        |    9.515|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_59m
@@ -206,7 +206,7 @@ Clock to Setup on destination clock clk_59m
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_59m        |    7.517|         |         |         |
+clk_59m        |    7.856|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
@@ -217,14 +217,14 @@ ADV7180_LLC    |ADV7179_CLK    |    5.483|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri Feb 24 10:01:59 2017 
+Analysis completed Mon Mar 13 00:33:49 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 236 MB
+Peak Memory Usage: 228 MB
 
 
 

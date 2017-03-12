@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/top_isim_beh.exe" -prj "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/top_beh.prj" "work.top" "work.glbl" 

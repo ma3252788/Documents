@@ -1,0 +1,55 @@
+Running: E:\Hardware\ISE14.3\14.3\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/top_isim_beh.exe -prj E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/top_beh.prj work.top work.glbl 
+ISim P.40xd (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/i2c_master_bit_ctrl.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/i2c_master_byte_ctrl.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/i2c_master_top.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/I2C_CTRL7179.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/I2C_Ctrl.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/filter.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/sram_bus_control.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/sys_dcm.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/dcm27m.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/adv7180_video_in.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/adv7180_config_top.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/adv7179_video_out.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/adv7179_config_top.v" into library work
+Analyzing Verilog file "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/top.v" into library work
+Analyzing Verilog file "E:/Hardware/ISE14.3/14.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/top.v" Line 66: Port CLK0_OUT is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/top.v" Line 75: Port CLK0_OUT is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/adv7180_config_top.v" Line 77: Port re_config is not connected to this instance
+WARNING:HDLCompiler:1016 - "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/adv7179_config_top.v" Line 56: Port cnt is not connected to this instance
+Completed static elaboration
+Compiling module BUFG
+Compiling module IBUFG
+Compiling module dcm_clock_divide_by_2
+Compiling module dcm_maximum_period_check(clock_n...
+Compiling module dcm_maximum_period_check(clock_n...
+Compiling module dcm_clock_lost
+Compiling module DCM(CLKDV_DIVIDE=5.5,CLKIN_PERIO...
+Compiling module sys_dcm
+Compiling module DCM(CLKIN_PERIOD=37.037,FACTORY_...
+Compiling module dcm27m
+Compiling module i2c_master_bit_ctrl
+Compiling module i2c_master_byte_ctrl
+Compiling module i2c_master_top
+Compiling module I2C_Ctrl
+Compiling module adv7180_config_top
+Compiling module filter
+Compiling module I2C_CTRL7179
+Compiling module adv7179_config_top
+Compiling module adv7180_video_in
+Compiling module adv7179_video_out
+Compiling module sram_bus_control
+Compiling module top
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 16 sub-compilation(s) to finish...
+Compiled 23 Verilog Units
+Built simulation executable E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode/top_isim_beh.exe
+Fuse Memory Usage: 34456 KB
+Fuse CPU Usage: 889 ms

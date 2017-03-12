@@ -1,4 +1,4 @@
-Release 14.6 Map P.68d (nt64)
+Release 14.3 Map P.40xd (nt64)
 Xilinx Map Application Log File for Design 'top'
 
 Design Information
@@ -9,7 +9,7 @@ Target Device  : xc3s4000
 Target Package : fg676
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Fri Feb 24 10:01:20 2017
+Mapped Date    : Mon Mar 13 00:33:15 2017
 
 Mapping design into LUTs...
 Running directed packing...
@@ -44,8 +44,8 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                3.63
 
-Peak Memory Usage:  338 MB
-Total REAL time to MAP completion:  6 secs 
+Peak Memory Usage:  286 MB
+Total REAL time to MAP completion:  3 secs 
 Total CPU time to MAP completion:   3 secs 
 
 NOTES:
