@@ -20,19 +20,19 @@
 <msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">139</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">rd_dout</arg>&apos; of instance &apos;<arg fmt="%s" index="4">encode</arg>&apos; is tied to GND.
 </msg>
 
-<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">dataout_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">dataout_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
 </msg>
 
-<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">addr_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">addr_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
 </msg>
 
-<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">ce_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">ce_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
 </msg>
 
-<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">oe_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">oe_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
 </msg>
 
-<msg type="warning" file="Xst" num="852" delta="new" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">we_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
+<msg type="warning" file="Xst" num="852" delta="old" >&quot;<arg fmt="%s" index="1">top.v</arg>&quot; line <arg fmt="%d" index="2">162</arg>: Unconnected input port &apos;<arg fmt="%s" index="3">we_pro</arg>&apos; of instance &apos;<arg fmt="%s" index="4">sram_bus_control</arg>&apos; is tied to GND.
 </msg>
 
 <msg type="warning" file="Xst" num="916" delta="old" >&quot;<arg fmt="%s" index="1">i2c_master_top.v</arg>&quot; line <arg fmt="%d" index="2">101</arg>: Delay is ignored for synthesis.

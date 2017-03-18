@@ -18,8 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module I2C_CTRL7179(
+module I2C_CTRL7179(clk,rst,din,ack,err,rty,sel,
+							cyc,stb,we,dout,adr,Finish
     );
-
+	 
+	
+	input clk;
+	input rst;
+	input [7:0] din;
+	input ack,
 
 endmodule

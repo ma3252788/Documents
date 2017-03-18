@@ -219,11 +219,11 @@ module I2C_CTRL7179(clk, rst, din, ack, err, rty, sel, //input
 							end
 						else if(data_cnt == 'd3)
 							begin
-								dout <= 8'hd8;	 //bit[7]=1/0: color bar enable/disable;bit[6]=1/0: DAC A disable/enable;bit[5]=1/0: DAC B disable/enable;bit[4]=1/0: DAC C disable/enable; 
+								dout <= 8'h58;	 //01H  bit[7]=1/0: color bar enable/disable;bit[6]=1/0: DAC A disable/enable;bit[5]=1/0: DAC B disable/enable;bit[4]=1/0: DAC C disable/enable; 
 							end
 						else if(data_cnt == 'd4)
 							begin
-								dout <= 8'h40;	 //bit[4]=1/0: color disable/enable
+								dout <= 8'h40;	 //02H  bit[4]=1/0: color disable/enable
 							end
 						else if(data_cnt == 'd5)
 							begin

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-17T11:45:56</DateModified>
+  <DateModified>2017-03-18T16:08:32</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>2016-12-20T15:08:01</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-03-17T10:48:02</SummaryTimeStamp>
   <SavedFilePath>E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode_zsy/video_decode_encode/iseconfig/top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/video_decode_encode_zsy/video_decode_encode\</ImplementationReportsDirectory>
   <DateInitialized>2016-12-08T09:00:57</DateInitialized>

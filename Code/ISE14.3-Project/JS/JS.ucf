@@ -9,6 +9,9 @@ NET "cross_output" 		LOC = "Y5";#"AB19";
 NET "video_zoom" 			LOC = "AA5";#"AB18";
 
 
+
+NET "clkout" LOC = J5;
+
 ##UART
 #NET "RS232_RXD1" LOC = "AD22" ;
 #NET "RS232_TXD1" LOC = "AE22" ;

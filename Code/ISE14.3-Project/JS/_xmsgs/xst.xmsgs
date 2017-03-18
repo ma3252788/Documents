@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;top.v&quot; line 196 </arg>Connection to output port &apos;<arg fmt="%s" index="2">Img_mean</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="261" delta="old" ><arg fmt="%s" index="1">&quot;top.v&quot; line 198 </arg>Connection to output port &apos;<arg fmt="%s" index="2">Img_mean</arg>&apos; does not match port size
 </msg>
 
-<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;top.v&quot; line 300 </arg>Connection to input port &apos;<arg fmt="%s" index="2">max_gray</arg>&apos; does not match port size
+<msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;top.v&quot; line 302 </arg>Connection to input port &apos;<arg fmt="%s" index="2">max_gray</arg>&apos; does not match port size
 </msg>
 
 <msg type="warning" file="HDLCompilers" num="259" delta="old" ><arg fmt="%s" index="1">&quot;Equilization_alg.v&quot; line 395 </arg>Connection to input port &apos;<arg fmt="%s" index="2">divisor</arg>&apos; does not match port size

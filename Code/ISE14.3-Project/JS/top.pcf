@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.40xd on Fri Mar 17 22:09:30 2017
+// Written by: Map P.40xd on Sat Mar 18 15:52:33 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -76,6 +76,7 @@ COMP "ADV7179_P<5>" LOCATE = SITE "AE12" LEVEL 1;
 COMP "ADV7179_P<6>" LOCATE = SITE "AF11" LEVEL 1;
 COMP "ADV7179_P<7>" LOCATE = SITE "AE11" LEVEL 1;
 COMP "enhance_enable" LOCATE = SITE "W5" LEVEL 1;
+COMP "clkout" LOCATE = SITE "J5" LEVEL 1;
 COMP "ttl_en" LOCATE = SITE "V5" LEVEL 1;
 COMP "ADV7180_LLC" LOCATE = SITE "AE14" LEVEL 1;
 COMP "ADV7180_INT" LOCATE = SITE "AC19" LEVEL 1;

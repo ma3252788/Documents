@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: top.prj
 
@@ -1029,8 +1029,8 @@ WARNING:Xst:646 - Signal <Iris_int> is assigned but never used. This unconnected
 WARNING:Xst:646 - Signal <Img_mean> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 26-bit up counter for signal <reset_cnt>.
     Found 1-bit register for signal <RSTW>.
-    Found 26-bit comparator greater for signal <RSTW$cmp_gt0000> created at line 168.
-    Found 26-bit comparator less for signal <RSTW$cmp_lt0000> created at line 168.
+    Found 26-bit comparator greater for signal <RSTW$cmp_gt0000> created at line 170.
+    Found 26-bit comparator less for signal <RSTW$cmp_lt0000> created at line 170.
     Summary:
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
@@ -1587,31 +1587,31 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 132
+# IOs                              : 133
 
 Cell Usage :
-# BELS                             : 4759
+# BELS                             : 4769
 #      BUF                         : 4
 #      GND                         : 6
 #      INV                         : 53
 #      LUT1                        : 166
-#      LUT2                        : 209
+#      LUT2                        : 207
 #      LUT2_D                      : 11
 #      LUT2_L                      : 4
 #      LUT3                        : 411
-#      LUT3_D                      : 14
+#      LUT3_D                      : 13
 #      LUT3_L                      : 3
-#      LUT4                        : 1597
+#      LUT4                        : 1610
 #      LUT4_D                      : 26
-#      LUT4_L                      : 51
+#      LUT4_L                      : 49
 #      MULT_AND                    : 37
 #      MUXCY                       : 1044
-#      MUXF5                       : 126
+#      MUXF5                       : 128
 #      MUXF6                       : 2
 #      VCC                         : 3
 #      XORCY                       : 992
 # FlipFlops/Latches                : 3247
-#      FD                          : 49
+#      FD                          : 50
 #      FDC                         : 372
 #      FDCE                        : 1374
 #      FDCP                        : 17
@@ -1620,16 +1620,17 @@ Cell Usage :
 #      FDP                         : 31
 #      FDPE                        : 1272
 #      FDR                         : 4
-#      FDS                         : 26
+#      FDS                         : 24
+#      FDSE                        : 1
 # RAMS                             : 2
 #      RAMB16                      : 2
 # Clock Buffers                    : 4
 #      BUFG                        : 4
-# IO Buffers                       : 120
+# IO Buffers                       : 121
 #      IBUF                        : 12
 #      IBUFG                       : 2
 #      IOBUF                       : 32
-#      OBUF                        : 70
+#      OBUF                        : 71
 #      OBUFT                       : 4
 # DCMs                             : 2
 #      DCM                         : 2
@@ -1642,11 +1643,11 @@ Device utilization summary:
 
 Selected Device : 3s4000fg676-4 
 
- Number of Slices:                     2358  out of  27648     8%  
+ Number of Slices:                     2362  out of  27648     8%  
  Number of Slice Flip Flops:           3247  out of  55296     5%  
- Number of 4 input LUTs:               2545  out of  55296     4%  
- Number of IOs:                         132
- Number of bonded IOBs:                 120  out of    489    24%  
+ Number of 4 input LUTs:               2553  out of  55296     4%  
+ Number of IOs:                         133
+ Number of bonded IOBs:                 121  out of    489    24%  
  Number of BRAMs:                         2  out of     96     2%  
  Number of MULT18X18s:                    4  out of     96     4%  
  Number of GCLKs:                         4  out of      8    50%  
@@ -1760,7 +1761,7 @@ Delay:               13.420ns (Levels of Logic = 10)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_59m'
   Clock period: 10.024ns (frequency: 99.760MHz)
-  Total number of paths / destination ports: 64882 / 2980
+  Total number of paths / destination ports: 64904 / 2979
 -------------------------------------------------------------------------
 Delay:               10.024ns (Levels of Logic = 46)
   Source:            adv7179_config/rst_dly_module/cnt_3 (FF)
@@ -1838,7 +1839,7 @@ Offset:              10.286ns (Levels of Logic = 6)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   0.821   1.140  cross_output_IBUF (cross_output_IBUF)
-     LUT4_L:I0->LO         1   0.551   0.126  adv7179_video_out_module/MP_and0002168_SW0 (N390)
+     LUT4_L:I0->LO         1   0.551   0.126  adv7179_video_out_module/MP_and0002168_SW0 (N389)
      LUT4:I3->O            1   0.551   1.140  adv7179_video_out_module/MP_and0002168 (adv7179_video_out_module/MP_and0002168)
      LUT4:I0->O           15   0.551   1.214  adv7179_video_out_module/MP_and0002179 (adv7179_video_out_module/MP_and0002)
      LUT4_D:I3->O          4   0.551   0.943  adv7179_video_out_module/Cb_mux0000<0>2 (adv7179_video_out_module/N48)
@@ -1923,8 +1924,8 @@ WARNING:Xst:616 - Invalid property "FPGA_DONT_TOUCH true": Did not attach to Equ
 WARNING:Xst:616 - Invalid property "FPGA_DONT_TOUCH true": Did not attach to Equilization_alg_uut/hist_table.
 
 
-Total REAL time to Xst completion: 46.00 secs
-Total CPU time to Xst completion: 45.84 secs
+Total REAL time to Xst completion: 51.00 secs
+Total CPU time to Xst completion: 51.57 secs
  
 --> 
 

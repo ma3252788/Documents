@@ -1,16 +1,16 @@
-Release 14.6 - xst P.68d (nt64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Release 14.3 - xst P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: top.prj
 
@@ -1263,21 +1263,21 @@ Design Statistics
 # IOs                              : 195
 
 Cell Usage :
-# BELS                             : 1551
+# BELS                             : 1544
 #      GND                         : 1
 #      INV                         : 39
 #      LUT1                        : 73
-#      LUT2                        : 128
+#      LUT2                        : 131
 #      LUT2_D                      : 4
-#      LUT2_L                      : 4
-#      LUT3                        : 262
-#      LUT3_D                      : 19
-#      LUT3_L                      : 7
-#      LUT4                        : 528
-#      LUT4_D                      : 28
-#      LUT4_L                      : 42
+#      LUT2_L                      : 6
+#      LUT3                        : 251
+#      LUT3_D                      : 18
+#      LUT3_L                      : 5
+#      LUT4                        : 525
+#      LUT4_D                      : 26
+#      LUT4_L                      : 46
 #      MUXCY                       : 179
-#      MUXF5                       : 83
+#      MUXF5                       : 86
 #      MUXF6                       : 2
 #      VCC                         : 1
 #      XORCY                       : 151
@@ -1289,7 +1289,8 @@ Cell Usage :
 #      FDP                         : 19
 #      FDPE                        : 38
 #      FDR                         : 4
-#      FDS                         : 25
+#      FDS                         : 24
+#      FDSE                        : 1
 # Clock Buffers                    : 6
 #      BUFG                        : 6
 # IO Buffers                       : 193
@@ -1309,9 +1310,9 @@ Device utilization summary:
 
 Selected Device : 3s4000fg676-5 
 
- Number of Slices:                      611  out of  27648     2%  
+ Number of Slices:                      605  out of  27648     2%  
  Number of Slice Flip Flops:            526  out of  55296     0%  
- Number of 4 input LUTs:               1134  out of  55296     2%  
+ Number of 4 input LUTs:               1124  out of  55296     2%  
  Number of IOs:                         195
  Number of bonded IOBs:                 193  out of    489    39%  
  Number of MULT18X18s:                    2  out of     96     2%  
@@ -1368,7 +1369,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_59m'
   Clock period: 8.600ns (frequency: 116.278MHz)
-  Total number of paths / destination ports: 30060 / 567
+  Total number of paths / destination ports: 30041 / 567
 -------------------------------------------------------------------------
 Delay:               8.600ns (Levels of Logic = 45)
   Source:            adv7179_config/rst_dly_module/cnt_3 (FF)
@@ -1471,10 +1472,10 @@ Offset:              7.995ns (Levels of Logic = 7)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           2   0.715   1.040  sram2_Db_0_IOBUF (N190)
+     IOBUF:IO->O           2   0.715   1.040  sram2_Db_0_IOBUF (N194)
      LUT3:I0->O            1   0.479   0.851  sram_bus_control/dataout_CH1<0>1 (dataout_CH1<0>)
      LUT4:I1->O            2   0.479   0.768  encode/MP_cmp_gt000017 (encode/MP_cmp_gt000017)
-     LUT4:I3->O            1   0.479   0.000  encode/MP_cmp_gt0000116_F (N487)
+     LUT4:I3->O            1   0.479   0.000  encode/MP_cmp_gt0000116_F (N475)
      MUXF5:I0->O           3   0.314   0.794  encode/MP_cmp_gt0000116 (encode/MP_cmp_gt0000)
      LUT4_D:I3->O          3   0.479   0.941  encode/MP_mux0000<0>21 (encode/N28)
      LUT4:I1->O            1   0.479   0.000  encode/MP_mux0000<2>32 (encode/MP_mux0000<2>)
@@ -1543,12 +1544,12 @@ Delay:               6.726ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 19.71 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.63 secs
  
 --> 
 
-Total memory usage is 338644 kilobytes
+Total memory usage is 299668 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  200 (   0 filtered)

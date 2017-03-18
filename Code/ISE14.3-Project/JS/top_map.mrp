@@ -9,7 +9,7 @@ Target Device  : xc3s4000
 Target Package : fg676
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Fri Mar 17 22:09:25 2017
+Mapped Date    : Sat Mar 18 15:52:26 2017
 
 Design Summary
 --------------
@@ -17,29 +17,29 @@ Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
   Number of Slice Flip Flops:         2,201 out of  55,296    3%
-  Number of 4 input LUTs:             2,306 out of  55,296    4%
+  Number of 4 input LUTs:             2,316 out of  55,296    4%
 Logic Distribution:
-  Number of occupied Slices:          1,732 out of  27,648    6%
-    Number of Slices containing only related logic:   1,732 out of   1,732 100%
-    Number of Slices containing unrelated logic:          0 out of   1,732   0%
+  Number of occupied Slices:          1,739 out of  27,648    6%
+    Number of Slices containing only related logic:   1,739 out of   1,739 100%
+    Number of Slices containing unrelated logic:          0 out of   1,739   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,479 out of  55,296    4%
-    Number used as logic:             2,306
+  Total Number of 4 input LUTs:       2,489 out of  55,296    4%
+    Number used as logic:             2,316
     Number used as a route-thru:        173
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                124 out of     489   25%
+  Number of bonded IOBs:                125 out of     489   25%
   Number of RAMB16s:                      2 out of      96    2%
   Number of MULT18X18s:                   4 out of      96    4%
   Number of BUFGMUXs:                     2 out of       8   25%
 
 Average Fanout of Non-Clock Nets:                2.94
 
-Peak Memory Usage:  307 MB
-Total REAL time to MAP completion:  6 secs 
-Total CPU time to MAP completion:   6 secs 
+Peak Memory Usage:  308 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   8 secs 
 
 NOTES:
 
@@ -3417,6 +3417,7 @@ Section 6 - IOB Properties
 | SRAM_B_UB                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | SRAM_B_WE                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | clk_59m                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| clkout                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | cross_output                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | enhance_enable                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | rst                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |

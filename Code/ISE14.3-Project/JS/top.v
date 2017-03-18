@@ -28,7 +28,7 @@ module top(	clk_59m,rst,
 
 				ttl_en,enhance_enable,cross_output,video_zoom,
 
-				test
+				test,clkout
 				);
 
 //system
@@ -47,11 +47,13 @@ output	ADV7180_SCL;
 output	ADV7180_SDA;
 output	ADV7180_RST;//always high
 output	ADV7180_PWDOWN;//always high
+output   clkout;
 
 wire		ADV7180_RST = 1'b1;
 wire		ADV7180_PWDOWN = 1'b1;
+//reg clkout;
 
-
+assign clkout = 1;
 //AD7179
 output	ADV7179_TTX;//always low
 output	ADV7179_TTXREQ;//always low.But it should be an input signal.
