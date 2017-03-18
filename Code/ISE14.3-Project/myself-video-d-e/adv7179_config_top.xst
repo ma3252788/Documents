@@ -1,0 +1,5 @@
+set -tmpdir "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/myself-video-d-e/xst/projnav.tmp"
+set -xsthdpdir "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/myself-video-d-e/xst"
+elaborate
+-ifn adv7179_config_top.prj
+-ifmt mixed

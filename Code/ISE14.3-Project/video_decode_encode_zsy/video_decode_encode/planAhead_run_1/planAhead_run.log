@@ -1,0 +1,332 @@
+
+****** PlanAhead v14.6 (64-bit)
+  **** Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -202 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+source D:/workspace/video_decode_encode/pa.fromNetlist.tcl
+# create_project -name video_decode_encode -dir "D:/workspace/video_decode_encode/planAhead_run_1" -part xc3s4000fg676-5
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/workspace/video_decode_encode/top.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/workspace/video_decode_encode} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "top.ucf" [current_fileset -constrset]
+Adding file 'D:/workspace/video_decode_encode/top.ucf' to fileset 'constrs_1'
+# add_files [list {top.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s4000fg676-5
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus addr_CH2<19 : 0> on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus adv7179_config/I2C_module/cr<7 : 1> on
+   block top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus adv7179_config/I2C_module/ctr<7 : 1> on
+   block top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_lut<11 : 0> on block top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   adv7180_config_top_module/I2C_module/cr<7 : 1> on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   adv7180_config_top_module/I2C_module/ctr<7 : 1> on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus decode/returnState<9 : 0> on block top
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus decode/returnState_mux0000<10 : 1> on
+   block top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus encode/nextSTATE<8 : 0> on block top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus encode/nextSTATE_mux0000<9 : 1> on block
+   top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus encode/qfv_cnt<10 : 0> on block top is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 96988 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/video_decode_encode.data/cache/top_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/video_decode_encode.data/cache/top_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'top' is not ideal for floorplanning, since the cellview 'top' defined in file 'top.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s4000/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s4000/ClockBuffers.xml
+Loading package from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s4000/fg676/Package.xml
+Loading io standards from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/xc3s4000/fg676/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/spartan3-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3/spartan3/spartan3-5.lib.
+Parsing UCF File [D:/workspace/video_decode_encode/top.ucf]
+Finished Parsing UCF File [D:/workspace/video_decode_encode/top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: fdede52a
+link_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 573.195 ; gain = 105.953
+startgroup
+set_property package_pin F2 [get_ports sram2_we]
+endgroup
+save_constraints
+startgroup
+set_property package_pin L26 [get_ports {sram3_Ab[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {sram3_Ab[1]}]]
+startgroup
+set_property package_pin T22 [get_ports {sram3_Ab[0]}]
+endgroup
+startgroup
+set_property package_pin R22 [get_ports {sram3_Ab[1]}]
+endgroup
+startgroup
+set_property package_pin T20 [get_ports {sram3_Ab[2]}]
+endgroup
+startgroup
+set_property package_pin J25 [get_ports {sram3_Ab[3]}]
+endgroup
+startgroup
+set_property package_pin H26 [get_ports {sram3_Ab[4]}]
+endgroup
+startgroup
+set_property package_pin AB21 [get_ports {sram3_Ab[5]}]
+endgroup
+startgroup
+set_property package_pin AA21 [get_ports {sram3_Ab[6]}]
+endgroup
+startgroup
+set_property package_pin AD22 [get_ports {sram3_Ab[7]}]
+endgroup
+startgroup
+set_property package_pin AC22 [get_ports {sram3_Ab[8]}]
+endgroup
+startgroup
+set_property package_pin AB25 [get_ports {sram3_Ab[9]}]
+endgroup
+set_property package_pin "" [get_ports [list  {sram3_Ab[11]}]]
+startgroup
+set_property package_pin AA26 [get_ports {sram3_Ab[10]}]
+endgroup
+startgroup
+set_property package_pin AA25 [get_ports {sram3_Ab[11]}]
+endgroup
+startgroup
+set_property package_pin Y26 [get_ports {sram3_Ab[12]}]
+endgroup
+startgroup
+set_property package_pin Y25 [get_ports {sram3_Ab[13]}]
+endgroup
+startgroup
+set_property package_pin W26 [get_ports {sram3_Ab[14]}]
+endgroup
+startgroup
+set_property package_pin N26 [get_ports {sram3_Ab[15]}]
+endgroup
+startgroup
+set_property package_pin N25 [get_ports {sram3_Ab[16]}]
+endgroup
+startgroup
+set_property package_pin M26 [get_ports {sram3_Ab[17]}]
+endgroup
+startgroup
+set_property package_pin M25 [get_ports {sram3_Ab[18]}]
+endgroup
+startgroup
+set_property package_pin L26 [get_ports {sram3_Ab[19]}]
+endgroup
+startgroup
+set_property package_pin N23 [get_ports {sram3_Db[0]}]
+endgroup
+startgroup
+set_property package_pin N24 [get_ports {sram3_Db[1]}]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports {sram3_Db[2]}]
+endgroup
+startgroup
+set_property package_pin P23 [get_ports {sram3_Db[3]}]
+endgroup
+startgroup
+set_property package_pin R24 [get_ports {sram3_Db[4]}]
+endgroup
+startgroup
+set_property package_pin T23 [get_ports {sram3_Db[5]}]
+endgroup
+startgroup
+set_property package_pin K25 [get_ports {sram3_Db[6]}]
+endgroup
+startgroup
+set_property package_pin K26 [get_ports {sram3_Db[7]}]
+endgroup
+startgroup
+set_property package_pin AB26 [get_ports {sram3_Db[8]}]
+endgroup
+startgroup
+set_property package_pin AC25 [get_ports {sram3_Db[9]}]
+endgroup
+startgroup
+set_property package_pin AC26 [get_ports {sram3_Db[10]}]
+endgroup
+startgroup
+set_property package_pin AD25 [get_ports {sram3_Db[11]}]
+endgroup
+startgroup
+set_property package_pin Y23 [get_ports {sram3_Db[12]}]
+endgroup
+startgroup
+set_property package_pin AA24 [get_ports {sram3_Db[13]}]
+endgroup
+startgroup
+set_property package_pin AA23 [get_ports {sram3_Db[14]}]
+endgroup
+startgroup
+set_property package_pin AB24 [get_ports {sram3_Db[15]}]
+endgroup
+startgroup
+set_property package_pin U24 [get_ports {sram4_Ab[0]}]
+endgroup
+startgroup
+set_property package_pin A22 [get_ports {sram4_Ab[1]}]
+endgroup
+startgroup
+set_property package_pin Y22 [get_ports {sram4_Ab[2]}]
+endgroup
+startgroup
+set_property package_pin W22 [get_ports {sram4_Ab[3]}]
+endgroup
+startgroup
+set_property package_pin V22 [get_ports {sram4_Ab[4]}]
+endgroup
+startgroup
+set_property package_pin J22 [get_ports {sram4_Ab[5]}]
+endgroup
+startgroup
+set_property package_pin K22 [get_ports {sram4_Ab[6]}]
+endgroup
+startgroup
+set_property package_pin L22 [get_ports {sram4_Ab[7]}]
+endgroup
+startgroup
+set_property package_pin M22 [get_ports {sram4_Ab[8]}]
+endgroup
+startgroup
+set_property package_pin E26 [get_ports {sram4_Ab[9]}]
+endgroup
+startgroup
+set_property package_pin F25 [get_ports {sram4_Ab[10]}]
+endgroup
+startgroup
+set_property package_pin F26 [get_ports {sram4_Ab[11]}]
+endgroup
+startgroup
+set_property package_pin G25 [get_ports {sram4_Ab[12]}]
+endgroup
+startgroup
+set_property package_pin G26 [get_ports {sram4_Ab[13]}]
+endgroup
+startgroup
+set_property package_pin H25 [get_ports {sram4_Ab[14]}]
+endgroup
+startgroup
+set_property package_pin P25 [get_ports {sram4_Ab[15]}]
+endgroup
+startgroup
+set_property package_pin P26 [get_ports {sram4_Ab[16]}]
+endgroup
+startgroup
+set_property package_pin R25 [get_ports {sram4_Ab[17]}]
+endgroup
+startgroup
+set_property package_pin R26 [get_ports {sram4_Ab[18]}]
+endgroup
+startgroup
+set_property package_pin T25 [get_ports {sram4_Ab[19]}]
+endgroup
+startgroup
+set_property package_pin V24 [get_ports {sram4_Db[0]}]
+endgroup
+startgroup
+set_property package_pin V23 [get_ports {sram4_Db[1]}]
+endgroup
+startgroup
+set_property package_pin W24 [get_ports {sram4_Db[2]}]
+endgroup
+startgroup
+set_property package_pin W23 [get_ports {sram4_Db[3]}]
+endgroup
+startgroup
+set_property package_pin T26 [get_ports {sram4_Db[4]}]
+endgroup
+startgroup
+set_property package_pin U25 [get_ports {sram4_Db[5]}]
+endgroup
+startgroup
+set_property package_pin U26 [get_ports {sram4_Db[6]}]
+endgroup
+startgroup
+set_property package_pin V25 [get_ports {sram4_Db[7]}]
+endgroup
+startgroup
+set_property package_pin E25 [get_ports {sram4_Db[8]}]
+endgroup
+startgroup
+set_property package_pin D26 [get_ports {sram4_Db[9]}]
+endgroup
+startgroup
+set_property package_pin D25 [get_ports {sram4_Db[10]}]
+endgroup
+startgroup
+set_property package_pin C26 [get_ports {sram4_Db[11]}]
+endgroup
+startgroup
+set_property package_pin M24 [get_ports {sram4_Db[12]}]
+endgroup
+startgroup
+set_property package_pin L23 [get_ports {sram4_Db[13]}]
+endgroup
+startgroup
+set_property package_pin K24 [get_ports {sram4_Db[14]}]
+endgroup
+startgroup
+set_property package_pin K23 [get_ports {sram4_Db[15]}]
+endgroup
+startgroup
+set_property package_pin U22 [get_ports sram3_ce]
+endgroup
+startgroup
+set_property package_pin AB22 [get_ports sram3_oe]
+endgroup
+startgroup
+set_property package_pin L25 [get_ports sram3_we]
+endgroup
+startgroup
+set_property package_pin U23 [get_ports sram4_ce]
+endgroup
+startgroup
+set_property package_pin N21 [get_ports sram4_oe]
+endgroup
+startgroup
+set_property package_pin W25 [get_ports sram4_we]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list ADV7179_RST]]
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Dec 21 12:09:20 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

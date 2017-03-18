@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Wed Dec 21 12:11:37 2016
+# Process ID: 4640
+# Log file: D:/workspace/video_decode_encode/planAhead_run_2/planAhead.log
+# Journal file: D:/workspace/video_decode_encode/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/workspace/video_decode_encode/pa.fromNetlist.tcl
+set_property iostandard LVCMOS25 [get_ports [list ADV7179_RST]]
+save_constraints

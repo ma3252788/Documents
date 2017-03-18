@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn __projnav/i2c_master_top.xst -ofn i2c_master_top.syr
+ngdbuild -intstyle ise -dd "e:\program\js_ttl\js/_ngo" -i  -p xc3s2000-fg676-4 i2c_master_top.ngc i2c_master_top.ngd
+map -intstyle ise -p xc3s2000-fg676-4 -cm area -pr b -k 4 -c 100 -o i2c_master_top_map.ncd i2c_master_top.ngd i2c_master_top.pcf
+par -w -intstyle ise -ol std -t 1 i2c_master_top_map.ncd i2c_master_top.ncd i2c_master_top.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml i2c_master_top i2c_master_top.ncd -o i2c_master_top.twr i2c_master_top.pcf
+bitgen -intstyle ise -f i2c_master_top.ut i2c_master_top.ncd

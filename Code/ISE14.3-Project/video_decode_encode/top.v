@@ -126,7 +126,7 @@ module top( clk_59m, rst,
 										 );
 			
 /////////////////////////////////////////////////////////////////////////
-/////7179编码，从SRAM读取			
+/////7179编码，从SRAM读取			这段什么意思？？？》????????????????????????????????????????
 	wire cross_output,video_zoom,video_switch;
 	assign cross_output = 1;
 	assign video_zoom = 0;
@@ -137,15 +137,33 @@ module top( clk_59m, rst,
 	wire ce_CH1,oe_CH1,we_CH1;
 	
 	adv7179_video_out encode (
-		 .clk59m(clk59M_DCMed),.rst(rst),.qd(AD1),.clk(clk27M_DCMed),.clk135(clk13_5M_DCMed), 
+		 .clk59m(clk59M_DCMed),
+		 .rst(rst),
+		 .qd(AD1),
+		 .clk(clk27M_DCMed),
+		 .clk135(clk13_5M_DCMed), 
 		 .config_done(config_done),
-		 .qd_out(DA),.clkout(ADV7179_CLK), 
-		 .data_saaSRAM(dataout_CH1),.addr_SRAM(addr_CH1),.ce_saaSRAM(ce_CH1),.oe_saaSRAM(oe_CH1),.we_saaSRAM(we_CH1), 
-		 .cross_output(cross_output),.video_zoom(video_zoom),.video_switch(video_switch),
+		 .qd_out(DA),
+		 .clkout(ADV7179_CLK), 
+		 .data_saaSRAM(dataout_CH1),
+		 .addr_SRAM(addr_CH1),
+		 .ce_saaSRAM(ce_CH1),
+		 .oe_saaSRAM(oe_CH1),
+		 .we_saaSRAM(we_CH1), 
+		 .cross_output(cross_output),
+		 .video_zoom(video_zoom),
+		 .video_switch(video_switch),
 		 
-		 .video_pip2(),.video_pip4(),.video_pip8(), 
-		 .rd_ce(),.rd_oe(),.rd_we(),.rd_dout(),.rd_addr(), 	     
-		 .field(),.line_cnt(), 
+		 .video_pip2(),
+		 .video_pip4(),
+		 .video_pip8(), 
+		 .rd_ce(),
+		 .rd_oe(),
+		 .rd_we(),
+		 .rd_dout(),
+		 .rd_addr(), 	     
+		 .field(),
+		 .line_cnt(), 
 		 .enhance_enable(), 
 		 .qfv()
 		 );

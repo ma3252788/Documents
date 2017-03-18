@@ -13,4 +13,4 @@ INFO:WebTalk:2 - WebTalk is enabled.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:5 - E:/Hardware/ISE14.3-Project/DSP-RET-TO-1/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at E:/Hardware/ISE14.3/14.3/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:5 - E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/DSP-RET-TO-1/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at E:/Hardware/ISE14.3/14.3/ISE_DS/ISE/data/reports/webtalk_introduction.html

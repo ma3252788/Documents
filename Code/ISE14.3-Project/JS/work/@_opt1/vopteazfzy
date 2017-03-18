@@ -1,0 +1,152 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\program\JS_TTL\JS
+T_opt
+Z1 V>NT>Yh4bLZ19VL7UOimX>2
+Z2 04 12 4 work dpram_test_v fast 0
+Z3 04 4 4 work glbl fast 0
+Z4 =1-c80aa965743c-4c89c121-55-9e0
+Z5 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver
+Z6 n@_opt
+Z7 OE;O;6.5;42
+T_opt1
+Z8 VkL[4n]UKERKUPKW?OCc@^2
+Z9 04 11 4 work tst_dpram_v fast 0
+R3
+Z10 =1-c80aa965743c-4c8b77ba-2f6-d04
+R5
+Z11 n@_opt1
+R7
+vadv7180_config_top
+Z12 IIfChVgIAo;jDSfjkDPaOV1
+Z13 V@2F[ihB3F5JW^6FSS?bCN1
+Z14 w1262771808
+Z15 8adv7180_config_top.v
+Z16 Fadv7180_config_top.v
+L0 21
+Z17 OE;L;6.5;42
+r1
+31
+Z18 o-L mtiAvm -L mtiOvm -L mtiUPF
+Z19 !s100 5Y_BZRf_G8RAf7VmE5;0m0
+!s85 0
+vdpram
+Z20 Ij1CgkfG3U=kBiOnCaMjOL2
+Z21 VTjAdYZN1_:=I0C]b]=3zE2
+Z22 w1284208510
+Z23 8dpram.v
+Z24 Fdpram.v
+L0 40
+R17
+r1
+31
+R18
+Z25 !s100 iRi2zHXEff1[X__R2jWSB2
+!s85 0
+vdpram_test_v
+Z26 IGoHHGYT2KDOj=IL;Nmko<3
+Z27 VkV1]IXjIiOWj=VXM9<3?02
+Z28 w1284096275
+Z29 8dpram_test.v
+Z30 Fdpram_test.v
+L0 25
+R17
+r1
+31
+R18
+Z31 !s100 0ZJ7koMXeZ>7JTAYhhz;F3
+!s85 0
+vglbl
+Z32 If=Va2cSRE59>g_>kGDBQ90
+Z33 VnN]4Gon>inod6>M^M2[SV1
+Z34 w1107956757
+Z35 8C:/Xilinx/verilog/src/glbl.v
+Z36 FC:/Xilinx/verilog/src/glbl.v
+L0 5
+R17
+r1
+31
+R18
+Z37 !s100 T?5S;>bN`@zG_25]R_4A33
+!s85 0
+vI2C_Ctrl
+Z38 I5OLG@GYmP^KKcm=aHMk032
+Z39 VeZGP?LnIB_MakAAkj?BcJ2
+Z40 w1267403288
+Z41 8I2C_Ctrl.v
+Z42 FI2C_Ctrl.v
+L0 25
+R17
+r1
+31
+R18
+Z43 n@i2@c_@ctrl
+Z44 !s100 Ylll4M13NgJKg3n?7Ze6b1
+!s85 0
+vi2c_master_bit_ctrl
+Z45 IVkE?54<mz;LIS[44]g@8L1
+Z46 VHIzcGcLERQQB0idVd5<CP1
+Z47 w1250216844
+Z48 8i2c_master_bit_ctrl.v
+Z49 Fi2c_master_bit_ctrl.v
+L0 46
+R17
+r1
+31
+R18
+Z50 !s100 lUz^L2eo_GA^BDX144dWj0
+!s85 0
+vi2c_master_byte_ctrl
+Z51 IZfiV]QiMUO<9h2M`6A]hN1
+Z52 VRnl3=UVTfd8=9E7jKG<EL2
+R47
+Z53 8i2c_master_byte_ctrl.v
+Z54 Fi2c_master_byte_ctrl.v
+L0 9
+R17
+r1
+31
+R18
+Z55 !s100 RnLjJ6P@TI1m^oV>A;Y:g1
+!s85 0
+vi2c_master_top
+Z56 I7H7Q6B_1?1WJLFRFNDkY32
+Z57 V3D4DKY55CE0cbMHi0207K2
+R47
+Z58 8i2c_master_top.v
+Z59 Fi2c_master_top.v
+L0 6
+R17
+r1
+31
+R18
+Z60 !s100 FckoQ=iUWg16[GWeRC_ik1
+!s85 0
+vtest_7180_v
+Z61 I<]C^KJQl4NP9bmU5TBYaY0
+Z62 VAB`Pe9PAeho^hE9hZYz9>3
+Z63 w1283871159
+Z64 8test_7180.v
+Z65 Ftest_7180.v
+L0 25
+R17
+r1
+31
+R18
+Z66 !s100 Al7eHlFF[cENZfR5GOm@43
+!s85 0
+vtst_dpram_v
+Z67 In4e1DKiTBOP6RL`mo9h@K3
+Z68 VG]0m`g]cL?NL:i5IS^jJD0
+Z69 w1284096228
+Z70 8tst_dpram.v
+Z71 Ftst_dpram.v
+L0 25
+R17
+r1
+31
+R18
+Z72 !s100 FVD;JC4dz:dfmiTjRl[G71
+!s85 0
