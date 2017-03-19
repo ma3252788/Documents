@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.61 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.61 secs
  
 --> Reading design: top.prj
 
@@ -1590,18 +1590,18 @@ Design Statistics
 # IOs                              : 133
 
 Cell Usage :
-# BELS                             : 4769
+# BELS                             : 4765
 #      BUF                         : 4
 #      GND                         : 6
 #      INV                         : 53
 #      LUT1                        : 166
-#      LUT2                        : 207
+#      LUT2                        : 208
 #      LUT2_D                      : 11
 #      LUT2_L                      : 4
-#      LUT3                        : 411
-#      LUT3_D                      : 13
-#      LUT3_L                      : 3
-#      LUT4                        : 1610
+#      LUT3                        : 405
+#      LUT3_D                      : 14
+#      LUT3_L                      : 4
+#      LUT4                        : 1609
 #      LUT4_D                      : 26
 #      LUT4_L                      : 49
 #      MULT_AND                    : 37
@@ -1611,7 +1611,7 @@ Cell Usage :
 #      VCC                         : 3
 #      XORCY                       : 992
 # FlipFlops/Latches                : 3247
-#      FD                          : 50
+#      FD                          : 49
 #      FDC                         : 372
 #      FDCE                        : 1374
 #      FDCP                        : 17
@@ -1620,8 +1620,7 @@ Cell Usage :
 #      FDP                         : 31
 #      FDPE                        : 1272
 #      FDR                         : 4
-#      FDS                         : 24
-#      FDSE                        : 1
+#      FDS                         : 26
 # RAMS                             : 2
 #      RAMB16                      : 2
 # Clock Buffers                    : 4
@@ -1643,9 +1642,9 @@ Device utilization summary:
 
 Selected Device : 3s4000fg676-4 
 
- Number of Slices:                     2362  out of  27648     8%  
+ Number of Slices:                     2360  out of  27648     8%  
  Number of Slice Flip Flops:           3247  out of  55296     5%  
- Number of 4 input LUTs:               2553  out of  55296     4%  
+ Number of 4 input LUTs:               2549  out of  55296     4%  
  Number of IOs:                         133
  Number of bonded IOBs:                 121  out of    489    24%  
  Number of BRAMs:                         2  out of     96     2%  
@@ -1761,7 +1760,7 @@ Delay:               13.420ns (Levels of Logic = 10)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_59m'
   Clock period: 10.024ns (frequency: 99.760MHz)
-  Total number of paths / destination ports: 64904 / 2979
+  Total number of paths / destination ports: 64906 / 2980
 -------------------------------------------------------------------------
 Delay:               10.024ns (Levels of Logic = 46)
   Source:            adv7179_config/rst_dly_module/cnt_3 (FF)
@@ -1924,8 +1923,8 @@ WARNING:Xst:616 - Invalid property "FPGA_DONT_TOUCH true": Did not attach to Equ
 WARNING:Xst:616 - Invalid property "FPGA_DONT_TOUCH true": Did not attach to Equilization_alg_uut/hist_table.
 
 
-Total REAL time to Xst completion: 51.00 secs
-Total CPU time to Xst completion: 51.57 secs
+Total REAL time to Xst completion: 47.00 secs
+Total CPU time to Xst completion: 47.32 secs
  
 --> 
 
