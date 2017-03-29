@@ -6,7 +6,7 @@ NET "rst" 					LOC = "M6";
 NET "ttl_en" 				LOC = "V5";
 NET "enhance_enable" 	LOC = "W5";#"AB20";
 NET "cross_output" 		LOC = "Y5";#"AB19";
-NET "video_zoom" 			LOC = "AA5";#"AB18";
+NET "video_zoom" 			LOC = "AA5";#"AB18";ÁùºÅ½Å
 
 
 

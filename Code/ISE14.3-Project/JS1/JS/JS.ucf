@@ -1,0 +1,276 @@
+#SYSTEM
+NET "clk_59m" 				LOC = "C14";
+NET "rst" 					LOC = "M6";
+#NET "rst" LOC = "G1";
+
+NET "ttl_en" 				LOC = "V5";
+NET "enhance_enable" 	LOC = "W5";#"AB20";
+NET "cross_output" 		LOC = "Y5";#"AB19";
+NET "video_zoom" 			LOC = "AA5";#"AB18";
+
+
+##UART
+#NET "RS232_RXD1" LOC = "AD22" ;
+#NET "RS232_TXD1" LOC = "AE22" ;
+#NET "RS232_RXD2" LOC = "AD21"; 
+#NET "RS232_TXD2" LOC = "AC20";
+ 		 
+
+#TEST
+#NET "test[0]" LOC = "AD5"; 
+#NET "test[1]" LOC = "AE4"; 
+#NET "test[2]" LOC = "AD4"; 
+#NET "test[3]" LOC = "AC5"; 
+#NET "test[4]" LOC = "AB5"; 
+#NET "test[5]" LOC = "AA5"; 
+#NET "test[6]" LOC = "Y5"; 
+#NET "test[7]" LOC = "W5"; 
+
+
+
+
+#############################################################
+#SRAM A 正面上
+NET "SRAM_A_A<0>"			LOC = "W24";
+NET "SRAM_A_A<1>"			LOC = "Y23";
+NET "SRAM_A_A<2>"			LOC = "K21";
+NET "SRAM_A_A<3>"			LOC = "U22";
+NET "SRAM_A_A<4>"			LOC = "V22";  
+NET "SRAM_A_A<5>"			LOC = "C26";
+NET "SRAM_A_A<6>"			LOC = "F23";
+NET "SRAM_A_A<7>"			LOC = "F24";
+NET "SRAM_A_A<8>"			LOC = "G23";
+NET "SRAM_A_A<9>"			LOC = "E25"; 
+NET "SRAM_A_A<10>"		LOC = "F26";
+NET "SRAM_A_A<11>"		LOC = "F25";
+NET "SRAM_A_A<12>"		LOC = "G26";
+NET "SRAM_A_A<13>"		LOC = "G25";
+NET "SRAM_A_A<14>"		LOC = "H26"; 
+NET "SRAM_A_A<15>"		LOC = "P26";
+NET "SRAM_A_A<16>"		LOC = "P25";
+NET "SRAM_A_A<17>"		LOC = "R26";
+NET "SRAM_A_A<18>"		LOC = "R25"; 
+NET "SRAM_A_A<19>"		LOC = "T26";
+#
+NET "SRAM_A_D<0>"			LOC = "AA24";
+NET "SRAM_A_D<1>"			LOC = "AA23";
+NET "SRAM_A_D<2>"			LOC = "AB24";
+NET "SRAM_A_D<3>"			LOC = "AB23";
+NET "SRAM_A_D<4>"			LOC = "U26";  
+NET "SRAM_A_D<5>"			LOC = "U25";
+NET "SRAM_A_D<6>"			LOC = "V25";
+NET "SRAM_A_D<7>"			LOC = "W26";
+NET "SRAM_A_D<8>"			LOC = "E26";
+NET "SRAM_A_D<9>"			LOC = "D25"; 
+NET "SRAM_A_D<10>"		LOC = "D26";
+NET "SRAM_A_D<11>"		LOC = "C25";
+NET "SRAM_A_D<12>"		LOC = "L23";
+NET "SRAM_A_D<13>"		LOC = "K24";
+NET "SRAM_A_D<14>"		LOC = "K23"; 
+NET "SRAM_A_D<15>"		LOC = "J24";
+
+NET "SRAM_A_CE"			LOC = "V24";
+NET "SRAM_A_WE"			LOC = "T25";
+NET "SRAM_A_OE"			LOC = "H23"; 
+NET "SRAM_A_UB"			LOC = "H24";
+NET "SRAM_A_LB"			LOC = "J23";
+###############################################################
+##
+####SRAM B	正面下
+NET "SRAM_B_A<0>"	LOC = "H4";
+NET "SRAM_B_A<1>"	LOC = "G4";
+NET "SRAM_B_A<2>"	LOC = "F3";
+NET "SRAM_B_A<3>"	LOC = "F4";
+NET "SRAM_B_A<4>"	LOC = "E3";  
+NET "SRAM_B_A<5>"	LOC = "M5";
+NET "SRAM_B_A<6>"	LOC = "L5";
+NET "SRAM_B_A<7>"	LOC = "K5";
+NET "SRAM_B_A<8>"	LOC = "W3";
+NET "SRAM_B_A<9>"	LOC = "U1"; 
+NET "SRAM_B_A<10>"	LOC = "T2";
+NET "SRAM_B_A<11>"	LOC = "T1";
+NET "SRAM_B_A<12>"	LOC = "R2";
+NET "SRAM_B_A<13>"	LOC = "R1";
+NET "SRAM_B_A<14>"	LOC = "P2"; 
+NET "SRAM_B_A<15>"	LOC = "H2";
+NET "SRAM_B_A<16>"	LOC = "H1";
+NET "SRAM_B_A<17>"	LOC = "G2";
+NET "SRAM_B_A<18>"	LOC = "G1"; 
+NET "SRAM_B_A<19>"	LOC = "F2";
+
+NET "SRAM_B_D<0>"	LOC = "J4";
+NET "SRAM_B_D<1>"	LOC = "J3";
+NET "SRAM_B_D<2>"	LOC = "K4";
+NET "SRAM_B_D<3>"	LOC = "K3";
+NET "SRAM_B_D<4>"	LOC = "D1";  
+NET "SRAM_B_D<5>"	LOC = "D2";
+NET "SRAM_B_D<6>"	LOC = "E1";
+NET "SRAM_B_D<7>"	LOC = "E2";
+NET "SRAM_B_D<8>"	LOC = "W2";
+NET "SRAM_B_D<9>"	LOC = "W1"; 
+NET "SRAM_B_D<10>"	LOC = "V2";
+NET "SRAM_B_D<11>"	LOC = "U2";
+NET "SRAM_B_D<12>"	LOC = "AB4";
+NET "SRAM_B_D<13>"	LOC = "AB3";
+NET "SRAM_B_D<14>"	LOC = "AA4"; 
+NET "SRAM_B_D<15>"	LOC = "AA3";
+#
+NET "SRAM_B_CE"	LOC = "H3";
+NET "SRAM_B_WE"	LOC = "F1";
+NET "SRAM_B_OE"	LOC = "W4"; 
+NET "SRAM_B_UB"	LOC = "V3";
+NET "SRAM_B_LB"	LOC = "Y4";
+##	  反面上
+#NET "SRAM_C_A<0>"	LOC = "P24";
+#NET "SRAM_C_A<1>"	LOC = "P23";
+#NET "SRAM_C_A<2>"	LOC = "N24";
+#NET "SRAM_C_A<3>"	LOC = "N23";
+#NET "SRAM_C_A<4>"	LOC = "M24";  
+#NET "SRAM_C_A<5>"	LOC = "U21";
+#NET "SRAM_C_A<6>"	LOC = "AC22";
+#NET "SRAM_C_A<7>"	LOC = "T21";
+#NET "SRAM_C_A<8>"	LOC = "AB22";
+#NET "SRAM_C_A<9>"	LOC = "AB26"; 
+#NET "SRAM_C_A<10>"	LOC = "AA25";
+#NET "SRAM_C_A<11>"	LOC = "AA26";
+#NET "SRAM_C_A<12>"	LOC = "Y25";
+#NET "SRAM_C_A<13>"	LOC = "Y26";
+#NET "SRAM_C_A<14>"	LOC = "W25"; 
+#NET "SRAM_C_A<15>"	LOC = "N25";
+#NET "SRAM_C_A<16>"	LOC = "N26";
+#NET "SRAM_C_A<17>"	LOC = "M25";
+#NET "SRAM_C_A<18>"	LOC = "M26"; 
+#NET "SRAM_C_A<19>"	LOC = "L25";
+#
+#NET "SRAM_C_D<0>"	LOC = "T23";
+#NET "SRAM_C_D<1>"	LOC = "U23";
+#NET "SRAM_C_D<2>"	LOC = "U24";
+#NET "SRAM_C_D<3>"	LOC = "V23";
+#NET "SRAM_C_D<4>"	LOC = "H25";  
+#NET "SRAM_C_D<5>"	LOC = "J25";
+#NET "SRAM_C_D<6>"	LOC = "K26";
+#NET "SRAM_C_D<7>"	LOC = "K25";
+#NET "SRAM_C_D<8>"	LOC = "AB25";
+#NET "SRAM_C_D<9>"	LOC = "AC26"; 
+#NET "SRAM_C_D<10>"	LOC = "AC25";
+#NET "SRAM_C_D<11>"	LOC = "L21";
+#NET "SRAM_C_D<12>"	LOC = "M21";
+#NET "SRAM_C_D<13>"	LOC = "W22";
+#NET "SRAM_C_D<14>"	LOC = "N21"; 
+#NET "SRAM_C_D<15>"	LOC = "Y22";
+#
+#NET "SRAM_C_CE"	LOC = "R24";
+#NET "SRAM_C_WE"	LOC = "L26";
+#NET "SRAM_C_OE"	LOC = "R21"; 
+#NET "SRAM_C_UB"	LOC = "AA22";
+#NET "SRAM_C_LB"	LOC = "P21";
+
+#反面下
+#NET "SRAM_D_A<0>"	LOC = "R5";
+#NET "SRAM_D_A<1>"	LOC = "T6";
+#NET "SRAM_D_A<2>"	LOC = "T5";
+#NET "SRAM_D_A<3>"	LOC = "U6";
+#NET "SRAM_D_A<4>"	LOC = "U5";  
+#NET "SRAM_D_A<5>"	LOC = "L4";
+#NET "SRAM_D_A<6>"	LOC = "M3";
+#NET "SRAM_D_A<7>"	LOC = "N4";
+#NET "SRAM_D_A<8>"	LOC = "N3";
+#NET "SRAM_D_A<9>"	LOC = "L2"; 
+#NET "SRAM_D_A<10>"	LOC = "M1";
+#NET "SRAM_D_A<11>"	LOC = "M2";
+#NET "SRAM_D_A<12>"	LOC = "N1";
+#NET "SRAM_D_A<13>"	LOC = "N2";
+#NET "SRAM_D_A<14>"	LOC = "P1"; 
+#NET "SRAM_D_A<15>"	LOC = "Y1";
+#NET "SRAM_D_A<16>"	LOC = "Y2";
+#NET "SRAM_D_A<17>"	LOC = "AA1";
+#NET "SRAM_D_A<18>"	LOC = "AA2"; 
+#NET "SRAM_D_A<19>"	LOC = "AB1";
+#
+#NET "SRAM_D_D<0>"	LOC = "P5";
+#NET "SRAM_D_D<1>"	LOC = "P6";
+#NET "SRAM_D_D<2>"	LOC = "N5";
+#NET "SRAM_D_D<3>"	LOC = "N6";
+#NET "SRAM_D_D<4>"	LOC = "AD2";  
+#NET "SRAM_D_D<5>"	LOC = "AD1";
+#NET "SRAM_D_D<6>"	LOC = "AC2";
+#NET "SRAM_D_D<7>"	LOC = "AC1";
+#NET "SRAM_D_D<8>"	LOC = "L1";
+#NET "SRAM_D_D<9>"	LOC = "K2"; 
+#NET "SRAM_D_D<10>"	LOC = "K1";
+#NET "SRAM_D_D<11>"	LOC = "J2";
+#NET "SRAM_D_D<12>"	LOC = "V4";
+#NET "SRAM_D_D<13>"	LOC = "U3";
+#NET "SRAM_D_D<14>"	LOC = "U4"; 
+#NET "SRAM_D_D<15>"	LOC = "T4";
+#
+#NET "SRAM_D_CE"	LOC = "R6";
+#NET "SRAM_D_WE"	LOC = "AB2";
+#NET "SRAM_D_OE"	LOC = "P4"; 
+#NET "SRAM_D_UB"	LOC = "P3";
+#NET "SRAM_D_LB"	LOC = "R3";
+##
+##
+##############################################################
+##
+#NET "LED<0>"	LOC = "AE5";  
+#NET "LED<1>"	LOC = "AE6"; 
+#NET "LED<2>"	LOC = "AF4"; 
+#NET "LED<3>"	LOC = "AF5"; 
+#NET "LED<4>"	LOC = "AF6";  
+#NET "LED<5>"	LOC = "AA10"; 
+#NET "LED<6>"	LOC = "AA9"; 
+#NET "LED<7>"	LOC = "AA7";
+##
+#NET "test<0>"	LOC = "AB5";  
+#NET "test<1>"	LOC = "AB6"; 
+#NET "test<2>"	LOC = "AB7"; 
+#NET "test<3>"	LOC = "AB8"; 
+#NET "test<4>"	LOC = "AB9";  
+#NET "test<5>"	LOC = "AB10"; 
+#NET "test<6>"	LOC = "AB11"; 
+#NET "test<7>"	LOC = "AB12"; 
+
+##############################################################
+#ADV7180
+NET "ADV7180_P[0]"					LOC = "AF14"  ;
+NET "ADV7180_P[1]"					LOC = "AF13"  ;
+NET "ADV7180_P[2]"					LOC = "AF16"  ;
+NET "ADV7180_P[3]"					LOC = "AF17"  ;
+NET "ADV7180_P[4]"					LOC = "AF21"  ;
+NET "ADV7180_P[5]"					LOC = "AF22"  ;
+NET "ADV7180_P[6]"					LOC = "AF23"  ;
+NET "ADV7180_P[7]"					LOC = "AE23"  ;
+#
+NET "ADV7180_LLC" 					LOC = "AE14";
+NET "ADV7180_RST" 					LOC = "AC18";
+NET "ADV7180_PWDOWN" 				LOC = "AD18";
+NET "ADV7180_SDA" 					LOC = "AE24";
+NET "ADV7180_SCL" 					LOC = "AF24";
+NET "ADV7180_HS" 						LOC = "AE20";
+NET "ADV7180_VS" 						LOC = "AD19";
+NET "ADV7180_SFL" 					LOC = "AE21";
+NET "ADV7180_INT" 					LOC = "AC19";
+#NET "ADDA_DONE" 						LOC = "AB19";
+
+##############################################################
+##ADV7179
+NET "ADV7179_P<0>"					LOC = "AD14"; 
+NET "ADV7179_P<1>"					LOC = "AD15"; 
+NET "ADV7179_P<2>"					LOC = "AC16"; 
+NET "ADV7179_P<3>"					LOC = "AC17";  
+NET "ADV7179_P<4>"					LOC = "AD17"; 
+NET "ADV7179_P<5>"					LOC = "AE12"; 
+NET "ADV7179_P<6>"					LOC = "AF11"; 
+NET "ADV7179_P<7>"					LOC = "AE11"; 
+
+NET "ADV7179_CLK"						LOC = "AE13"; 
+NET "ADV7179_RST"						LOC = "AC8";
+NET "ADV7179_SCL"						LOC = "AD10"; 
+NET "ADV7179_SDA"						LOC = "AC11"; 
+NET "ADV7179_TTX"						LOC = "AD13"; 
+NET "ADV7179_TTXREQ"					LOC = "AC13"; 
+NET "ADV7179_SCRESET"				LOC = "AD12"; 
+NET "ADV7179_BLANK"					LOC = "AC9"; 
+NET "ADV7179_VS"						LOC = "AD9"; 
+NET "ADV7179_HS"						LOC = "AC10"; 

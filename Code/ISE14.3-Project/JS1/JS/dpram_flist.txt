@@ -1,0 +1,10 @@
+# Output products list for <dpram>
+dpram.asy
+dpram.edn
+dpram.sym
+dpram.v
+dpram.veo
+dpram.vhd
+dpram.vho
+dpram.xco
+dpram_flist.txt

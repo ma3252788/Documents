@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Sun Mar 19 23:21:57 2017">
+  <application stringID="Xst" timeStamp="Wed Mar 22 16:05:19 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -194,18 +194,18 @@
         <item stringID="XST_IOS" value="133"/>
       </section>
       <section stringID="XST_CELL_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="4765">
+        <item dataType="int" stringID="XST_BELS" value="4769">
           <item dataType="int" stringID="XST_BUF" value="4"/>
           <item dataType="int" stringID="XST_GND" value="6"/>
           <item dataType="int" stringID="XST_INV" value="53"/>
           <item dataType="int" stringID="XST_LUT1" value="166"/>
-          <item dataType="int" stringID="XST_LUT2" value="208"/>
+          <item dataType="int" stringID="XST_LUT2" value="207"/>
           <item dataType="int" stringID="XST_LUT2D" value="11"/>
           <item dataType="int" stringID="XST_LUT2L" value="4"/>
-          <item dataType="int" stringID="XST_LUT3" value="405"/>
-          <item dataType="int" stringID="XST_LUT3D" value="14"/>
-          <item dataType="int" stringID="XST_LUT3L" value="4"/>
-          <item dataType="int" stringID="XST_LUT4" value="1609"/>
+          <item dataType="int" stringID="XST_LUT3" value="411"/>
+          <item dataType="int" stringID="XST_LUT3D" value="13"/>
+          <item dataType="int" stringID="XST_LUT3L" value="3"/>
+          <item dataType="int" stringID="XST_LUT4" value="1610"/>
           <item dataType="int" stringID="XST_LUT4D" value="26"/>
           <item dataType="int" stringID="XST_LUT4L" value="49"/>
           <item dataType="int" stringID="XST_MULTAND" value="37"/>
@@ -216,14 +216,15 @@
           <item dataType="int" stringID="XST_XORCY" value="992"/>
         </item>
         <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="3247">
-          <item dataType="int" stringID="XST_FD" value="49"/>
+          <item dataType="int" stringID="XST_FD" value="50"/>
           <item dataType="int" stringID="XST_FDC" value="372"/>
           <item dataType="int" stringID="XST_FDCE" value="1374"/>
           <item dataType="int" stringID="XST_FDE" value="94"/>
           <item dataType="int" stringID="XST_FDP" value="31"/>
           <item dataType="int" stringID="XST_FDPE" value="1272"/>
           <item dataType="int" stringID="XST_FDR" value="4"/>
-          <item dataType="int" stringID="XST_FDS" value="26"/>
+          <item dataType="int" stringID="XST_FDS" value="24"/>
+          <item dataType="int" stringID="XST_FDSE" value="1"/>
         </item>
         <item dataType="int" stringID="XST_RAMS" value="2"></item>
         <item dataType="int" stringID="XST_CLOCK_BUFFERS" value="4">
@@ -243,9 +244,9 @@
     </section>
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="3s4000fg676-4"/>
-      <item AVAILABLE="27648" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="2360"/>
+      <item AVAILABLE="27648" dataType="int" label="Number of Slices" stringID="XST_NUMBER_OF_SLICES" value="2362"/>
       <item AVAILABLE="55296" dataType="int" label="Number of Slice Flip Flops" stringID="XST_NUMBER_OF_SLICE_FLIP_FLOPS" value="3247"/>
-      <item AVAILABLE="55296" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="2549"/>
+      <item AVAILABLE="55296" dataType="int" label="Number of 4 input LUTs" stringID="XST_NUMBER_OF_4_INPUT_LUTS" value="2553"/>
       <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="133"/>
       <item AVAILABLE="489" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="121"/>
       <item AVAILABLE="96" dataType="int" stringID="XST_NUMBER_OF_BRAMS" value="2"/>

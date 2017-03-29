@@ -1,0 +1,255 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Tue Dec 20 19:32:47 2016
+# Process ID: 8152
+# Log file: D:/workspace/video_decode_encode/planAhead_run_1/planAhead.log
+# Journal file: D:/workspace/video_decode_encode/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/workspace/video_decode_encode/pa.fromNetlist.tcl
+startgroup
+set_property package_pin F2 [get_ports sram2_we]
+endgroup
+save_constraints
+startgroup
+set_property package_pin L26 [get_ports {sram3_Ab[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {sram3_Ab[1]}]]
+startgroup
+set_property package_pin T22 [get_ports {sram3_Ab[0]}]
+endgroup
+startgroup
+set_property package_pin R22 [get_ports {sram3_Ab[1]}]
+endgroup
+startgroup
+set_property package_pin T20 [get_ports {sram3_Ab[2]}]
+endgroup
+startgroup
+set_property package_pin J25 [get_ports {sram3_Ab[3]}]
+endgroup
+startgroup
+set_property package_pin H26 [get_ports {sram3_Ab[4]}]
+endgroup
+startgroup
+set_property package_pin AB21 [get_ports {sram3_Ab[5]}]
+endgroup
+startgroup
+set_property package_pin AA21 [get_ports {sram3_Ab[6]}]
+endgroup
+startgroup
+set_property package_pin AD22 [get_ports {sram3_Ab[7]}]
+endgroup
+startgroup
+set_property package_pin AC22 [get_ports {sram3_Ab[8]}]
+endgroup
+startgroup
+set_property package_pin AB25 [get_ports {sram3_Ab[9]}]
+endgroup
+set_property package_pin "" [get_ports [list  {sram3_Ab[11]}]]
+startgroup
+set_property package_pin AA26 [get_ports {sram3_Ab[10]}]
+endgroup
+startgroup
+set_property package_pin AA25 [get_ports {sram3_Ab[11]}]
+endgroup
+startgroup
+set_property package_pin Y26 [get_ports {sram3_Ab[12]}]
+endgroup
+startgroup
+set_property package_pin Y25 [get_ports {sram3_Ab[13]}]
+endgroup
+startgroup
+set_property package_pin W26 [get_ports {sram3_Ab[14]}]
+endgroup
+startgroup
+set_property package_pin N26 [get_ports {sram3_Ab[15]}]
+endgroup
+startgroup
+set_property package_pin N25 [get_ports {sram3_Ab[16]}]
+endgroup
+startgroup
+set_property package_pin M26 [get_ports {sram3_Ab[17]}]
+endgroup
+startgroup
+set_property package_pin M25 [get_ports {sram3_Ab[18]}]
+endgroup
+startgroup
+set_property package_pin L26 [get_ports {sram3_Ab[19]}]
+endgroup
+startgroup
+set_property package_pin N23 [get_ports {sram3_Db[0]}]
+endgroup
+startgroup
+set_property package_pin N24 [get_ports {sram3_Db[1]}]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports {sram3_Db[2]}]
+endgroup
+startgroup
+set_property package_pin P23 [get_ports {sram3_Db[3]}]
+endgroup
+startgroup
+set_property package_pin R24 [get_ports {sram3_Db[4]}]
+endgroup
+startgroup
+set_property package_pin T23 [get_ports {sram3_Db[5]}]
+endgroup
+startgroup
+set_property package_pin K25 [get_ports {sram3_Db[6]}]
+endgroup
+startgroup
+set_property package_pin K26 [get_ports {sram3_Db[7]}]
+endgroup
+startgroup
+set_property package_pin AB26 [get_ports {sram3_Db[8]}]
+endgroup
+startgroup
+set_property package_pin AC25 [get_ports {sram3_Db[9]}]
+endgroup
+startgroup
+set_property package_pin AC26 [get_ports {sram3_Db[10]}]
+endgroup
+startgroup
+set_property package_pin AD25 [get_ports {sram3_Db[11]}]
+endgroup
+startgroup
+set_property package_pin Y23 [get_ports {sram3_Db[12]}]
+endgroup
+startgroup
+set_property package_pin AA24 [get_ports {sram3_Db[13]}]
+endgroup
+startgroup
+set_property package_pin AA23 [get_ports {sram3_Db[14]}]
+endgroup
+startgroup
+set_property package_pin AB24 [get_ports {sram3_Db[15]}]
+endgroup
+startgroup
+set_property package_pin U24 [get_ports {sram4_Ab[0]}]
+endgroup
+startgroup
+set_property package_pin A22 [get_ports {sram4_Ab[1]}]
+endgroup
+startgroup
+set_property package_pin Y22 [get_ports {sram4_Ab[2]}]
+endgroup
+startgroup
+set_property package_pin W22 [get_ports {sram4_Ab[3]}]
+endgroup
+startgroup
+set_property package_pin V22 [get_ports {sram4_Ab[4]}]
+endgroup
+startgroup
+set_property package_pin J22 [get_ports {sram4_Ab[5]}]
+endgroup
+startgroup
+set_property package_pin K22 [get_ports {sram4_Ab[6]}]
+endgroup
+startgroup
+set_property package_pin L22 [get_ports {sram4_Ab[7]}]
+endgroup
+startgroup
+set_property package_pin M22 [get_ports {sram4_Ab[8]}]
+endgroup
+startgroup
+set_property package_pin E26 [get_ports {sram4_Ab[9]}]
+endgroup
+startgroup
+set_property package_pin F25 [get_ports {sram4_Ab[10]}]
+endgroup
+startgroup
+set_property package_pin F26 [get_ports {sram4_Ab[11]}]
+endgroup
+startgroup
+set_property package_pin G25 [get_ports {sram4_Ab[12]}]
+endgroup
+startgroup
+set_property package_pin G26 [get_ports {sram4_Ab[13]}]
+endgroup
+startgroup
+set_property package_pin H25 [get_ports {sram4_Ab[14]}]
+endgroup
+startgroup
+set_property package_pin P25 [get_ports {sram4_Ab[15]}]
+endgroup
+startgroup
+set_property package_pin P26 [get_ports {sram4_Ab[16]}]
+endgroup
+startgroup
+set_property package_pin R25 [get_ports {sram4_Ab[17]}]
+endgroup
+startgroup
+set_property package_pin R26 [get_ports {sram4_Ab[18]}]
+endgroup
+startgroup
+set_property package_pin T25 [get_ports {sram4_Ab[19]}]
+endgroup
+startgroup
+set_property package_pin V24 [get_ports {sram4_Db[0]}]
+endgroup
+startgroup
+set_property package_pin V23 [get_ports {sram4_Db[1]}]
+endgroup
+startgroup
+set_property package_pin W24 [get_ports {sram4_Db[2]}]
+endgroup
+startgroup
+set_property package_pin W23 [get_ports {sram4_Db[3]}]
+endgroup
+startgroup
+set_property package_pin T26 [get_ports {sram4_Db[4]}]
+endgroup
+startgroup
+set_property package_pin U25 [get_ports {sram4_Db[5]}]
+endgroup
+startgroup
+set_property package_pin U26 [get_ports {sram4_Db[6]}]
+endgroup
+startgroup
+set_property package_pin V25 [get_ports {sram4_Db[7]}]
+endgroup
+startgroup
+set_property package_pin E25 [get_ports {sram4_Db[8]}]
+endgroup
+startgroup
+set_property package_pin D26 [get_ports {sram4_Db[9]}]
+endgroup
+startgroup
+set_property package_pin D25 [get_ports {sram4_Db[10]}]
+endgroup
+startgroup
+set_property package_pin C26 [get_ports {sram4_Db[11]}]
+endgroup
+startgroup
+set_property package_pin M24 [get_ports {sram4_Db[12]}]
+endgroup
+startgroup
+set_property package_pin L23 [get_ports {sram4_Db[13]}]
+endgroup
+startgroup
+set_property package_pin K24 [get_ports {sram4_Db[14]}]
+endgroup
+startgroup
+set_property package_pin K23 [get_ports {sram4_Db[15]}]
+endgroup
+startgroup
+set_property package_pin U22 [get_ports sram3_ce]
+endgroup
+startgroup
+set_property package_pin AB22 [get_ports sram3_oe]
+endgroup
+startgroup
+set_property package_pin L25 [get_ports sram3_we]
+endgroup
+startgroup
+set_property package_pin U23 [get_ports sram4_ce]
+endgroup
+startgroup
+set_property package_pin N21 [get_ports sram4_oe]
+endgroup
+startgroup
+set_property package_pin W25 [get_ports sram4_we]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list ADV7179_RST]]
+save_constraints

@@ -1,0 +1,40 @@
+# BEGIN Project Options
+SET flowvendor = Foundation_iSE
+SET vhdlsim = True
+SET verilogsim = True
+SET workingdirectory = E:\program\JS_TTL\JS
+SET speedgrade = -4
+SET simulationfiles = Behavioral
+SET asysymbol = True
+SET addpads = False
+# SET outputdirectory = E:\program\JS_TTL\JS
+SET device = xc3s2000
+SET implementationfiletype = Edif
+SET busformat = BusFormatAngleBracketNotRipped
+SET foundationsym = False
+SET package = fg676
+SET createndf = False
+SET designentry = VHDL
+SET devicefamily = spartan3
+SET formalverification = False
+SET removerpms = False
+# END Project Options
+# BEGIN Select
+SELECT Pipelined_Divider family Xilinx,_Inc. 3.0
+# END Select
+# BEGIN Parameters
+CSET signed_b=Unsigned
+CSET has_aclr=true
+CSET divclk_sel=1_Clock
+CSET fractional_b=Integer
+CSET divisor_width=20
+CSET component_name=divider_ip
+CSET fractional_width=20
+CSET dividend_width=32
+CSET sync_enable=CE_Overrides_SCLR
+CSET has_sclr=false
+CSET has_ce=false
+# END Parameters
+GENERATE
+
+

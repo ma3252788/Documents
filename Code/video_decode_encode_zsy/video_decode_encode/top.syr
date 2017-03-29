@@ -1,0 +1,1557 @@
+Release 14.3 - xst P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s4000-5-fg676
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "i2c_master_bit_ctrl.v" in library work
+Compiling verilog include file "i2c_master_defines.v"
+Compiling verilog file "i2c_master_byte_ctrl.v" in library work
+Compiling verilog include file "i2c_master_defines.v"
+Module <i2c_master_bit_ctrl> compiled
+Compiling verilog file "i2c_master_top.v" in library work
+Compiling verilog include file "timescale.v"
+Compiling verilog include file "i2c_master_defines.v"
+Module <i2c_master_byte_ctrl> compiled
+Compiling verilog file "I2C_CTRL7179.v" in library work
+Compiling verilog include file "timescale.v"
+Compiling verilog include file "i2c_master_defines.v"
+Module <i2c_master_top> compiled
+Compiling verilog file "I2C_Ctrl.v" in library work
+Compiling verilog include file "timescale.v"
+Compiling verilog include file "i2c_master_defines.v"
+Module <I2C_CTRL7179> compiled
+Compiling verilog file "filter.v" in library work
+Module <I2C_Ctrl> compiled
+Compiling verilog file "sram_bus_control.v" in library work
+Module <filter> compiled
+Compiling verilog file "sys_dcm.v" in library work
+Module <sram_bus_control> compiled
+Compiling verilog file "dcm27m.v" in library work
+Module <sys_dcm> compiled
+Compiling verilog file "adv7180_video_in.v" in library work
+Module <dcm27m> compiled
+Compiling verilog file "adv7180_config_top.v" in library work
+Module <adv7180_video_in> compiled
+Compiling verilog file "adv7179_video_out.v" in library work
+Module <adv7180_config_top> compiled
+Compiling verilog file "adv7179_config_top.v" in library work
+Module <adv7179_video_out> compiled
+Compiling verilog file "top.v" in library work
+Module <adv7179_config_top> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+Analyzing hierarchy for module <sys_dcm> in library <work>.
+
+Analyzing hierarchy for module <dcm27m> in library <work>.
+
+Analyzing hierarchy for module <adv7180_config_top> in library <work>.
+
+Analyzing hierarchy for module <adv7179_config_top> in library <work>.
+
+Analyzing hierarchy for module <adv7180_video_in> in library <work> with parameters.
+	stCheckEscape1 = "0010"
+	stCheckEscape2 = "0011"
+	stCheckForEndLine = "1010"
+	stCheckForFirstLine = "0101"
+	stCheckForNewLine = "1011"
+	stCheckForNewPage = "0100"
+	stChromaBlue = "0110"
+	stChromaRed = "1000"
+	stError = "1100"
+	stIdle = "0000"
+	stLumaBlue = "0111"
+	stLumaRed = "1001"
+	stWaitForEscape = "0001"
+
+Analyzing hierarchy for module <adv7179_video_out> in library <work> with parameters.
+	stACTIVE = "0110"
+	stCb_or_Cr = "1010"
+	stCheckEscape1 = "0010"
+	stCheckEscape2 = "0011"
+	stCheckForEndLine = "0111"
+	stCheckForNewLine = "1000"
+	stCheckNEWpage = "0100"
+	stCheckODD = "0101"
+	stError = "1001"
+	stIdle = "0000"
+	stWaitForEscape = "0001"
+	stY = "1011"
+
+Analyzing hierarchy for module <sram_bus_control> in library <work>.
+
+Analyzing hierarchy for module <i2c_master_top> in library <work> with parameters.
+	ARST_LVL = "0"
+
+Analyzing hierarchy for module <I2C_Ctrl> in library <work> with parameters.
+	CR = "100"
+	CR_R = "110"
+	CTR = "010"
+	IDLE = "0000000000000000000001"
+	PRER_HI = "001"
+	PRER_LO = "000"
+	RXR = "011"
+	SR = "100"
+	STATE1 = "0000000000000000000010"
+	STATE10 = "0000000000010000000000"
+	STATE11 = "0000000000100000000000"
+	STATE12 = "0000000001000000000000"
+	STATE13 = "0000000010000000000000"
+	STATE14 = "0000000100000000000000"
+	STATE15 = "0000001000000000000000"
+	STATE16 = "0000010000000000000000"
+	STATE17 = "0000100000000000000000"
+	STATE18 = "0001000000000000000000"
+	STATE19 = "0010000000000000000000"
+	STATE2 = "0000000000000000000100"
+	STATE20 = "0100000000000000000000"
+	STATE3 = "0000000000000000001000"
+	STATE4 = "0000000000000000010000"
+	STATE5 = "0000000000000000100000"
+	STATE6 = "0000000000000001000000"
+	STATE7 = "0000000000000010000000"
+	STATE8 = "0000000000000100000000"
+	STATE9 = "0000000000001000000000"
+	STATE_DELAY = "1000000000000000000000"
+	STATE_finish = "0000000000000000000011"
+	TXR = "011"
+	TXR_R = "101"
+	Wait_st = "0000000000000000000000"
+
+Analyzing hierarchy for module <filter> in library <work>.
+
+Analyzing hierarchy for module <I2C_CTRL7179> in library <work> with parameters.
+	CR = "100"
+	CR_R = "110"
+	CTR = "010"
+	IDLE = "00000000000000000000"
+	PRER_HI = "001"
+	PRER_LO = "000"
+	RXR = "011"
+	SR = "100"
+	STATE1 = "00000000000000000001"
+	STATE10 = "00000000001000000000"
+	STATE11 = "00000000010000000000"
+	STATE12 = "00000000100000000000"
+	STATE13 = "00000001000000000000"
+	STATE14 = "00000010000000000000"
+	STATE15 = "00000100000000000000"
+	STATE16 = "00001000000000000000"
+	STATE17 = "00010000000000000000"
+	STATE18 = "00100000000000000000"
+	STATE19 = "01000000000000000000"
+	STATE2 = "00000000000000000010"
+	STATE20 = "10000000000000000000"
+	STATE3 = "00000000000000000100"
+	STATE4 = "00000000000000001000"
+	STATE5 = "00000000000000010000"
+	STATE6 = "00000000000000100000"
+	STATE7 = "00000000000001000000"
+	STATE8 = "00000000000010000000"
+	STATE9 = "00000000000100000000"
+	TXR = "011"
+	TXR_R = "101"
+
+Analyzing hierarchy for module <i2c_master_byte_ctrl> in library <work> with parameters.
+	ST_ACK = "01000"
+	ST_IDLE = "00000"
+	ST_READ = "00010"
+	ST_START = "00001"
+	ST_STOP = "10000"
+	ST_WRITE = "00100"
+
+Analyzing hierarchy for module <i2c_master_bit_ctrl> in library <work> with parameters.
+	idle = "00000000000000000"
+	rd_a = "00000001000000000"
+	rd_b = "00000010000000000"
+	rd_c = "00000100000000000"
+	rd_d = "00001000000000000"
+	start_a = "00000000000000001"
+	start_b = "00000000000000010"
+	start_c = "00000000000000100"
+	start_d = "00000000000001000"
+	start_e = "00000000000010000"
+	stop_a = "00000000000100000"
+	stop_b = "00000000001000000"
+	stop_c = "00000000010000000"
+	stop_d = "00000000100000000"
+	wr_a = "00010000000000000"
+	wr_b = "00100000000000000"
+	wr_c = "01000000000000000"
+	wr_d = "10000000000000000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+WARNING:Xst:852 - "top.v" line 139: Unconnected input port 'enhance_enable' of instance 'encode' is tied to GND.
+WARNING:Xst:852 - "top.v" line 139: Unconnected input port 'video_pip2' of instance 'encode' is tied to GND.
+WARNING:Xst:852 - "top.v" line 139: Unconnected input port 'video_pip4' of instance 'encode' is tied to GND.
+WARNING:Xst:852 - "top.v" line 139: Unconnected input port 'video_pip8' of instance 'encode' is tied to GND.
+WARNING:Xst:852 - "top.v" line 139: Unconnected input port 'rd_dout' of instance 'encode' is tied to GND.
+WARNING:Xst:852 - "top.v" line 162: Unconnected input port 'dataout_pro' of instance 'sram_bus_control' is tied to GND.
+WARNING:Xst:852 - "top.v" line 162: Unconnected input port 'addr_pro' of instance 'sram_bus_control' is tied to GND.
+WARNING:Xst:852 - "top.v" line 162: Unconnected input port 'ce_pro' of instance 'sram_bus_control' is tied to GND.
+WARNING:Xst:852 - "top.v" line 162: Unconnected input port 'oe_pro' of instance 'sram_bus_control' is tied to GND.
+WARNING:Xst:852 - "top.v" line 162: Unconnected input port 'we_pro' of instance 'sram_bus_control' is tied to GND.
+Module <top> is correct for synthesis.
+ 
+Analyzing module <sys_dcm> in library <work>.
+Module <sys_dcm> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <sys_dcm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <sys_dcm>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <sys_dcm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <sys_dcm>.
+    Set user-defined property "CLKDV_DIVIDE =  5.500000" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "CLKIN_PERIOD =  16.949000" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "FACTORY_JF =  8080" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_INST> in unit <sys_dcm>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_INST> in unit <sys_dcm>.
+Analyzing module <dcm27m> in library <work>.
+Module <dcm27m> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <dcm27m>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <dcm27m>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <dcm27m>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <dcm27m>.
+    Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "CLKIN_PERIOD =  37.037000" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "FACTORY_JF =  8080" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_INST> in unit <dcm27m>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_INST> in unit <dcm27m>.
+Analyzing module <adv7180_config_top> in library <work>.
+Module <adv7180_config_top> is correct for synthesis.
+ 
+Analyzing module <i2c_master_top> in library <work>.
+	ARST_LVL = 1'b0
+WARNING:Xst:916 - "i2c_master_top.v" line 101: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_top.v" line 122: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_top.v" line 123: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_top.v" line 124: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_top.v" line 128: Delay is ignored for synthesis.
+WARNING:Xst:915 - Message (916) is reported only 5 times for each module.
+Module <i2c_master_top> is correct for synthesis.
+ 
+Analyzing module <i2c_master_byte_ctrl> in library <work>.
+	ST_ACK = 5'b01000
+	ST_IDLE = 5'b00000
+	ST_READ = 5'b00010
+	ST_START = 5'b00001
+	ST_STOP = 5'b10000
+	ST_WRITE = 5'b00100
+WARNING:Xst:916 - "i2c_master_byte_ctrl.v" line 112: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_byte_ctrl.v" line 114: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_byte_ctrl.v" line 116: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_byte_ctrl.v" line 118: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_byte_ctrl.v" line 123: Delay is ignored for synthesis.
+WARNING:Xst:915 - Message (916) is reported only 5 times for each module.
+Module <i2c_master_byte_ctrl> is correct for synthesis.
+ 
+Analyzing module <i2c_master_bit_ctrl> in library <work>.
+	idle = 17'b00000000000000000
+	rd_a = 17'b00000001000000000
+	rd_b = 17'b00000010000000000
+	rd_c = 17'b00000100000000000
+	rd_d = 17'b00001000000000000
+	start_a = 17'b00000000000000001
+	start_b = 17'b00000000000000010
+	start_c = 17'b00000000000000100
+	start_d = 17'b00000000000001000
+	start_e = 17'b00000000000010000
+	stop_a = 17'b00000000000100000
+	stop_b = 17'b00000000001000000
+	stop_c = 17'b00000000010000000
+	stop_d = 17'b00000000100000000
+	wr_a = 17'b00010000000000000
+	wr_b = 17'b00100000000000000
+	wr_c = 17'b01000000000000000
+	wr_d = 17'b10000000000000000
+WARNING:Xst:916 - "i2c_master_bit_ctrl.v" line 104: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_bit_ctrl.v" line 113: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_bit_ctrl.v" line 114: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_bit_ctrl.v" line 118: Delay is ignored for synthesis.
+WARNING:Xst:916 - "i2c_master_bit_ctrl.v" line 119: Delay is ignored for synthesis.
+WARNING:Xst:915 - Message (916) is reported only 5 times for each module.
+Module <i2c_master_bit_ctrl> is correct for synthesis.
+ 
+Analyzing module <I2C_Ctrl> in library <work>.
+	CR = 3'b100
+	CR_R = 3'b110
+	CTR = 3'b010
+	IDLE = 22'b0000000000000000000001
+	PRER_HI = 3'b001
+	PRER_LO = 3'b000
+	RXR = 3'b011
+	SR = 3'b100
+	STATE1 = 22'b0000000000000000000010
+	STATE10 = 22'b0000000000010000000000
+	STATE11 = 22'b0000000000100000000000
+	STATE12 = 22'b0000000001000000000000
+	STATE13 = 22'b0000000010000000000000
+	STATE14 = 22'b0000000100000000000000
+	STATE15 = 22'b0000001000000000000000
+	STATE16 = 22'b0000010000000000000000
+	STATE17 = 22'b0000100000000000000000
+	STATE18 = 22'b0001000000000000000000
+	STATE19 = 22'b0010000000000000000000
+	STATE2 = 22'b0000000000000000000100
+	STATE20 = 22'b0100000000000000000000
+	STATE3 = 22'b0000000000000000001000
+	STATE4 = 22'b0000000000000000010000
+	STATE5 = 22'b0000000000000000100000
+	STATE6 = 22'b0000000000000001000000
+	STATE7 = 22'b0000000000000010000000
+	STATE8 = 22'b0000000000000100000000
+	STATE9 = 22'b0000000000001000000000
+	STATE_DELAY = 22'b1000000000000000000000
+	STATE_finish = 22'b0000000000000000000011
+	TXR = 3'b011
+	TXR_R = 3'b101
+	Wait_st = 22'b0000000000000000000000
+Module <I2C_Ctrl> is correct for synthesis.
+ 
+Analyzing module <adv7179_config_top> in library <work>.
+Module <adv7179_config_top> is correct for synthesis.
+ 
+Analyzing module <filter> in library <work>.
+Module <filter> is correct for synthesis.
+ 
+Analyzing module <I2C_CTRL7179> in library <work>.
+	CR = 3'b100
+	CR_R = 3'b110
+	CTR = 3'b010
+	IDLE = 20'b00000000000000000000
+	PRER_HI = 3'b001
+	PRER_LO = 3'b000
+	RXR = 3'b011
+	SR = 3'b100
+	STATE1 = 20'b00000000000000000001
+	STATE10 = 20'b00000000001000000000
+	STATE11 = 20'b00000000010000000000
+	STATE12 = 20'b00000000100000000000
+	STATE13 = 20'b00000001000000000000
+	STATE14 = 20'b00000010000000000000
+	STATE15 = 20'b00000100000000000000
+	STATE16 = 20'b00001000000000000000
+	STATE17 = 20'b00010000000000000000
+	STATE18 = 20'b00100000000000000000
+	STATE19 = 20'b01000000000000000000
+	STATE2 = 20'b00000000000000000010
+	STATE20 = 20'b10000000000000000000
+	STATE3 = 20'b00000000000000000100
+	STATE4 = 20'b00000000000000001000
+	STATE5 = 20'b00000000000000010000
+	STATE6 = 20'b00000000000000100000
+	STATE7 = 20'b00000000000001000000
+	STATE8 = 20'b00000000000010000000
+	STATE9 = 20'b00000000000100000000
+	TXR = 3'b011
+	TXR_R = 3'b101
+Module <I2C_CTRL7179> is correct for synthesis.
+ 
+Analyzing module <adv7180_video_in> in library <work>.
+	stCheckEscape1 = 4'b0010
+	stCheckEscape2 = 4'b0011
+	stCheckForEndLine = 4'b1010
+	stCheckForFirstLine = 4'b0101
+	stCheckForNewLine = 4'b1011
+	stCheckForNewPage = 4'b0100
+	stChromaBlue = 4'b0110
+	stChromaRed = 4'b1000
+	stError = 4'b1100
+	stIdle = 4'b0000
+	stLumaBlue = 4'b0111
+	stLumaRed = 4'b1001
+	stWaitForEscape = 4'b0001
+WARNING:Xst:1465 - "adv7180_video_in.v" line 257: Exactly not equal expression will be synthesized as a not equal expression, simulation mismatch is possible. 
+WARNING:Xst:1465 - "adv7180_video_in.v" line 257: Exactly not equal expression will be synthesized as a not equal expression, simulation mismatch is possible. 
+Module <adv7180_video_in> is correct for synthesis.
+ 
+Analyzing module <adv7179_video_out> in library <work>.
+	stACTIVE = 4'b0110
+	stCb_or_Cr = 4'b1010
+	stCheckEscape1 = 4'b0010
+	stCheckEscape2 = 4'b0011
+	stCheckForEndLine = 4'b0111
+	stCheckForNewLine = 4'b1000
+	stCheckNEWpage = 4'b0100
+	stCheckODD = 4'b0101
+	stError = 4'b1001
+	stIdle = 4'b0000
+	stWaitForEscape = 4'b0001
+	stY = 4'b1011
+Module <adv7179_video_out> is correct for synthesis.
+ 
+Analyzing module <sram_bus_control> in library <work>.
+Module <sram_bus_control> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <pixel_cnt> in unit <adv7180_video_in> has a constant value of 1111111111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <oe_sram12> in unit <adv7180_video_in> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <rd_we> in unit <adv7179_video_out> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <we_saaSRAM> in unit <adv7179_video_out> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <addr_saaSRAM_temp> in unit <adv7179_video_out> has a constant value of 00000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <databuffer4zoom> in unit <adv7179_video_out> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <adv7180_video_in>.
+    Related source file is "adv7180_video_in.v".
+WARNING:Xst:647 - Input <clk59m> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <llck_hf> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <vpo_dly2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pixel_cnt> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <LB_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <State> of Case statement line 151 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <State> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <State>.
+    Found 16-bit register for signal <data_sram12>.
+    Found 1-bit register for signal <field>.
+    Found 1-bit register for signal <flag>.
+    Found 20-bit register for signal <addr_sram12>.
+    Found 1-bit register for signal <ce_sram12>.
+    Found 1-bit register for signal <error>.
+    Found 1-bit register for signal <we_sram12>.
+    Found 20-bit adder for signal <addr_sram12$add0000> created at line 266.
+    Found 19-bit adder carry out for signal <addr_sram12$addsub0001> created at line 266.
+    Found 9x10-bit multiplier for signal <addr_sram12$mult0000> created at line 266.
+    Found 10-bit register for signal <cntr_hori_byte>.
+    Found 10-bit adder for signal <cntr_hori_byte$share0000> created at line 151.
+    Found 10-bit register for signal <cntr_hori_word>.
+    Found 10-bit adder for signal <cntr_hori_word$addsub0000> created at line 270.
+    Found 9-bit register for signal <cntr_vert>.
+    Found 9-bit adder for signal <cntr_vert$addsub0000> created at line 306.
+    Found 11-bit register for signal <returnState>.
+    Found 11-bit register for signal <State>.
+    Found 8-bit register for signal <UB_data>.
+    Found 8-bit register for signal <vpo_dly>.
+    Found 8-bit register for signal <vpo_dly1>.
+    Summary:
+	inferred  94 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <adv7180_video_in> synthesized.
+
+
+Synthesizing Unit <adv7179_video_out>.
+    Related source file is "adv7179_video_out.v".
+WARNING:Xst:647 - Input <rd_dout> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk59m> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk135> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <enhance_enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <video_pip8_dly1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <video_pip4_dly1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <video_pip2_dly1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <re_config> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <qd_dly1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <line_cnt_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <error> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <databuffer4zoom> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cnt> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <addr_saaSRAM_temp> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <oe_saaSRAM> equivalent to <ce_saaSRAM> has been removed
+    Register <rd_ce> equivalent to <ce_saaSRAM> has been removed
+    Register <rd_oe> equivalent to <ce_saaSRAM> has been removed
+    Register <video_switch_dly> equivalent to <cross_output_dly> has been removed
+    Register <video_switch_dly1> equivalent to <cross_output_dly1> has been removed
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <STATE> of Case statement line 247 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <STATE> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <STATE>.
+WARNING:Xst:643 - "adv7179_video_out.v" line 399: The result of a 32x10-bit multiplication is partially used. Only the 20 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 1-bit register for signal <field>.
+    Found 9-bit register for signal <line_cnt>.
+    Found 16-bit register for signal <rd_addr>.
+    Found 1-bit register for signal <ce_saaSRAM>.
+    Found 1-bit register for signal <qfv>.
+    Found 20-bit register for signal <addr_saaSRAM>.
+    Found 20-bit adder for signal <addr_saaSRAM$addsub0000> created at line 399.
+    Found 19-bit adder carry out for signal <addr_saaSRAM$addsub0002> created at line 405.
+    Found 32x10-bit multiplier for signal <addr_saaSRAM$mult0001> created at line 399.
+    Found 9x10-bit multiplier for signal <addr_saaSRAM$mult0002> created at line 405.
+    Found 20-bit adder for signal <addr_saaSRAM$share0000>.
+    Found 1-bit register for signal <cross_output_dly>.
+    Found 1-bit register for signal <cross_output_dly1>.
+    Found 9-bit adder for signal <line_cnt$addsub0000> created at line 446.
+    Found 8-bit register for signal <MP>.
+    Found 11-bit comparator greatequal for signal <MP$cmp_ge0000> created at line 370.
+    Found 9-bit comparator greatequal for signal <MP$cmp_ge0001> created at line 370.
+    Found 8-bit comparator greater for signal <MP$cmp_gt0000> created at line 372.
+    Found 11-bit comparator lessequal for signal <MP$cmp_le0000> created at line 370.
+    Found 9-bit comparator lessequal for signal <MP$cmp_le0001> created at line 370.
+    Found 10-bit register for signal <nextSTATE>.
+    Found 8-bit register for signal <qd_dly>.
+    Found 11-bit register for signal <qfv_cnt>.
+    Found 11-bit adder for signal <qfv_cnt$addsub0000> created at line 364.
+    Found 11-bit register for signal <qfv_cnt_2>.
+    Found 10-bit register for signal <STATE>.
+    Found 1-bit register for signal <video_zoom_dly>.
+    Found 1-bit register for signal <video_zoom_dly1>.
+    Summary:
+	inferred  90 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred   5 Comparator(s).
+Unit <adv7179_video_out> synthesized.
+
+
+Synthesizing Unit <sram_bus_control>.
+    Related source file is "sram_bus_control.v".
+    Found 16-bit tristate buffer for signal <sram2_Db>.
+    Found 16-bit tristate buffer for signal <sram1_Db>.
+    Summary:
+	inferred  32 Tristate(s).
+Unit <sram_bus_control> synthesized.
+
+
+Synthesizing Unit <I2C_Ctrl>.
+    Related source file is "I2C_Ctrl.v".
+WARNING:Xst:647 - Input <din<7:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <din<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rom_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <err> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <stb> equivalent to <sel> has been removed
+    Found finite state machine <FSM_0> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 23                                             |
+    | Transitions        | 64                                             |
+    | Inputs             | 36                                             |
+    | Outputs            | 17                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000000000000000000001                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <re_config>.
+    Found 1-bit register for signal <Finish>.
+    Found 1-bit register for signal <cyc>.
+    Found 3-bit register for signal <adr>.
+    Found 1-bit register for signal <we>.
+    Found 8-bit register for signal <dout>.
+    Found 1-bit register for signal <sel>.
+    Found 4-bit up counter for signal <cnt>.
+    Found 16-bit register for signal <cnt_ddd>.
+    Found 16-bit adder for signal <cnt_ddd$addsub0000> created at line 468.
+    Found 6-bit register for signal <data_cnt>.
+    Found 6-bit adder for signal <data_cnt$addsub0000> created at line 398.
+    Found 16-bit register for signal <re_config_cnt>.
+    Found 16-bit adder for signal <re_config_cnt$addsub0000> created at line 509.
+    Found 1-bit register for signal <vedio_swich_dly>.
+    Found 1-bit register for signal <vedio_swich_dly1>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  56 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <I2C_Ctrl> synthesized.
+
+
+Synthesizing Unit <i2c_master_bit_ctrl>.
+    Related source file is "i2c_master_bit_ctrl.v".
+    Found finite state machine <FSM_1> for signal <c_state>.
+    -----------------------------------------------------------------------
+    | States             | 18                                             |
+    | Transitions        | 50                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 19                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | c_state$not0000           (positive)           |
+    | Reset              | nReset                    (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000000000000000                              |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <sda_oen>.
+    Found 1-bit register for signal <al>.
+    Found 1-bit register for signal <cmd_ack>.
+    Found 1-bit register for signal <busy>.
+    Found 1-bit register for signal <scl_oen>.
+    Found 1-bit register for signal <dout>.
+    Found 1-bit register for signal <clk_en>.
+    Found 1-bit register for signal <cmd_stop>.
+    Found 16-bit register for signal <cnt>.
+    Found 16-bit subtractor for signal <cnt$addsub0000> created at line 134.
+    Found 1-bit register for signal <dcmd_stop>.
+    Found 1-bit register for signal <dSCL>.
+    Found 1-bit register for signal <dscl_oen>.
+    Found 1-bit register for signal <dSDA>.
+    Found 1-bit register for signal <sda_chk>.
+    Found 1-bit register for signal <sSCL>.
+    Found 1-bit register for signal <sSDA>.
+    Found 1-bit register for signal <sta_condition>.
+    Found 1-bit register for signal <sto_condition>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <i2c_master_bit_ctrl> synthesized.
+
+
+Synthesizing Unit <filter>.
+    Related source file is "filter.v".
+    Found 32-bit up counter for signal <cnt>.
+    Found 1-bit register for signal <rst_out1>.
+    Found 1-bit register for signal <rst_out2>.
+    Found 32-bit adder for signal <cnt$add0000> created at line 27.
+    Found 32-bit comparator less for signal <cnt$cmp_lt0000> created at line 22.
+    Found 32-bit comparator less for signal <rst_out1$cmp_lt0000> created at line 30.
+    Found 32-bit comparator less for signal <rst_out2$cmp_lt0000> created at line 38.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <filter> synthesized.
+
+
+Synthesizing Unit <I2C_CTRL7179>.
+    Related source file is "I2C_CTRL7179.v".
+WARNING:Xst:647 - Input <din<7:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <din<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <err> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <stb> equivalent to <sel> has been removed
+    Found finite state machine <FSM_2> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 21                                             |
+    | Transitions        | 29                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 15                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000000000000000000                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <Finish>.
+    Found 1-bit register for signal <cyc>.
+    Found 3-bit register for signal <adr>.
+    Found 1-bit register for signal <we>.
+    Found 8-bit register for signal <dout>.
+    Found 1-bit register for signal <sel>.
+    Found 7-bit register for signal <data_cnt>.
+    Found 7-bit adder for signal <data_cnt$addsub0000> created at line 485.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <I2C_CTRL7179> synthesized.
+
+
+Synthesizing Unit <sys_dcm>.
+    Related source file is "sys_dcm.v".
+Unit <sys_dcm> synthesized.
+
+
+Synthesizing Unit <dcm27m>.
+    Related source file is "dcm27m.v".
+Unit <dcm27m> synthesized.
+
+
+Synthesizing Unit <i2c_master_byte_ctrl>.
+    Related source file is "i2c_master_byte_ctrl.v".
+    Found finite state machine <FSM_3> for signal <c_state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 31                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | nReset                    (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <cmd_ack>.
+    Found 1-bit register for signal <ack_out>.
+    Found 4-bit register for signal <core_cmd>.
+    Found 1-bit register for signal <core_txd>.
+    Found 3-bit register for signal <dcnt>.
+    Found 3-bit subtractor for signal <dcnt$addsub0000> created at line 129.
+    Found 1-bit register for signal <ld>.
+    Found 1-bit register for signal <shift>.
+    Found 8-bit register for signal <sr>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <i2c_master_byte_ctrl> synthesized.
+
+
+Synthesizing Unit <i2c_master_top>.
+    Related source file is "i2c_master_top.v".
+    Found 8-bit register for signal <wb_dat_o>.
+    Found 1-bit register for signal <wb_inta_o>.
+    Found 1-bit register for signal <wb_ack_o>.
+    Found 1-bit register for signal <al>.
+    Found 8-bit register for signal <cr>.
+    Found 8-bit register for signal <ctr>.
+    Found 1-bit register for signal <irq_flag>.
+    Found 16-bit register for signal <prer>.
+    Found 1-bit register for signal <rxack>.
+    Found 1-bit register for signal <tip>.
+    Found 8-bit register for signal <txr>.
+    Found 8-bit 8-to-1 multiplexer for signal <wb_dat_o$mux0000> created at line 106.
+    Summary:
+	inferred  54 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <i2c_master_top> synthesized.
+
+
+Synthesizing Unit <adv7180_config_top>.
+    Related source file is "adv7180_config_top.v".
+WARNING:Xst:653 - Signal <rom_data> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:1780 - Signal <rom_addr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit tristate buffer for signal <ADV7180_SDA>.
+    Found 1-bit tristate buffer for signal <ADV7180_SCL>.
+    Summary:
+	inferred   2 Tristate(s).
+Unit <adv7180_config_top> synthesized.
+
+
+Synthesizing Unit <adv7179_config_top>.
+    Related source file is "adv7179_config_top.v".
+    Found 1-bit tristate buffer for signal <ADV7179_SDA>.
+    Found 1-bit tristate buffer for signal <ADV7179_SCL>.
+    Summary:
+	inferred   2 Tristate(s).
+Unit <adv7179_config_top> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+WARNING:Xst:647 - Input <ADV7179_P> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ADV7180_P> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <sram2_D> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk10M_DCMed> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <ch_video_switch> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <bsram3_Db> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 3
+ 32x10-bit multiplier                                  : 1
+ 9x10-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 18
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 2
+ 19-bit adder carry out                                : 2
+ 20-bit adder                                          : 3
+ 3-bit subtractor                                      : 2
+ 32-bit adder                                          : 1
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 199
+ 1-bit register                                        : 161
+ 10-bit register                                       : 3
+ 11-bit register                                       : 4
+ 16-bit register                                       : 4
+ 20-bit register                                       : 2
+ 3-bit register                                        : 4
+ 4-bit register                                        : 2
+ 6-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 15
+ 9-bit register                                        : 2
+# Comparators                                          : 8
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator lessequal                           : 1
+ 32-bit comparator less                                : 3
+ 8-bit comparator greater                              : 1
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 2
+ 8-bit 8-to-1 multiplexer                              : 2
+# Tristates                                            : 6
+ 1-bit tristate buffer                                 : 4
+ 16-bit tristate buffer                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <adv7180_config_top_module/I2C_module/byte_controller/c_state/FSM> on signal <c_state[1:3]> with gray encoding.
+Optimizing FSM <adv7179_config/I2C_module/byte_controller/c_state/FSM> on signal <c_state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 000
+ 00001 | 001
+ 00010 | 011
+ 00100 | 010
+ 01000 | 111
+ 10000 | 110
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <adv7179_config/Contro_modulel7179/STATE/FSM> on signal <STATE[1:21]> with one-hot encoding.
+-----------------------------------------------
+ State                | Encoding
+-----------------------------------------------
+ 00000000000000000000 | 000000000000000000001
+ 00000000000000000001 | 000000000000000000010
+ 00000000000000000010 | 000000000000000000100
+ 00000000000000000100 | 000000000000000001000
+ 00000000000000001000 | 000000000000000010000
+ 00000000000000010000 | 000000000000000100000
+ 00000000000000100000 | 000000000000001000000
+ 00000000000001000000 | 000000000000010000000
+ 00000000000010000000 | 000000000000100000000
+ 00000000000100000000 | 000000000001000000000
+ 00000000001000000000 | 000000000010000000000
+ 00000000010000000000 | 000000000100000000000
+ 00000000100000000000 | 000000001000000000000
+ 00000001000000000000 | 000000010000000000000
+ 00000010000000000000 | 000000100000000000000
+ 00000100000000000000 | 000001000000000000000
+ 00001000000000000000 | 000010000000000000000
+ 00010000000000000000 | 000100000000000000000
+ 00100000000000000000 | 001000000000000000000
+ 01000000000000000000 | 010000000000000000000
+ 10000000000000000000 | 100000000000000000000
+-----------------------------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <adv7180_config_top_module/I2C_module/byte_controller/bit_controller/c_state/FSM> on signal <c_state[1:18]> with one-hot encoding.
+Optimizing FSM <adv7179_config/I2C_module/byte_controller/bit_controller/c_state/FSM> on signal <c_state[1:18]> with one-hot encoding.
+-----------------------------------------
+ State             | Encoding
+-----------------------------------------
+ 00000000000000000 | 000000000000000001
+ 00000000000000001 | 000000000000000010
+ 00000000000000010 | 000000000000100000
+ 00000000000000100 | 000000000001000000
+ 00000000000001000 | 000000000010000000
+ 00000000000010000 | 000000000100000000
+ 00000000000100000 | 000000000000000100
+ 00000000001000000 | 000000001000000000
+ 00000000010000000 | 000000010000000000
+ 00000000100000000 | 000000100000000000
+ 00000001000000000 | 000000000000010000
+ 00000010000000000 | 000001000000000000
+ 00000100000000000 | 000010000000000000
+ 00001000000000000 | 000100000000000000
+ 00010000000000000 | 000000000000001000
+ 00100000000000000 | 001000000000000000
+ 01000000000000000 | 010000000000000000
+ 10000000000000000 | 100000000000000000
+-----------------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <adv7180_config_top_module/Control_module/STATE/FSM> on signal <STATE[1:23]> with one-hot encoding.
+---------------------------------------------------
+ State                  | Encoding
+---------------------------------------------------
+ 0000000000000000000000 | 00100000000000000000000
+ 0000000000000000000001 | 00000000000000000000001
+ 0000000000000000000010 | 00000000000000000000010
+ 0000000000000000000100 | 00000000000000000000100
+ 0000000000000000001000 | 00000000000000000001000
+ 0000000000000000010000 | 00000000000000000010000
+ 0000000000000000100000 | 00000000000000000100000
+ 0000000000000001000000 | 00000000000000001000000
+ 0000000000000010000000 | 00000000000000010000000
+ 0000000000000100000000 | 00000000000000100000000
+ 0000000000001000000000 | 00000000000001000000000
+ 0000000000010000000000 | 00000000000010000000000
+ 0000000000100000000000 | 00000000000100000000000
+ 0000000001000000000000 | 00000000001000000000000
+ 0000000010000000000000 | 00000000010000000000000
+ 0000000100000000000000 | 00000000100000000000000
+ 0000001000000000000000 | 00000001000000000000000
+ 0000010000000000000000 | 00000010000000000000000
+ 0000100000000000000000 | 00000100000000000000000
+ 0001000000000000000000 | 00001000000000000000000
+ 0010000000000000000000 | 00010000000000000000000
+ 0100000000000000000000 | 01000000000000000000000
+ 1000000000000000000000 | 10000000000000000000000
+---------------------------------------------------
+WARNING:Xst:1710 - FF/Latch <FFd1> (without init value) has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <vedio_swich_dly> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <video_zoom_dly> (without init value) has a constant value of 0 in block <encode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <qfv_cnt_2_10> (without init value) has a constant value of 0 in block <encode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <vedio_swich_dly1> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <video_zoom_dly1> (without init value) has a constant value of 0 in block <encode>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <wb_dat_o_0> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_2> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_3> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_4> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_5> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_6> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_7> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_0> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_2> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_3> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_4> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_5> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_6> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:2677 - Node <wb_dat_o_7> of sequential type is unconnected in block <I2C_module>.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_0> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_1> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_2> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_3> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_4> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_5> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_6> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_7> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_8> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_9> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_10> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_11> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_12> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_13> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_14> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_15> (without init value) has a constant value of 0 in block <Control_module>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 4
+# Multipliers                                          : 3
+ 32x10-bit multiplier                                  : 1
+ 9x10-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 18
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 2
+ 19-bit adder carry out                                : 2
+ 20-bit adder                                          : 3
+ 3-bit subtractor                                      : 2
+ 32-bit adder                                          : 1
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 510
+ Flip-Flops                                            : 510
+# Comparators                                          : 8
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator lessequal                           : 1
+ 32-bit comparator less                                : 3
+ 8-bit comparator greater                              : 1
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 16
+ 1-bit 8-to-1 multiplexer                              : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <rd_addr_0> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_1> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_3> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_4> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_2> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_5> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_6> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_8> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_9> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_7> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_11> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_12> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_10> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_14> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_15> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_addr_13> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <qfv_cnt_2_10> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <video_zoom_dly> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <video_zoom_dly1> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <vedio_swich_dly> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <vedio_swich_dly1> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <STATE_FSM_FFd1> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <re_config_cnt_0> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_1> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_2> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_3> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_4> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_5> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_6> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_7> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_8> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_9> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_10> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_11> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_12> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_13> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_14> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <re_config_cnt_15> (without init value) has a constant value of 0 in block <I2C_Ctrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <returnState_10> (without init value) has a constant value of 0 in block <adv7180_video_in>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <returnState_7> (without init value) has a constant value of 0 in block <adv7180_video_in>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <returnState_6> (without init value) has a constant value of 0 in block <adv7180_video_in>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <returnState_3> (without init value) has a constant value of 0 in block <adv7180_video_in>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <returnState_1> (without init value) has a constant value of 0 in block <adv7180_video_in>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <returnState_2> (without init value) has a constant value of 0 in block <adv7180_video_in>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <nextSTATE_9> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <nextSTATE_6> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <nextSTATE_3> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <nextSTATE_1> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <nextSTATE_2> (without init value) has a constant value of 0 in block <adv7179_video_out>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2042 - Unit top: 4 internal tristates are replaced by logic (pull-up yes): N2, N3, N4, N5.
+
+Optimizing unit <top> ...
+
+Optimizing unit <I2C_Ctrl> ...
+
+Optimizing unit <i2c_master_bit_ctrl> ...
+
+Optimizing unit <filter> ...
+
+Optimizing unit <I2C_CTRL7179> ...
+
+Optimizing unit <adv7180_video_in> ...
+
+Optimizing unit <adv7179_video_out> ...
+
+Optimizing unit <i2c_master_byte_ctrl> ...
+
+Optimizing unit <i2c_master_top> ...
+WARNING:Xst:2677 - Node <decode/error> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/byte_controller/ack_out> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/byte_controller/bit_controller/busy> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/byte_controller/bit_controller/sta_condition> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/wb_dat_o_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/wb_dat_o_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/wb_dat_o_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/wb_dat_o_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/wb_dat_o_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/wb_dat_o_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/wb_dat_o_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/wb_inta_o> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/irq_flag> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/rxack> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/al> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/cr_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/cr_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/ctr_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/ctr_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/ctr_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/ctr_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/ctr_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7179_config/I2C_module/ctr_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/byte_controller/ack_out> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/byte_controller/bit_controller/busy> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/byte_controller/bit_controller/sta_condition> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/wb_dat_o_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/wb_dat_o_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/wb_dat_o_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/wb_dat_o_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/wb_dat_o_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/wb_dat_o_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/wb_dat_o_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/wb_inta_o> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/irq_flag> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/rxack> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/al> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/cr_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/cr_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/ctr_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/ctr_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/ctr_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/ctr_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/ctr_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <adv7180_config_top_module/I2C_module/ctr_0> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <decode/vpo_dly_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <encode/qd_dly_3> 
+INFO:Xst:2261 - The FF/Latch <decode/vpo_dly_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <encode/qd_dly_4> 
+INFO:Xst:2261 - The FF/Latch <decode/vpo_dly_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <encode/qd_dly_5> 
+INFO:Xst:2261 - The FF/Latch <decode/vpo_dly_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <encode/qd_dly_0> 
+INFO:Xst:2261 - The FF/Latch <decode/vpo_dly_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <encode/qd_dly_6> 
+INFO:Xst:2261 - The FF/Latch <decode/vpo_dly_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <encode/qd_dly_1> 
+INFO:Xst:2261 - The FF/Latch <decode/vpo_dly_7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <encode/qd_dly_7> 
+INFO:Xst:2261 - The FF/Latch <decode/vpo_dly_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <encode/qd_dly_2> 
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 2.
+FlipFlop decode/vpo_dly_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 526
+ Flip-Flops                                            : 526
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 195
+
+Cell Usage :
+# BELS                             : 1544
+#      GND                         : 1
+#      INV                         : 39
+#      LUT1                        : 73
+#      LUT2                        : 131
+#      LUT2_D                      : 4
+#      LUT2_L                      : 6
+#      LUT3                        : 251
+#      LUT3_D                      : 18
+#      LUT3_L                      : 5
+#      LUT4                        : 525
+#      LUT4_D                      : 26
+#      LUT4_L                      : 46
+#      MUXCY                       : 179
+#      MUXF5                       : 86
+#      MUXF6                       : 2
+#      VCC                         : 1
+#      XORCY                       : 151
+# FlipFlops/Latches                : 526
+#      FD                          : 4
+#      FDC                         : 223
+#      FDCE                        : 166
+#      FDE                         : 47
+#      FDP                         : 19
+#      FDPE                        : 38
+#      FDR                         : 4
+#      FDS                         : 24
+#      FDSE                        : 1
+# Clock Buffers                    : 6
+#      BUFG                        : 6
+# IO Buffers                       : 193
+#      IBUF                        : 9
+#      IBUFG                       : 2
+#      IOBUF                       : 32
+#      OBUF                        : 146
+#      OBUFT                       : 4
+# DCMs                             : 2
+#      DCM                         : 2
+# MULTs                            : 2
+#      MULT18X18                   : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s4000fg676-5 
+
+ Number of Slices:                      605  out of  27648     2%  
+ Number of Slice Flip Flops:            526  out of  55296     0%  
+ Number of 4 input LUTs:               1124  out of  55296     2%  
+ Number of IOs:                         195
+ Number of bonded IOBs:                 193  out of    489    39%  
+ Number of MULT18X18s:                    2  out of     96     2%  
+ Number of GCLKs:                         6  out of      8    75%  
+ Number of DCMs:                          2  out of      4    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_59m                            | IBUFG+BUFG             | 348   |
+ADV7180_LLC                        | IBUFG+BUFG             | 178   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
+Control Signal                                                                                                             | Buffer(FF name)                                                  | Load  |
+---------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
+adv7179_config/I2C_module/arst_i_inv(encode/STATE_Acst_inv1_INV_0:O)                                                       | NONE(adv7179_config/I2C_module/byte_controller/bit_controller/al)| 416   |
+adv7179_config/Contro_modulel7179/STATE_FSM_Acst_FSM_inv(adv7179_config/Contro_modulel7179/STATE_FSM_Acst_FSM_inv1_INV_0:O)| NONE(adv7179_config/Contro_modulel7179/Finish)                   | 30    |
+---------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.319ns (Maximum Frequency: 107.312MHz)
+   Minimum input arrival time before clock: 7.995ns
+   Maximum output required time after clock: 9.187ns
+   Maximum combinational path delay: 6.726ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_59m'
+  Clock period: 8.600ns (frequency: 116.278MHz)
+  Total number of paths / destination ports: 30041 / 567
+-------------------------------------------------------------------------
+Delay:               8.600ns (Levels of Logic = 45)
+  Source:            adv7179_config/rst_dly_module/cnt_3 (FF)
+  Destination:       adv7179_config/rst_dly_module/cnt_31 (FF)
+  Source Clock:      clk_59m rising
+  Destination Clock: clk_59m rising
+
+  Data Path: adv7179_config/rst_dly_module/cnt_3 to adv7179_config/rst_dly_module/cnt_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.626   1.074  adv7179_config/rst_dly_module/cnt_3 (adv7179_config/rst_dly_module/cnt_3)
+     LUT2:I0->O            1   0.479   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_lut<0> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<0> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<1> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<2> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<3> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<4> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<5> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<6> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<7> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<8> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<9> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<10> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<10>)
+     MUXCY:CI->O          36   0.056   1.890  adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<11> (adv7179_config/rst_dly_module/Mcompar_cnt_cmp_lt0000_cy<11>)
+     LUT3:I0->O            1   0.479   0.000  adv7179_config/rst_dly_module/Mcount_cnt_lut<1> (adv7179_config/rst_dly_module/Mcount_cnt_lut<1>)
+     MUXCY:S->O            1   0.435   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<1> (adv7179_config/rst_dly_module/Mcount_cnt_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<2> (adv7179_config/rst_dly_module/Mcount_cnt_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<3> (adv7179_config/rst_dly_module/Mcount_cnt_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<4> (adv7179_config/rst_dly_module/Mcount_cnt_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<5> (adv7179_config/rst_dly_module/Mcount_cnt_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<6> (adv7179_config/rst_dly_module/Mcount_cnt_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<7> (adv7179_config/rst_dly_module/Mcount_cnt_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<8> (adv7179_config/rst_dly_module/Mcount_cnt_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<9> (adv7179_config/rst_dly_module/Mcount_cnt_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<10> (adv7179_config/rst_dly_module/Mcount_cnt_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<11> (adv7179_config/rst_dly_module/Mcount_cnt_cy<11>)
+     MUXCY:CI->O           1   0.055   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<12> (adv7179_config/rst_dly_module/Mcount_cnt_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<13> (adv7179_config/rst_dly_module/Mcount_cnt_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<14> (adv7179_config/rst_dly_module/Mcount_cnt_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<15> (adv7179_config/rst_dly_module/Mcount_cnt_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<16> (adv7179_config/rst_dly_module/Mcount_cnt_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<17> (adv7179_config/rst_dly_module/Mcount_cnt_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<18> (adv7179_config/rst_dly_module/Mcount_cnt_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<19> (adv7179_config/rst_dly_module/Mcount_cnt_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<20> (adv7179_config/rst_dly_module/Mcount_cnt_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<21> (adv7179_config/rst_dly_module/Mcount_cnt_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<22> (adv7179_config/rst_dly_module/Mcount_cnt_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<23> (adv7179_config/rst_dly_module/Mcount_cnt_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<24> (adv7179_config/rst_dly_module/Mcount_cnt_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<25> (adv7179_config/rst_dly_module/Mcount_cnt_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<26> (adv7179_config/rst_dly_module/Mcount_cnt_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<27> (adv7179_config/rst_dly_module/Mcount_cnt_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<28> (adv7179_config/rst_dly_module/Mcount_cnt_cy<28>)
+     MUXCY:CI->O           1   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<29> (adv7179_config/rst_dly_module/Mcount_cnt_cy<29>)
+     MUXCY:CI->O           0   0.056   0.000  adv7179_config/rst_dly_module/Mcount_cnt_cy<30> (adv7179_config/rst_dly_module/Mcount_cnt_cy<30>)
+     XORCY:CI->O           1   0.786   0.000  adv7179_config/rst_dly_module/Mcount_cnt_xor<31> (adv7179_config/rst_dly_module/Mcount_cnt31)
+     FDCE:D                    0.176          adv7179_config/rst_dly_module/cnt_31
+    ----------------------------------------
+    Total                      8.600ns (5.636ns logic, 2.964ns route)
+                                       (65.5% logic, 34.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ADV7180_LLC'
+  Clock period: 9.319ns (frequency: 107.312MHz)
+  Total number of paths / destination ports: 10537 / 213
+-------------------------------------------------------------------------
+Delay:               9.319ns (Levels of Logic = 6)
+  Source:            encode/line_cnt_4 (FF)
+  Destination:       encode/addr_saaSRAM_19 (FF)
+  Source Clock:      ADV7180_LLC rising
+  Destination Clock: ADV7180_LLC rising
+
+  Data Path: encode/line_cnt_4 to encode/addr_saaSRAM_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.626   0.972  encode/line_cnt_4 (encode/line_cnt_4)
+     MULT18X18:A4->P17     1   3.358   0.976  encode/Mmult_addr_saaSRAM_mult0002 (encode/addr_saaSRAM_mult0002<17>)
+     LUT1:I0->O            1   0.479   0.000  encode/Madd_addr_saaSRAM_share0000_cy<17>_rt (encode/Madd_addr_saaSRAM_share0000_cy<17>_rt)
+     MUXCY:S->O            1   0.435   0.000  encode/Madd_addr_saaSRAM_share0000_cy<17> (encode/Madd_addr_saaSRAM_share0000_cy<17>)
+     MUXCY:CI->O           0   0.056   0.000  encode/Madd_addr_saaSRAM_share0000_cy<18> (encode/Madd_addr_saaSRAM_share0000_cy<18>)
+     XORCY:CI->O           1   0.786   0.976  encode/Madd_addr_saaSRAM_share0000_xor<19> (encode/addr_saaSRAM_share0000<19>)
+     LUT4:I0->O            1   0.479   0.000  encode/addr_saaSRAM_mux0000<0>1 (encode/addr_saaSRAM_mux0000<0>)
+     FDC:D                     0.176          encode/addr_saaSRAM_19
+    ----------------------------------------
+    Total                      9.319ns (6.394ns logic, 2.924ns route)
+                                       (68.6% logic, 31.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ADV7180_LLC'
+  Total number of paths / destination ports: 254 / 62
+-------------------------------------------------------------------------
+Offset:              7.995ns (Levels of Logic = 7)
+  Source:            sram2_Db<0> (PAD)
+  Destination:       encode/MP_7 (FF)
+  Destination Clock: ADV7180_LLC rising
+
+  Data Path: sram2_Db<0> to encode/MP_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           2   0.715   1.040  sram2_Db_0_IOBUF (N194)
+     LUT3:I0->O            1   0.479   0.851  sram_bus_control/dataout_CH1<0>1 (dataout_CH1<0>)
+     LUT4:I1->O            2   0.479   0.768  encode/MP_cmp_gt000017 (encode/MP_cmp_gt000017)
+     LUT4:I3->O            1   0.479   0.000  encode/MP_cmp_gt0000116_F (N475)
+     MUXF5:I0->O           3   0.314   0.794  encode/MP_cmp_gt0000116 (encode/MP_cmp_gt0000)
+     LUT4_D:I3->O          3   0.479   0.941  encode/MP_mux0000<0>21 (encode/N28)
+     LUT4:I1->O            1   0.479   0.000  encode/MP_mux0000<2>32 (encode/MP_mux0000<2>)
+     FDC:D                     0.176          encode/MP_5
+    ----------------------------------------
+    Total                      7.995ns (3.600ns logic, 4.395ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_59m'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              6.529ns (Levels of Logic = 1)
+  Source:            adv7179_config/I2C_module/byte_controller/bit_controller/sda_oen (FF)
+  Destination:       ADV7179_SDA (PAD)
+  Source Clock:      clk_59m rising
+
+  Data Path: adv7179_config/I2C_module/byte_controller/bit_controller/sda_oen to ADV7179_SDA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             5   0.626   0.783  adv7179_config/I2C_module/byte_controller/bit_controller/sda_oen (adv7179_config/I2C_module/byte_controller/bit_controller/sda_oen)
+     OBUFT:T->O                5.120          ADV7179_SDA_OBUFT (ADV7179_SDA)
+    ----------------------------------------
+    Total                      6.529ns (5.746ns logic, 0.783ns route)
+                                       (88.0% logic, 12.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ADV7180_LLC'
+  Total number of paths / destination ports: 222 / 86
+-------------------------------------------------------------------------
+Offset:              9.187ns (Levels of Logic = 2)
+  Source:            decode/flag (FF)
+  Destination:       sram1_Db<15> (PAD)
+  Source Clock:      ADV7180_LLC rising
+
+  Data Path: decode/flag to sram1_Db<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            82   0.626   1.819  decode/flag (decode/flag)
+     INV:I->O             17   0.479   1.143  decode/flag_not00031_INV_0 (decode/flag_not0003)
+     IOBUF:T->IO               5.120          sram1_Db_15_IOBUF (sram1_Db<15>)
+    ----------------------------------------
+    Total                      9.187ns (6.225ns logic, 2.962ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.726ns (Levels of Logic = 2)
+  Source:            ADV7180_LLC (PAD)
+  Destination:       ADV7179_CLK (PAD)
+
+  Data Path: ADV7180_LLC to ADV7179_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            2   1.072   0.745  dcm27m/CLKIN_IBUFG_INST (clk27M_DCMed1)
+     OBUF:I->O                 4.909          ADV7179_CLK_OBUF (ADV7179_CLK)
+    ----------------------------------------
+    Total                      6.726ns (5.981ns logic, 0.745ns route)
+                                       (88.9% logic, 11.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.80 secs
+ 
+--> 
+
+Total memory usage is 300756 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  200 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

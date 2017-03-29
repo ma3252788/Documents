@@ -1,0 +1,101 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    13:56:13 12/07/2016 
+// Design Name: 
+// Module Name:    top 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+/*				
+
+*//////////////////////////////////////////////////////////////////////////////////
+module top( clk_59m, rst, 
+				ADV7180_SCL, ADV7180_SDA, ADV7180_LLC, ADV7180_P, ADV7180_RST,	ADV7180_PWDOWN,
+				ADV7179_SDA, ADV7179_SCL, ADV7179_RST, ADV7179_P, ADV7179_CLK, ADV7179_TTX, ADV7179_TTXREQ, ADV7179_SCRESET, ADV7179_BLANK, ADV7179_VS, ADV7179_HS,
+				AD1,DA
+				);
+	input  rst,clk_59m;
+	//ADV7180
+	input		ADV7180_P, ADV7180_LLC;
+	input	 	[7:0] AD1;
+	output 	ADV7180_SCL, ADV7180_SDA, ADV7180_RST, ADV7180_PWDOWN;
+	//ADV7179
+	input  	ADV7179_P;
+	output 	ADV7179_SDA, ADV7179_SCL, ADV7179_RST, ADV7179_CLK;
+	output 	ADV7179_TTX, ADV7179_TTXREQ, ADV7179_SCRESET, ADV7179_BLANK, ADV7179_VS, ADV7179_HS;
+	output	[7:0] DA;
+	
+	//AD DA
+	wire		ADV7180_RST = 1'b1;
+	wire  	ADV7180_PWDOWN = 1'b1;
+	wire		finish7180;
+
+	wire  	ADV7179_TTX = 1'b1;	
+	wire 		ADV7179_TTXREQ = 1'b1;
+	wire		ADV7179_SCRESET = 1'b1;
+	wire		ADV7179_BLANK = 1'b1;
+	wire		ADV7179_VS = 1'b1;
+	wire		ADV7179_HS = 1'b1;
+	wire		ADV7179_CLK;
+	wire		finish7179;
+	reg		[7:0] DA;
+/////////////////////////////////////////////////////////////////////////
+/////system clock
+	wire	clk59M_DCMed;
+	wire	clk10M_DCMed;
+	sys_dcm dcm59m (
+									 .CLKIN_IN(clk_59m), 
+									 .RST_IN(!rst), 
+									 .CLKDV_OUT(clk10M_DCMed), 
+									 .CLKIN_IBUFG_OUT(clk59M_DCMed)
+									 );
+/////////////////////////////////////////////////////////////////////////
+/////configure AD&DA	
+	
+	adv7180_config_top 	adv7180_config_top_module(
+										.rst(rst),//原来是rst && re_cfg
+										.clk(clk59M_DCMed), 
+										.ADV7180_SCL(ADV7180_SCL),
+										.ADV7180_SDA(ADV7180_SDA),
+										.finish(finish7180),
+										.vedio_swich(ch_video_switch/*video_switch*/)//video_switch_dly)
+										);
+
+	adv7179_config_top 	adv7179_config(
+											.rst(rst),
+											.clk(clk59M_DCMed),																
+											.ADV7179_SCL(ADV7179_SCL),
+											.ADV7179_SDA(ADV7179_SDA),
+											.ADV7179_RST(ADV7179_RST),
+											.finish7179(finish7179)
+											);
+											
+	assign	config_done = finish7180&finish7179;
+	always
+		if(config_done)
+			DA = AD1;
+			
+			
+
+///////////////////////////////////////////////////////////////////////////
+
+	wire	clk27M_DCMed;
+	wire	clk13_5M_DCMed;
+	dcm27m dcm27m (
+											 .CLKIN_IN(ADV7180_LLC), 
+											 .RST_IN((!rst)),  //||(!video_switch_rst)切换时要复位DCM，否则13.5M与27M时钟对齐有问题
+											 .CLKDV_OUT(clk13_5M_DCMed),
+											 .CLKIN_IBUFG_OUT(clk27M_DCMed)
+											 );
+	assign ADV7179_CLK = clk27M_DCMed;
+endmodule

@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj video_decode_encode -o D:/workspace/video_decode_encode/adv7179_video_out.tfi -lib work D:/workspace/video_decode_encode//adv7179_video_out.v -module adv7179_video_out -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 
