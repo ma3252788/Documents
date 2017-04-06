@@ -1,0 +1,112 @@
+Release 14.3 Map P.40xd (nt64)
+Xilinx Map Application Log File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s4000-fg676-4 -cm area -ir off -pr off
+-c 100 -smartguide
+E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS1/JS/top_guide.ncd
+-o top_map.ncd top.ngd top.pcf 
+Target Device  : xc3s4000
+Target Package : fg676
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Sat Apr 01 11:40:38 2017
+
+WARNING:Map:120 - The command line option -c can not be used when running in
+   timing mode.  The option will be ignored.
+Loading device for application Rf_Device from file '3s4000.nph' in environment
+E:\Hardware\ISE14.3\14.3\ISE_DS\ISE\.
+   "top" is an NCD, version 3.2, device xc3s4000, package fg676, speed -4
+Mapping design into LUTs...
+Running directed packing...
+Constraining slice packing based on guide NCD.
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 19 secs 
+Total CPU  time at the beginning of Placer: 15 secs 
+
+Phase 1.7  Design Feasibility Check
+Phase 1.7  Design Feasibility Check (Checksum:cccff284) REAL time: 19 secs 
+
+Phase 2.31  Local Placement Optimization
+Phase 2.31  Local Placement Optimization (Checksum:8c2089f4) REAL time: 19 secs 
+
+Phase 3.2  Initial Clock and IO Placement
+
+Phase 3.2  Initial Clock and IO Placement (Checksum:c2afe0fc) REAL time: 20 secs 
+
+Phase 4.36  Local Placement Optimization
+Phase 4.36  Local Placement Optimization (Checksum:c2afe0fc) REAL time: 20 secs 
+
+Phase 5.4  Local Placement Optimization
+...
+Phase 5.4  Local Placement Optimization (Checksum:c2afe0fc) REAL time: 22 secs 
+
+Phase 6.28  Local Placement Optimization
+Phase 6.28  Local Placement Optimization (Checksum:c2afe0fc) REAL time: 22 secs 
+
+Phase 7.8  Global Placement
+...
+Phase 7.8  Global Placement (Checksum:90b2557b) REAL time: 22 secs 
+
+Phase 8.29  Local Placement Optimization
+Phase 8.29  Local Placement Optimization (Checksum:90b2557b) REAL time: 22 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:90b2557b) REAL time: 22 secs 
+
+Phase 10.18  Placement Optimization
+Phase 10.18  Placement Optimization (Checksum:90b2557b) REAL time: 22 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:90b2557b) REAL time: 23 secs 
+
+Total REAL time to Placer completion: 23 secs 
+Total CPU  time to Placer completion: 18 secs 
+Running post-placement packing...
+Updating route info ...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Total Number Slice Registers:       2,423 out of  55,296    4%
+    Number used as Flip Flops:        2,422
+    Number used as Latches:               1
+  Number of 4 input LUTs:             2,513 out of  55,296    4%
+Logic Distribution:
+  Number of occupied Slices:          1,965 out of  27,648    7%
+    Number of Slices containing only related logic:   1,965 out of   1,965 100%
+    Number of Slices containing unrelated logic:          0 out of   1,965   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,743 out of  55,296    4%
+    Number used as logic:             2,434
+    Number used as a route-thru:        230
+    Number used as Shift registers:      79
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                124 out of     489   25%
+  Number of RAMB16s:                      3 out of      96    3%
+  Number of MULT18X18s:                   4 out of      96    4%
+  Number of BUFGMUXs:                     3 out of       8   37%
+  Number of BSCANs:                       1 out of       1  100%
+
+  Number of RPM macros:           12
+Average Fanout of Non-Clock Nets:                2.91
+
+Peak Memory Usage:  481 MB
+Total REAL time to MAP completion:  25 secs 
+Total CPU time to MAP completion:   20 secs 
+
+Mapping completed.
+See MAP report file "top_map.mrp" for details.

@@ -4,68 +4,108 @@ Xilinx Map Application Log File for Design 'top'
 Design Information
 ------------------
 Command Line   : map -intstyle ise -p xc3s4000-fg676-4 -cm area -ir off -pr off
--c 100 -o top_map.ncd top.ngd top.pcf 
+-c 100 -smartguide
+E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS1/JS/top_guide.ncd
+-o top_map.ncd top.ngd top.pcf 
 Target Device  : xc3s4000
 Target Package : fg676
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Wed Mar 22 16:22:58 2017
+Mapped Date    : Tue Apr 04 23:31:28 2017
 
+WARNING:Map:120 - The command line option -c can not be used when running in
+   timing mode.  The option will be ignored.
+Loading device for application Rf_Device from file '3s4000.nph' in environment
+E:\Hardware\ISE14.3\14.3\ISE_DS\ISE\.
+   "top" is an NCD, version 3.2, device xc3s4000, package fg676, speed -4
 Mapping design into LUTs...
 Running directed packing...
+Constraining slice packing based on guide NCD.
 Running delay-based LUT packing...
-Running related packing...
 Updating timing models...
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 12 secs 
+Total CPU  time at the beginning of Placer: 12 secs 
+
+Phase 1.7  Design Feasibility Check
+Phase 1.7  Design Feasibility Check (Checksum:d28ffe89) REAL time: 12 secs 
+
+Phase 2.31  Local Placement Optimization
+Phase 2.31  Local Placement Optimization (Checksum:9cbf6e89) REAL time: 12 secs 
+
+Phase 3.2  Initial Clock and IO Placement
+Phase 3.2  Initial Clock and IO Placement (Checksum:9cbf6e89) REAL time: 12 secs 
+
+Phase 4.36  Local Placement Optimization
+Phase 4.36  Local Placement Optimization (Checksum:9cbf6e89) REAL time: 12 secs 
+
+Phase 5.4  Local Placement Optimization
+..
+Phase 5.4  Local Placement Optimization (Checksum:9cbf6e89) REAL time: 12 secs 
+
+Phase 6.28  Local Placement Optimization
+Phase 6.28  Local Placement Optimization (Checksum:9cbf6e89) REAL time: 12 secs 
+
+Phase 7.8  Global Placement
+..
+Phase 7.8  Global Placement (Checksum:659daee9) REAL time: 12 secs 
+
+Phase 8.29  Local Placement Optimization
+Phase 8.29  Local Placement Optimization (Checksum:659daee9) REAL time: 12 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:659daee9) REAL time: 12 secs 
+
+Phase 10.18  Placement Optimization
+Phase 10.18  Placement Optimization (Checksum:659daee9) REAL time: 12 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:659daee9) REAL time: 12 secs 
+
+Total REAL time to Placer completion: 12 secs 
+Total CPU  time to Placer completion: 12 secs 
+Running post-placement packing...
+Updating route info ...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    2
 Logic Utilization:
-  Number of Slice Flip Flops:         2,197 out of  55,296    3%
-  Number of 4 input LUTs:             2,313 out of  55,296    4%
+  Total Number Slice Registers:         818 out of  55,296    1%
+    Number used as Flip Flops:          817
+    Number used as Latches:               1
+  Number of 4 input LUTs:             1,436 out of  55,296    2%
 Logic Distribution:
-  Number of occupied Slices:          1,730 out of  27,648    6%
-    Number of Slices containing only related logic:   1,730 out of   1,730 100%
-    Number of Slices containing unrelated logic:          0 out of   1,730   0%
+  Number of occupied Slices:          1,021 out of  27,648    3%
+    Number of Slices containing only related logic:   1,021 out of   1,021 100%
+    Number of Slices containing unrelated logic:          0 out of   1,021   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,486 out of  55,296    4%
-    Number used as logic:             2,313
-    Number used as a route-thru:        173
+  Total Number of 4 input LUTs:       1,627 out of  55,296    2%
+    Number used as logic:             1,357
+    Number used as a route-thru:        191
+    Number used as Shift registers:      79
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                124 out of     489   25%
-  Number of RAMB16s:                      2 out of      96    2%
-  Number of MULT18X18s:                   4 out of      96    4%
-  Number of BUFGMUXs:                     2 out of       8   25%
+  Number of bonded IOBs:                125 out of     489   25%
+  Number of RAMB16s:                      1 out of      96    1%
+  Number of MULT18X18s:                   3 out of      96    3%
+  Number of BUFGMUXs:                     3 out of       8   37%
+  Number of BSCANs:                       1 out of       1  100%
 
-Average Fanout of Non-Clock Nets:                2.94
+  Number of RPM macros:           12
+Average Fanout of Non-Clock Nets:                3.28
 
-Peak Memory Usage:  308 MB
-Total REAL time to MAP completion:  7 secs 
-Total CPU time to MAP completion:   6 secs 
-
-NOTES:
-
-   Related logic is defined as being logic that shares connectivity - e.g. two
-   LUTs are "related" if they share common inputs.  When assembling slices,
-   Map gives priority to combine logic that is related.  Doing so results in
-   the best timing performance.
-
-   Unrelated logic shares no connectivity.  Map will only begin packing
-   unrelated logic into a slice once 99% of the slices are occupied through
-   related logic packing.
-
-   Note that once logic distribution reaches the 99% level through related
-   logic packing, this does not mean the device is completely utilized.
-   Unrelated logic packing will then begin, continuing until all usable LUTs
-   and FFs are occupied.  Depending on your timing budget, increased levels of
-   unrelated logic packing may adversely affect the overall timing performance
-   of your design.
+Peak Memory Usage:  433 MB
+Total REAL time to MAP completion:  14 secs 
+Total CPU time to MAP completion:   14 secs 
 
 Mapping completed.
 See MAP report file "top_map.mrp" for details.

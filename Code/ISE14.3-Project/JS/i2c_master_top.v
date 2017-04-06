@@ -13,21 +13,21 @@ module i2c_master_top(
 	 wb_inta_o,scl_pad_i, scl_pad_o, scl_padoen_o, sda_pad_i, sda_pad_o, sda_padoen_o);
 	
 	// parameters
-	parameter ARST_LVL = 1'b0; // asynchronous reset level
+	parameter ARST_LVL = 1'b0; // asynchronous reset level异步复位电平
 
 	//
 	// inputs & outputs
 	//
 
-	// wishbone signals
-	input        wb_clk_i;     // master clock input
-	input        wb_rst_i;     // synchronous active high reset
-	input        arst_i;       // asynchronous reset
+	// wishbone signals这好像是IP核的总线规范，高电平有效
+	input        wb_clk_i;     // master clock input 主时钟的输入
+	input        wb_rst_i;     // synchronous active high reset同步激活高电平复位
+	input        arst_i;       // asynchronous reset异步复位
 	input  [2:0] wb_adr_i;     // lower address bits
-	input  [7:0] wb_dat_i;     // databus input
-	output [7:0] wb_dat_o;     // databus output
-	input        wb_we_i;      // write enable input
-	input        wb_stb_i;     // stobe/core select signal
+	input  [7:0] wb_dat_i;     // databus input数据总线输入
+	output [7:0] wb_dat_o;     // databus output数据总线输出
+	input        wb_we_i;      // write enable input写入使能
+	input        wb_stb_i;     // stobe/core select signal选择IP核？？？？？？？
 	input        wb_cyc_i;     // valid bus cycle input
 	output       wb_ack_o;     // bus cycle acknowledge output
 	output       wb_inta_o;    // interrupt request signal output
@@ -88,14 +88,14 @@ module i2c_master_top(
 	// generate internal reset
 	wire rst_i = arst_i ^ ARST_LVL; 
 
-	// generate wishbone signals
+	// generate wishbone signals生成wishbone总线信号
 	wire wb_wacc = wb_cyc_i & wb_stb_i & wb_we_i;
 
 	//三态缓冲输出
 //	wire	scl = scl_padoen_o? 1'bz : scl_pad_o;
 //	wire	sda = sda_padoen_o? 1'bz : sda_pad_o;
 
-	// generate acknowledge output signal
+	// generate acknowledge output signal生成应答信号
 	always @(posedge wb_clk_i)
 	  wb_ack_o <= #1 wb_cyc_i & wb_stb_i & ~wb_ack_o; // because timing is always honored
 

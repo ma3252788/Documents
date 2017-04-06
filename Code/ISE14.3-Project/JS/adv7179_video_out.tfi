@@ -1,0 +1,28 @@
+
+
+
+// Instantiate the module
+adv7179_video_out instance_name (
+    .rst(rst), 
+    .qd(qd), 
+    .clk(clk), 
+    .qd_out(qd_out), 
+    .clkout(clkout), 
+    .field(field), 
+    .data_saaSRAM(data_saaSRAM), 
+    .addr_saaSRAM(addr_saaSRAM), 
+    .ce_saaSRAM(ce_saaSRAM), 
+    .oe_saaSRAM(oe_saaSRAM), 
+    .we_saaSRAM(we_saaSRAM), 
+    .config_done(config_done), 
+    .video_zoom(video_zoom), 
+    .cross_output(cross_output), 
+    .video_pip(video_pip), 
+    .qfv(qfv), 
+    .qfv_cnt(qfv_cnt), 
+    .qfv_cnt_2(qfv_cnt_2), 
+    .qd_dly(qd_dly), 
+    .qd_dly1(qd_dly1)
+    );
+
+

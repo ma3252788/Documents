@@ -1,0 +1,10 @@
+WARNING:coreutil:590 - Edif Implementation Files option is not available
+   anymore, and has been set to Ngc implementation files.
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Customizing IP...
+WARNING:coreutil - WARNING: Default charset GBK not supported, using ISO-8859-1
+   instead
+Cancelled Customization.
+Wrote CGP file for project 'dpram'.

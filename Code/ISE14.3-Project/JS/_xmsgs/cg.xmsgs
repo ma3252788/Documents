@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="coreutil" num="590" delta="new" >Edif Implementation Files option is not available anymore, and has been set to Ngc implementation files.
+</msg>
+
+<msg type="info" file="sim" num="172" delta="new" >Generating IP...
+</msg>
+
+<msg type="warning" file="coreutil" num="0" delta="new" >WARNING: Default charset GBK not supported, using ISO-8859-1 instead
+</msg>
+
+</messages>
+

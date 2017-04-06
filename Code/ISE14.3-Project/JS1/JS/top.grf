@@ -1,0 +1,56 @@
+Release 14.3 - par P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Apr 04 23:31:53 2017
+
+  SmartGuide Results
+  ------------------
+  This section describes the guide results after invoking the Router. This
+  report accurately reflects the differences between the input design
+  and the guide design.
+
+  Number of Components in the input design    |   1154
+    Number of guided Components               |   1153 out of   1154  99.9%
+    Number of re-implemented Components       |      0 out of   1154   0.0%
+    Number of new/changed Components          |      1 out of   1154   0.1%
+  Number of Nets in the input design          |   2046
+    Number of guided Nets                     |   2031 out of   2046  99.3%
+    Number of partially guided Nets           |      8 out of   2046   0.4%
+    Number of re-routed Nets                  |      7 out of   2046   0.3%
+    Number of new/changed Nets                |      0 out of   2046   0.0%
+
+
+The following Components were re-implemented.
+---------------------------------------------
+
+
+The following Components are new/changed.
+-----------------------------------------
+ clkout : PAD700.
+
+
+The following Nets were re-routed.
+----------------------------------
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/state<8>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/state<7>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/and_out<13>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/cfg<0>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].SI_CFG/iCFG_DIN.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/state<0>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].SI_CFG/iCFG_DIN.
+
+
+The following Nets are new/changed.
+-----------------------------------
+
+
+The following Nets were partially guided.
+-----------------------------------------
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/SCNT_RESET.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/iARM.
+ icon_control0<19>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/state<11>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/state<10>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/state<9>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/state<13>.
+ U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/state<14>.

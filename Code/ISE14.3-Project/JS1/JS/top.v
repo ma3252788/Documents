@@ -28,7 +28,7 @@ module top(	clk_59m,rst,
 
 				ttl_en,enhance_enable,cross_output,video_zoom,
 
-				test
+				test,clkout
 				);
 
 //system
@@ -47,11 +47,13 @@ output	ADV7180_SCL;
 output	ADV7180_SDA;
 output	ADV7180_RST;//always high
 output	ADV7180_PWDOWN;//always high
+output   clkout;
 
 wire		ADV7180_RST = 1'b1;
 wire		ADV7180_PWDOWN = 1'b1;
+//reg clkout;
 
-
+assign clkout = 1;
 //AD7179
 output	ADV7179_TTX;//always low
 output	ADV7179_TTXREQ;//always low.But it should be an input signal.
@@ -94,11 +96,7 @@ assign	SRAM_A_LB=0;
 assign	SRAM_B_UB=0;
 assign	SRAM_B_LB=0;
 
-//UART
-//input		RS232_RXD1;
-//output	RS232_TXD1;
-//input		RS232_RXD2;
-//output	RS232_TXD2;
+
 
 //TEST
 output 	ADDA_DONE;
@@ -110,7 +108,7 @@ input		enhance_enable,
 			video_zoom;
 
 
-//DCM module
+//DCM module  这是时钟
 wire		clk27M_DCMed;
 DCM27M DCM_27Muu (
    					.CLKIN_IN(ADV7180_LLC), 
@@ -123,13 +121,14 @@ DCM59M DCM_59Muu (
 					    .RST_IN(rst), 
 					    .CLKIN_IBUFG_OUT(clk59M_DCMed) 
 					    );
+//时钟结束
 
 ///7180.7179config module
 wire	finish7179;
 wire	finish7180;
-adv7180_config_top 	adv7180_config_top_module(
+adv7180_config_top 	adv7180_config_top_module(//前面是要连接的模块的名字，adv7180_config_top.v，后面的名字无所谓
 																.rst(rst),
-																.clk(clk59M_DCMed), 
+																.clk(clk59M_DCMed), //意思是把7180里面的clk跟这里的clk59M_DCMed连接起来了
 																.ADV7180_SCL(ADV7180_SCL),
 																.ADV7180_SDA(ADV7180_SDA),
 																.finish(finish7180)
@@ -145,11 +144,11 @@ adv7179_config_top 	adv7179_config			(
 															.finish7179(finish7179)
 															);
 
-wire	ADDA_DONE=finish7180&finish7179;
-wire 	config_done=finish7180&finish7179;
+wire	ADDA_DONE=finish7180&finish7179;//转换成功
+wire 	config_done=finish7180&finish7179;//配置成功
 
 
-//watch dog
+//watch dog 开始
 reg 	 [25:0]reset_cnt;
 wire	 qfv;
 reg	 RSTW;
@@ -169,12 +168,12 @@ begin
 		end 	
 end
 wire	 rst_internal=RSTW&rst;
+//watch dog 结束
 
 
 
 
-
-//decord module
+//decode module  解码模块
 wire		oe_sram_write_7113;
 wire		we_sram_write_7113;
 wire		ce_sram_write_7113;
@@ -183,7 +182,9 @@ wire		[15:0]data_sram_write_7113;
 wire		frame_sw;
 wire		[9:0]addr_4newtable;
 wire	 	[7:0]data_4newtable;
-//wire		enhance_enable;
+
+
+//wire		enhance_enable;   增强使能
 wire		[7:0]max_gray;
 SAA7113_decode SAA7113_decode_uut(
 													.reset(rst_internal),//rst), //
@@ -211,7 +212,7 @@ SAA7113_decode SAA7113_decode_uut(
 													.data_4newtable(data_4newtable)
 											);	
 											
-//output module
+//output module 输出模块
 wire		[7:0]MP_temp;
 wire 		clk_temp;
 Out_CTRL out_ctrl_uut(
@@ -223,13 +224,16 @@ Out_CTRL out_ctrl_uut(
 								.MP_out(ADV7179_P)
 								);
 
-wire	 	ce_sram_read_7179;
-wire		oe_sram_read_7179;
-wire		we_sram_read_7179;
+wire	 	ce_sram_read_7179;//片选
+wire		oe_sram_read_7179;//输出使能,低电平时使能
+wire		we_sram_read_7179;//写入使能,低电平时使能
+
 wire		[15:0]data_sram_read_7179;
 wire		[19:0]addr_sram_read_7179;
 wire		video_zoom;//zzz       video_zoom_out;
 //wire		cross_output;
+
+
 adv7179_video_out		adv7179_video_out_module(
 															.rst(rst_internal),//rst),//	
 															.config_done(config_done),				
@@ -251,6 +255,8 @@ adv7179_video_out		adv7179_video_out_module(
 															.cross_output(cross_output),//cross_output
 															.video_pip(1'b0)
 															);	
+
+
 
 bus_control 	bus_control_module(											
 											.sram_flag(frame_sw), 
@@ -282,37 +288,42 @@ bus_control 	bus_control_module(
 											.sram2_oe(SRAM_A_OE)
 											);
 
+
+
 //增强模块
-wire	[7:0]max_gray_buff;
-assign max_gray_buff =(max_gray>=150)? max_gray : ( 'd200 );//	 ((max_gray<120)&&(max_gray>=80))? 180 : 
-wire		[7:0]data_2newtableRAM;
-wire		we_2newtableRAM;
-wire		[9:0]addr_2newtableRAM;
-Equilization_alg Equilization_alg_uut(														
-													.rst(rst_internal), // config_done
-													.qd(ADV7180_P), 
-													.clk(clk27M_DCMed),
-													.clk50(clk59M_DCMed),
-													.config_done(config_done), 	  //config_done
-													.frame_sw(frame_sw),			
-
-													//最大灰度级
-													.max_gray(255),	 //max_gray
-
-													//写新查找表
-													.gray_lookup_table(data_2newtableRAM), 
-													.we(we_2newtableRAM), 
-													.addr4out(addr_2newtableRAM)
-												);
-new_gray_table NEW_table_RAM(
-										.clka(clk27M_DCMed),
-										.addra(addr_2newtableRAM),
-										.dina(data_2newtableRAM),
-										.wea(we_2newtableRAM), 										
-										
-										.clkb(clk27M_DCMed),
-										.addrb(addr_4newtable),
-										.doutb(data_4newtable)
-										);
+//wire	[7:0]max_gray_buff;
+//assign max_gray_buff =(max_gray>=150)? max_gray : ( 'd200 );//	 ((max_gray<120)&&(max_gray>=80))? 180 : 
+////assign max_gray_buff =((max_gray<120)&&(max_gray>=80))? 180 : ('d200);
+//wire		[7:0]data_2newtableRAM;
+//wire		we_2newtableRAM;
+//wire		[9:0]addr_2newtableRAM;
+//
+//Equilization_alg Equilization_alg_uut(														
+//													.rst(rst_internal), // config_done
+//													.qd(ADV7180_P), 
+//													.clk(clk27M_DCMed),
+//													.clk50(clk59M_DCMed),
+//													.config_done(config_done), 	  //config_done
+//													.frame_sw(frame_sw),			
+//
+//													//最大灰度级
+//													.max_gray(255),	 //max_gray
+//
+//													//写新查找表
+//													.gray_lookup_table(data_2newtableRAM), 
+//													.we(we_2newtableRAM), 
+//													.addr4out(addr_2newtableRAM)
+//												);
+//												
+//new_gray_table NEW_table_RAM(
+//										.clka(clk27M_DCMed),
+//										.addra(addr_2newtableRAM),
+//										.dina(data_2newtableRAM),
+//										.wea(we_2newtableRAM), 										
+//										
+//										.clkb(clk27M_DCMed),
+//										.addrb(addr_4newtable),
+//										.doutb(data_4newtable)
+//										);
 
 endmodule

@@ -1,7 +1,7 @@
 Release 14.3 - par P.40xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Wed Mar 22 16:07:00 2017
+Tue Apr 04 23:37:19 2017
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -111,7 +111,7 @@ Pinout by Pin Number:
 |AC11      |ADV7179_SDA    |IOB      |IO                 |TRISTATE |LVCMOS25*  |5             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |AC12      |               |         |GND                |         |           |              |          |         |           |         |         |          |           |                |
 |AC13      |ADV7179_TTXREQ |IOB      |IO_L31N_5/D4       |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
-|AC14      |ADDA_DONE      |IOB      |IO_L31N_4/INIT_B   |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|AC14      |               |DIFFS    |IO_L31N_4/INIT_B   |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
 |AC15      |               |         |GND                |         |           |              |          |         |           |         |         |          |           |                |
 |AC16      |ADV7179_P<2>   |IOB      |IO_L25P_4          |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |AC17      |ADV7179_P<3>   |IOB      |IO_L19N_4          |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
@@ -187,7 +187,7 @@ Pinout by Pin Number:
 |AF9       |               |         |VCCAUX             |         |           |              |          |         |           |         |2.5      |          |           |                |
 |AF10      |               |DIFFS    |IO_L23N_5          |UNUSED   |           |5             |          |         |           |         |         |          |           |                |
 |AF11      |ADV7179_P<6>   |IOB      |IO_L26N_5          |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
-|AF12      |               |DIFFS    |IO_L29N_5          |UNUSED   |           |5             |          |         |           |         |         |          |           |                |
+|AF12      |ADDA_DONE      |IOB      |IO_L29N_5          |OUTPUT   |LVCMOS25*  |5             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |AF13      |ADV7180_P<1>   |IOB      |IO/VREF_5          |INPUT    |LVCMOS25*  |5             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |AF14      |ADV7180_P<0>   |IOB      |IO_L32P_4/GCLK0    |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |AF15      |               |DIFFM    |IO_L29P_4          |UNUSED   |           |4             |          |         |           |         |         |          |           |                |
@@ -199,7 +199,7 @@ Pinout by Pin Number:
 |AF21      |ADV7180_P<4>   |IOB      |IO                 |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |AF22      |ADV7180_P<5>   |IOB      |IO                 |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |AF23      |ADV7180_P<6>   |IOB      |IO_L05P_4          |INPUT    |LVCMOS25*  |4             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|AF24      |ADV7180_SCL    |IOB      |IO_L04P_4          |TRISTATE |LVCMOS25*  |4             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
+|AF24      |ADV7180_SCL    |IOB      |IO_L04P_4          |OUTPUT   |LVCMOS25*  |4             |12        |SLOW     |NONE**     |         |         |LOCATED   |NO         |NONE            |
 |AF25      |               |         |VCCAUX             |         |           |              |          |         |           |         |2.5      |          |           |                |
 |AF26      |               |         |GND                |         |           |              |          |         |           |         |         |          |           |                |
 |B1        |               |         |VCCAUX             |         |           |              |          |         |           |         |2.5      |          |           |                |

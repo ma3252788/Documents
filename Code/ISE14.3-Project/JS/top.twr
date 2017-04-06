@@ -44,50 +44,50 @@ Setup/Hold to clock ADV7180_LLC
               |Max Setup to|Max Hold to |                  | Clock  |
 Source        | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 --------------+------------+------------+------------------+--------+
-ADV7180_P<0>  |    2.627(R)|   -0.805(R)|clk27M_DCMed      |   0.000|
-ADV7180_P<1>  |    2.595(R)|   -0.780(R)|clk27M_DCMed      |   0.000|
-ADV7180_P<2>  |    2.224(R)|   -0.502(R)|clk27M_DCMed      |   0.000|
-ADV7180_P<3>  |    1.584(R)|    0.009(R)|clk27M_DCMed      |   0.000|
-ADV7180_P<4>  |    3.932(R)|   -1.477(R)|clk27M_DCMed      |   0.000|
-ADV7180_P<5>  |    5.173(R)|   -2.155(R)|clk27M_DCMed      |   0.000|
-ADV7180_P<6>  |    4.660(R)|   -1.754(R)|clk27M_DCMed      |   0.000|
-ADV7180_P<7>  |    3.675(R)|   -1.637(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<0>   |    7.939(R)|   -4.353(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<1>   |    9.466(R)|   -4.282(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<2>   |    9.412(R)|   -4.620(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<3>   |   10.419(R)|   -4.289(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<4>   |    7.799(R)|   -4.037(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<5>   |    8.201(R)|   -3.837(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<6>   |    8.170(R)|   -3.037(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<7>   |    7.984(R)|   -3.854(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<8>   |   10.588(R)|   -5.421(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<9>   |   10.384(R)|   -5.186(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<10>  |   12.209(R)|   -4.645(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<11>  |   12.394(R)|   -5.141(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<12>  |   10.074(R)|   -4.183(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<13>  |   10.024(R)|   -3.450(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<14>  |    9.120(R)|   -3.536(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<15>  |    9.149(R)|   -4.854(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<0>   |    9.245(R)|   -5.397(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<1>   |    9.545(R)|   -4.345(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<2>   |    8.552(R)|   -3.932(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<3>   |   10.300(R)|   -4.194(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<4>   |   11.207(R)|   -6.763(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<5>   |   10.802(R)|   -5.918(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<6>   |   10.758(R)|   -5.108(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<7>   |    9.936(R)|   -5.789(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<8>   |   10.512(R)|   -5.360(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<9>   |    8.782(R)|   -3.904(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<10>  |   11.434(R)|   -4.024(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<11>  |   11.153(R)|   -4.148(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<12>  |   12.623(R)|   -6.222(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<13>  |   11.461(R)|   -4.600(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<14>  |   11.064(R)|   -5.091(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<15>  |   11.245(R)|   -6.061(R)|clk27M_DCMed      |   0.000|
-cross_output  |   13.535(R)|   -7.456(R)|clk27M_DCMed      |   0.000|
-enhance_enable|   12.500(R)|   -2.100(R)|clk27M_DCMed      |   0.000|
-rst           |   10.813(R)|   -3.154(R)|clk27M_DCMed      |   0.000|
-video_zoom    |    6.291(R)|   -3.692(R)|clk27M_DCMed      |   0.000|
+ADV7180_P<0>  |    1.806(R)|   -0.132(R)|clk27M_DCMed      |   0.000|
+ADV7180_P<1>  |    1.605(R)|    0.029(R)|clk27M_DCMed      |   0.000|
+ADV7180_P<2>  |    2.053(R)|   -0.301(R)|clk27M_DCMed      |   0.000|
+ADV7180_P<3>  |    2.344(R)|   -0.534(R)|clk27M_DCMed      |   0.000|
+ADV7180_P<4>  |    3.378(R)|   -1.430(R)|clk27M_DCMed      |   0.000|
+ADV7180_P<5>  |    3.113(R)|   -1.218(R)|clk27M_DCMed      |   0.000|
+ADV7180_P<6>  |    3.131(R)|   -1.207(R)|clk27M_DCMed      |   0.000|
+ADV7180_P<7>  |    3.967(R)|   -1.876(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<0>   |    9.241(R)|   -3.605(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<1>   |    8.648(R)|   -4.522(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<2>   |    9.272(R)|   -4.646(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<3>   |    8.003(R)|   -3.843(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<4>   |    9.481(R)|   -3.288(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<5>   |    9.388(R)|   -2.785(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<6>   |    8.449(R)|   -3.520(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<7>   |    9.339(R)|   -4.917(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<8>   |   10.730(R)|   -4.957(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<9>   |   12.169(R)|   -5.377(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<10>  |   12.973(R)|   -4.630(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<11>  |   12.337(R)|   -4.858(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<12>  |   10.076(R)|   -4.115(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<13>  |   10.122(R)|   -4.014(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<14>  |    9.185(R)|   -3.329(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<15>  |    9.548(R)|   -4.217(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<0>   |   10.364(R)|   -4.159(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<1>   |    8.355(R)|   -4.445(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<2>   |    8.696(R)|   -4.185(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<3>   |    8.879(R)|   -4.483(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<4>   |   11.226(R)|   -4.512(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<5>   |   10.885(R)|   -4.320(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<6>   |   10.554(R)|   -5.550(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<7>   |    9.961(R)|   -5.415(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<8>   |   10.435(R)|   -4.863(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<9>   |   10.918(R)|   -4.376(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<10>  |   11.182(R)|   -3.197(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<11>  |   11.053(R)|   -3.832(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<12>  |   11.686(R)|   -5.403(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<13>  |   11.280(R)|   -4.941(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<14>  |   10.603(R)|   -4.464(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<15>  |    9.879(R)|   -4.481(R)|clk27M_DCMed      |   0.000|
+cross_output  |   13.323(R)|   -6.720(R)|clk27M_DCMed      |   0.000|
+enhance_enable|    5.433(R)|   -2.384(R)|clk27M_DCMed      |   0.000|
+rst           |   10.315(R)|   -5.390(R)|clk27M_DCMed      |   0.000|
+video_zoom    |    5.175(R)|   -2.788(R)|clk27M_DCMed      |   0.000|
 --------------+------------+------------+------------------+--------+
 
 Clock ADV7180_LLC to Pad
@@ -95,92 +95,92 @@ Clock ADV7180_LLC to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-ADV7179_P<0>|   14.184(R)|clk27M_DCMed      |   0.000|
-ADV7179_P<1>|   14.052(R)|clk27M_DCMed      |   0.000|
-ADV7179_P<2>|   15.907(R)|clk27M_DCMed      |   0.000|
-ADV7179_P<3>|   15.062(R)|clk27M_DCMed      |   0.000|
-ADV7179_P<4>|   15.318(R)|clk27M_DCMed      |   0.000|
-ADV7179_P<5>|   15.324(R)|clk27M_DCMed      |   0.000|
-ADV7179_P<6>|   14.421(R)|clk27M_DCMed      |   0.000|
-ADV7179_P<7>|   15.871(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<0> |   23.397(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<1> |   24.323(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<2> |   24.661(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<3> |   24.984(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<4> |   25.982(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<5> |   27.304(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<6> |   27.504(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<7> |   26.753(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<8> |   26.736(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<9> |   26.995(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<10>|   27.768(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<11>|   27.818(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<12>|   27.741(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<13>|   27.142(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<14>|   26.567(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<15>|   25.388(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<16>|   25.191(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<17>|   26.992(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<18>|   25.829(R)|clk27M_DCMed      |   0.000|
-SRAM_A_A<19>|   28.483(R)|clk27M_DCMed      |   0.000|
-SRAM_A_CE   |   18.825(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<0> |   15.937(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<1> |   15.534(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<2> |   16.533(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<3> |   16.529(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<4> |   14.799(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<5> |   14.866(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<6> |   14.611(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<7> |   15.009(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<8> |   17.674(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<9> |   18.644(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<10>|   17.849(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<11>|   18.035(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<12>|   15.573(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<13>|   16.264(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<14>|   16.601(R)|clk27M_DCMed      |   0.000|
-SRAM_A_D<15>|   16.601(R)|clk27M_DCMed      |   0.000|
-SRAM_A_OE   |   17.169(R)|clk27M_DCMed      |   0.000|
-SRAM_A_WE   |   17.197(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<0> |   23.276(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<1> |   24.979(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<2> |   26.525(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<3> |   26.438(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<4> |   29.049(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<5> |   25.237(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<6> |   25.593(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<7> |   25.441(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<8> |   26.617(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<9> |   25.642(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<10>|   25.996(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<11>|   26.568(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<12>|   26.291(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<13>|   25.695(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<14>|   25.663(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<15>|   27.728(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<16>|   27.653(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<17>|   28.261(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<18>|   28.577(R)|clk27M_DCMed      |   0.000|
-SRAM_B_A<19>|   28.829(R)|clk27M_DCMed      |   0.000|
-SRAM_B_CE   |   19.383(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<0> |   16.140(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<1> |   16.159(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<2> |   15.786(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<3> |   16.844(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<4> |   19.169(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<5> |   20.220(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<6> |   20.193(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<7> |   18.478(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<8> |   19.830(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<9> |   19.773(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<10>|   20.443(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<11>|   19.474(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<12>|   19.917(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<13>|   19.851(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<14>|   19.928(R)|clk27M_DCMed      |   0.000|
-SRAM_B_D<15>|   19.866(R)|clk27M_DCMed      |   0.000|
-SRAM_B_OE   |   18.660(R)|clk27M_DCMed      |   0.000|
-SRAM_B_WE   |   17.061(R)|clk27M_DCMed      |   0.000|
+ADV7179_P<0>|   15.236(R)|clk27M_DCMed      |   0.000|
+ADV7179_P<1>|   15.613(R)|clk27M_DCMed      |   0.000|
+ADV7179_P<2>|   15.132(R)|clk27M_DCMed      |   0.000|
+ADV7179_P<3>|   16.062(R)|clk27M_DCMed      |   0.000|
+ADV7179_P<4>|   16.155(R)|clk27M_DCMed      |   0.000|
+ADV7179_P<5>|   14.850(R)|clk27M_DCMed      |   0.000|
+ADV7179_P<6>|   16.692(R)|clk27M_DCMed      |   0.000|
+ADV7179_P<7>|   16.076(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<0> |   25.913(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<1> |   26.329(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<2> |   26.600(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<3> |   27.776(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<4> |   27.442(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<5> |   30.052(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<6> |   29.943(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<7> |   29.904(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<8> |   29.729(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<9> |   29.918(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<10>|   30.444(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<11>|   30.539(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<12>|   30.780(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<13>|   30.625(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<14>|   29.228(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<15>|   28.178(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<16>|   30.455(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<17>|   30.828(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<18>|   30.000(R)|clk27M_DCMed      |   0.000|
+SRAM_A_A<19>|   30.320(R)|clk27M_DCMed      |   0.000|
+SRAM_A_CE   |   17.645(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<0> |   16.158(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<1> |   16.942(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<2> |   16.944(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<3> |   16.937(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<4> |   15.170(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<5> |   15.149(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<6> |   15.477(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<7> |   15.819(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<8> |   17.936(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<9> |   18.269(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<10>|   18.612(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<11>|   18.974(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<12>|   15.544(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<13>|   16.198(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<14>|   15.861(R)|clk27M_DCMed      |   0.000|
+SRAM_A_D<15>|   16.559(R)|clk27M_DCMed      |   0.000|
+SRAM_A_OE   |   18.992(R)|clk27M_DCMed      |   0.000|
+SRAM_A_WE   |   17.028(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<0> |   25.000(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<1> |   26.152(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<2> |   27.690(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<3> |   28.305(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<4> |   29.188(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<5> |   27.435(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<6> |   27.985(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<7> |   28.571(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<8> |   28.972(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<9> |   28.565(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<10>|   28.939(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<11>|   29.312(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<12>|   29.221(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<13>|   28.359(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<14>|   28.207(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<15>|   28.544(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<16>|   29.121(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<17>|   30.484(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<18>|   29.747(R)|clk27M_DCMed      |   0.000|
+SRAM_B_A<19>|   30.678(R)|clk27M_DCMed      |   0.000|
+SRAM_B_CE   |   17.402(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<0> |   15.187(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<1> |   15.599(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<2> |   16.212(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<3> |   16.232(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<4> |   18.216(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<5> |   19.268(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<6> |   19.240(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<7> |   17.526(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<8> |   23.986(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<9> |   23.967(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<10>|   23.614(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<11>|   22.636(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<12>|   27.006(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<13>|   27.364(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<14>|   25.656(R)|clk27M_DCMed      |   0.000|
+SRAM_B_D<15>|   25.983(R)|clk27M_DCMed      |   0.000|
+SRAM_B_OE   |   16.969(R)|clk27M_DCMed      |   0.000|
+SRAM_B_WE   |   17.808(R)|clk27M_DCMed      |   0.000|
 ------------+------------+------------------+--------+
 
 Clock clk_59m to Pad
@@ -188,21 +188,20 @@ Clock clk_59m to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-ADDA_DONE   |   19.683(R)|clk59M_DCMed      |   0.000|
-ADV7179_CLK |   12.535(R)|clk59M_DCMed      |   0.000|
-ADV7179_P<0>|   14.674(R)|clk59M_DCMed      |   0.000|
-ADV7179_P<1>|   13.731(R)|clk59M_DCMed      |   0.000|
-ADV7179_P<2>|   13.981(R)|clk59M_DCMed      |   0.000|
-ADV7179_P<3>|   14.544(R)|clk59M_DCMed      |   0.000|
-ADV7179_P<4>|   14.088(R)|clk59M_DCMed      |   0.000|
-ADV7179_P<5>|   12.370(R)|clk59M_DCMed      |   0.000|
-ADV7179_P<6>|   12.989(R)|clk59M_DCMed      |   0.000|
-ADV7179_P<7>|   13.325(R)|clk59M_DCMed      |   0.000|
-ADV7179_RST |   11.362(R)|clk59M_DCMed      |   0.000|
-ADV7179_SCL |   14.096(R)|clk59M_DCMed      |   0.000|
-ADV7179_SDA |   14.500(R)|clk59M_DCMed      |   0.000|
-ADV7180_SCL |   17.268(R)|clk59M_DCMed      |   0.000|
-ADV7180_SDA |   17.050(R)|clk59M_DCMed      |   0.000|
+ADDA_DONE   |   15.795(R)|clk59M_DCMed      |   0.000|
+ADV7179_CLK |   11.733(R)|clk59M_DCMed      |   0.000|
+ADV7179_P<0>|   12.370(R)|clk59M_DCMed      |   0.000|
+ADV7179_P<1>|   12.411(R)|clk59M_DCMed      |   0.000|
+ADV7179_P<2>|   13.667(R)|clk59M_DCMed      |   0.000|
+ADV7179_P<3>|   14.478(R)|clk59M_DCMed      |   0.000|
+ADV7179_P<4>|   14.648(R)|clk59M_DCMed      |   0.000|
+ADV7179_P<5>|   14.142(R)|clk59M_DCMed      |   0.000|
+ADV7179_P<6>|   15.443(R)|clk59M_DCMed      |   0.000|
+ADV7179_P<7>|   14.751(R)|clk59M_DCMed      |   0.000|
+ADV7179_RST |    9.927(R)|clk59M_DCMed      |   0.000|
+ADV7179_SCL |   11.883(R)|clk59M_DCMed      |   0.000|
+ADV7179_SDA |   12.022(R)|clk59M_DCMed      |   0.000|
+ADV7180_SDA |   16.777(R)|clk59M_DCMed      |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock ADV7180_LLC
@@ -210,8 +209,8 @@ Clock to Setup on destination clock ADV7180_LLC
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ADV7180_LLC    |   11.788|         |         |         |
-clk_59m        |   13.853|         |         |         |
+ADV7180_LLC    |   14.944|         |         |         |
+clk_59m        |   10.983|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_59m
@@ -219,26 +218,25 @@ Clock to Setup on destination clock clk_59m
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ADV7180_LLC    |    3.451|         |         |         |
-clk_59m        |    8.861|         |         |         |
+clk_59m        |    8.881|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-ADV7180_LLC    |ADV7179_CLK    |    9.452|
+ADV7180_LLC    |ADV7179_CLK    |    7.501|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Mar 22 16:07:08 2017 
+Analysis completed Tue Apr 04 23:37:26 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 258 MB
+Peak Memory Usage: 231 MB
 
 
 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Hardware\About-Hardware\Documents\Code\ISE14.3-Project\JS1\JS\top.ncd
+OUTFILE=E:\Hardware\About-Hardware\Documents\Code\ISE14.3-Project\JS1\JS\top.bit
+FAMILY=Spartan3
+PART=xc3s4000-4fg676
+WORKINGDIR=E:\Hardware\About-Hardware\Documents\Code\ISE14.3-Project\JS1\JS
+LICENSE=ISE
+USER_INFO=__0_0_0

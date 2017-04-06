@@ -1,0 +1,10 @@
+# Output products list for <hist_ram>
+hist_ram.asy
+hist_ram.edn
+hist_ram.sym
+hist_ram.v
+hist_ram.veo
+hist_ram.vhd
+hist_ram.vho
+hist_ram.xco
+hist_ram_flist.txt

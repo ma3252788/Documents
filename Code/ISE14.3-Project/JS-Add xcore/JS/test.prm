@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator K.31
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o E:\program\JS_TTL\JS\//test -u 0 E:/program/JS_TTL/JS/top.bit -x xcf08p 
+
+PROM E:\program\JS_TTL\JS\//test.prm map: Sat Sep 11 21:32:34 2010
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          1024K
+PROM start    0000:0000
+PROM end      000f:ffff
+PROM checksum 01a5c5f3
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    000e:a297     Sep 11 20:40:25 2010 E:/program/JS_TTL/JS/top.bit

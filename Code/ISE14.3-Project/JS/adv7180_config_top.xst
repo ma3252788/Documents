@@ -1,0 +1,5 @@
+set -tmpdir "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS/xst/projnav.tmp"
+set -xsthdpdir "E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS/xst"
+elaborate
+-ifn adv7180_config_top.prj
+-ifmt mixed

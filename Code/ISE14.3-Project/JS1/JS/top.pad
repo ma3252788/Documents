@@ -1,7 +1,7 @@
 Release 14.3 - par P.40xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Wed Mar 22 16:23:54 2017
+Tue Apr 04 23:31:55 2017
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -387,7 +387,7 @@ J1|||VCCAUX||||||||2.5||||
 J2||DIFFS|IO_L22N_7|UNUSED||7|||||||||
 J3|SRAM_B_D<1>|IOB|IO_L22P_7|BIDIR|LVCMOS25*|7|12|SLOW|NONE**|NONE||LOCATED|NO|NONE|
 J4|SRAM_B_D<0>|IOB|IO_L21N_7|BIDIR|LVCMOS25*|7|12|SLOW|NONE**|NONE||LOCATED|NO|NONE|
-J5||DIFFM|IO_L21P_7|UNUSED||7|||||||||
+J5|clkout|IOB|IO_L21P_7|OUTPUT|LVCMOS25*|7|12|SLOW|NONE**|||LOCATED|NO|NONE|
 J6||DIFFS|IO_L16N_7|UNUSED||7|||||||||
 J7||DIFFM|IO_L20P_7|UNUSED||7|||||||||
 J8|||VCCO_7|||7|||||2.50||||

@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj JS -o E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS/adv7179_video_out.tfi -lib work E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS//adv7179_video_out.v -module adv7179_video_out -template E:/Hardware/ISE14.3/14.3/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -16,7 +16,7 @@
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+// 直方图均衡化
 ////////////////////////////////////////////////////////////////////////////////
 module Equilization_alg(rst, qd, clk, clk50, config_done, frame_sw,/* field, */
 			

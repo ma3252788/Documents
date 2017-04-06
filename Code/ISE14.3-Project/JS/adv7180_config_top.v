@@ -43,8 +43,14 @@ module adv7180_config_top(rst,clk, //input
 	wire sda_oen;
 
 		//三态缓冲输出
-	wire	ADV7180_SCL = scl_oen ? 1'bz : scl_o;
+	//wire	ADV7180_SCL = scl_oen ? 1'bz : scl_o;
 	wire	ADV7180_SDA = sda_oen ? 1'bz : sda_o;
+	wire  ADV7189_SCL = scl_oen ? 1'bz : scl_o;
+//	//wire ADV7180_SDA;
+//	if(scl_oen)
+//		wire ADV7180_SDA = 1'bz;
+//	else 
+//		wire ADV7180_SDA = scl_o;
 
 
 	//连接I2C总线模块

@@ -1,0 +1,10 @@
+# Output products list for <new_gray_table>
+new_gray_table.asy
+new_gray_table.edn
+new_gray_table.sym
+new_gray_table.v
+new_gray_table.veo
+new_gray_table.vhd
+new_gray_table.vho
+new_gray_table.xco
+new_gray_table_flist.txt

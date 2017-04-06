@@ -1,0 +1,189 @@
+Release 14.3 par P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+MCJ::  Sat Apr 01 11:41:06 2017
+
+par -w -intstyle ise -ol high -t 1 -smartguide
+E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS1/JS/top_guide.ncd
+top_map.ncd top.ncd top.pcf 
+
+
+Constraints file: top.pcf.
+Loading device for application Rf_Device from file '3s4000.nph' in environment E:\Hardware\ISE14.3\14.3\ISE_DS\ISE\.
+   "top" is an NCD, version 3.2, device xc3s4000, package fg676, speed -4
+
+Loading database for application par from file:
+"E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS1/JS/top_guide.ncd"
+   "top" is an NCD, version 3.2, device xc3s4000, package fg676, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.39 2012-10-12".
+
+
+
+INFO:Par:402 - SmartGuide was run during Map. Since all guiding (mapping, packing, placement and routing) is completed
+   in MAP, PAR does not require the use of the guide switches. The -smartguide switch only generates a post place and
+   route guide report in the SmartGuide Report File(.GRF). Runtime can be reduced, if this detailed report is not
+   generated. PAR will automatically generate the SmartGuide summary report based on the guide file used during MAP.
+   This summary information is always in the PAR report file and the GRF.
+Device Utilization Summary:
+
+   Number of BSCANs                          1 out of 1     100%
+   Number of BUFGMUXs                        3 out of 8      37%
+   Number of External IOBs                 124 out of 489    25%
+      Number of LOCed IOBs                 123 out of 124    99%
+
+   Number of MULT18X18s                      4 out of 96      4%
+   Number of RAMB16s                         3 out of 96      3%
+   Number of Slices                       1965 out of 27648   7%
+      Number of SLICEMs                     49 out of 13824   1%
+
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 6 secs 
+Finished initial Timing Analysis.  REAL time: 6 secs 
+
+WARNING:Par:288 - The signal ADV7180_INT_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ADV7180_SFL_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ADV7180_HS_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal ADV7180_VS_IBUF has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 2421 unrouted;      REAL time: 6 secs 
+
+Phase  2  : 1952 unrouted;      REAL time: 7 secs 
+
+Phase  3  : 485 unrouted;      REAL time: 7 secs 
+
+Phase  4  : 485 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
+
+Updating file: top.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 10 secs 
+WARNING:Route:455 - CLK Net:icon_control0<13> may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 10 secs 
+Total CPU time to Router completion: 10 secs 
+
+  SmartGuide Results
+  ------------------
+  This section describes the guide results after invoking the Router. This
+  report accurately reflects the differences between the input design
+  and the guide design.
+
+  Number of Components in the input design    |   2100
+    Number of guided Components               |   1805 out of   2100  86.0%
+    Number of re-implemented Components       |     28 out of   2100   1.3%
+    Number of new/changed Components          |    267 out of   2100  12.7%
+  Number of Nets in the input design          |   4276
+    Number of guided Nets                     |   3435 out of   4276  80.3%
+    Number of partially guided Nets           |    131 out of   4276   3.1%
+    Number of re-routed Nets                  |    161 out of   4276   3.8%
+    Number of new/changed Nets                |    549 out of   4276  12.8%
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|    icon_control0<0> |      BUFGMUX3| No   |   88 |  0.510     |  1.331      |
++---------------------+--------------+------+------+------------+-------------+
+|        clk27M_DCMed |      BUFGMUX1| No   |  415 |  0.728     |  1.548      |
++---------------------+--------------+------+------+------------+-------------+
+|        clk59M_DCMed |      BUFGMUX4| No   |  953 |  0.842     |  1.669      |
++---------------------+--------------+------+------+------------+-------------+
+|U_icon_pro/U0/iUPDAT |              |      |      |            |             |
+|               E_OUT |         Local|      |    1 |  0.000     |  4.567      |
++---------------------+--------------+------+------+------------+-------------+
+|   icon_control0<13> |         Local|      |    4 |  0.000     |  1.060      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.329ns|     1.671ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_ila_pro_0_path" TIG     | SETUP       |         N/A|     6.349ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_ila_pro_0_path" TIG     | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_ila_pro_0_path" TIG     | MAXDELAY    |         N/A|     7.702ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 4 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 14 secs 
+Total CPU time to PAR completion: 13 secs 
+
+Peak Memory Usage:  375 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 7
+Number of info messages: 1
+
+Writing design to file top.ncd
+
+
+
+PAR done!

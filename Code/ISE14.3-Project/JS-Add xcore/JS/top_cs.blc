@@ -1,0 +1,47 @@
+Release 14.3 ngcbuild P.40xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngcbuild.exe -dd
+E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS1/JS/_ngo -sd
+ipcore_dir -p xc3s4000-fg676-4 -i
+E:\Hardware\About-Hardware\Documents\Code\ISE14.3-Project\JS1\JS\top.ngc
+E:\Hardware\About-Hardware\Documents\Code\ISE14.3-Project\JS1\JS\top_cs.ngc
+
+Reading NGO file
+"E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS1/JS/top.ngc" ...
+Reading module "new_gray_table.ngo" ( "new_gray_table.ngo" unchanged since last
+run )...
+Loading design module
+"E:\Hardware\About-Hardware\Documents\Code\ISE14.3-Project\JS1\JS\_ngo\new_gray_
+table.ngo"...
+Loading design module "ipcore_dir/test.ngc"...
+Reading module "divider_ip.ngo" ( "divider_ip.ngo" unchanged since last run )...
+Loading design module
+"E:\Hardware\About-Hardware\Documents\Code\ISE14.3-Project\JS1\JS\_ngo\divider_i
+p.ngo"...
+Reading module "hist_ram.ngo" ( "hist_ram.ngo" unchanged since last run )...
+Loading design module
+"E:\Hardware\About-Hardware\Documents\Code\ISE14.3-Project\JS1\JS\_ngo\hist_ram.
+ngo"...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 169188 kilobytes
+
+Writing NGC file
+"E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS1/JS/top_cs.ngc"
+...
+Total REAL time to NGCBUILD completion:  3 sec
+Total CPU time to NGCBUILD completion:   3 sec
+
+Writing NGCBUILD log file
+"E:/Hardware/About-Hardware/Documents/Code/ISE14.3-Project/JS1/JS/top_cs.blc"...

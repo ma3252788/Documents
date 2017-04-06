@@ -336,7 +336,8 @@ begin
 												if( (cross_output == 1)&&(( (line_cnt == 144) && (qfv_cnt_2 >= 335) && (qfv_cnt_2 < 385) ) || ( (qfv_cnt_2 == 360) && (line_cnt > 134) && (line_cnt <= 154) )) )//画电十字
 //														if( (cross_output == 1)&&((line_cnt == 144) || (qfv_cnt_2 == 360)))//画电十字
 													begin
-														MP <= 8'h80; 	//色差分量置零，才能输出黑白十字	
+														MP <= 8'h80; 	//色差分量置零，才能输出黑白十字	改了这个。。
+														//改了这个。。
 //																addr_saaSRAM <= (20'h32A00*field) + (line_cnt*720) + qfv_cnt_2; //读出亮度分量，以决定黑或白十字
 													end
 												else	//变倍 //变倍和画中画都是8个像素为一组考虑CbYCrY的重新组合														 														
@@ -360,57 +361,15 @@ begin
 															end
 														else
 														if (qfv_cnt%8==4)
-															MP <= Cb;
+															MP <=189; //Cb;
 														else
 														if	(qfv_cnt%8==6)
 															MP <= Cr;
 													end														 
-//														else	//画中画
-//														if(video_pip_dly1)
-//															begin
-//																if(line_cnt < 96 && qfv_cnt_2 < 240)
-//																	begin	
-//																		if(qfv_cnt%8==0) 	
-//																			begin													
-//																				MP <= data_saaSRAM[7:0];//Cb
-//																				Cb <= data_saaSRAM[7:0];//保存Cb,Y0分量,下一组像素用																																					
-//																				Y0 <= data_saaSRAM[15:8];  
-////																				addr_saaSRAM <= (20'h32A00*field) + 86700 + ((line_cnt>>1)*720) + (qfv_cnt_2>>1);//取出第一个的Cb和Y分量
-//																				addr_saaSRAM_buff<= addr_saaSRAM;
-//																			end
-//																		else
-//																		if (qfv_cnt%8==2)
-//																			begin
-//																				MP <=data_saaSRAM[7:0];//Cr;
-//																				Cr <= data_saaSRAM[7:0];//保存Cr,Y1分量,下一组像素用																																					
-//																				Y1 <= data_saaSRAM[15:8]; 
-////																				addr_saaSRAM <= addr_saaSRAM + 1'b1;	//取出下一个Cr分量
-//																			end
-//																		else
-//																		if (qfv_cnt%8==4)
-//																			MP <= Cb;
-//																		else
-//																		if	(qfv_cnt%8==6)
-//																			MP <= Cr;
-//																	 end
-//																else
-//																	begin	
-//																		if( (((line_cnt == 120)||(line_cnt == 168)) && (((qfv_cnt_2 >= 300) && (qfv_cnt_2 < 310))||((qfv_cnt_2 > 410) && (qfv_cnt_2 <= 420)))) || (((qfv_cnt_2 == 300)||(qfv_cnt_2 == 400)) && (((line_cnt >= 120) && (line_cnt < 125))||((line_cnt > 163) && (line_cnt <= 168)))))
-//																		begin
-//																			MP <= 8'h80; 	//输出
-//																		end
-//																		else
-//																		begin														
-//																		MP <= data_saaSRAM[7:0];
-////																		addr_saaSRAM <= (20'h32A00*field) + (line_cnt*720) + qfv_cnt_2; 
-//																		end											
-//																	end	
-//															end
+
 												else //正常
 													begin															
-														MP <= 22;//data_saaSRAM[7:0];//CbCr;	//为了解决倒像时CB,CR错位，因此这一次的色差分量延迟到下一次
-														//CbCr <= data_saaSRAM[7:0];
-//																addr_saaSRAM <= (20'h32A00*field) + (line_cnt*720) + qfv_cnt_2; 											
+														MP <= 49;// data_saaSRAM[7:0];//CbCr;	//为了解决倒像时CB,CR错位，因此这一次的色差分量延迟到下一次
 													end																		
 											end	
 										else		//亮度分量
@@ -443,44 +402,10 @@ begin
 																MP <= Y1;																			
 															end		
 													end
-//														else
-//														if(video_pip_dly1)
-//															begin
-//																if(line_cnt < 96 && qfv_cnt_2 < 240)
-//																	begin
-//																		if(qfv_cnt%8==1) 																	
-//																			begin																			
-//																				MP <= Y0;//赋值																			
-//																			end
-//																		else
-//																		if(qfv_cnt%8==3)	 
-//																			begin
-//																				MP <= Y0;																			
-//																			end
-//																		else
-//																		if(qfv_cnt%8==5)	 
-//																			begin
-//																				MP <= Y1;																			
-//																			end
-//																		else
-//																		if(qfv_cnt%8==7)	 
-//																			begin
-//																				MP <= Y1;																			
-//																			end												
-//																	end
-//																else
-//																	begin
-//																		if( (((line_cnt == 120)||(line_cnt == 168)) && (((qfv_cnt_2 >= 300) && (qfv_cnt_2 < 310))||((qfv_cnt_2 > 410) && (qfv_cnt_2 <= 420)))) || (((qfv_cnt_2 == 300)||(qfv_cnt_2 == 420)) && (((line_cnt >= 120) && (line_cnt < 125))||((line_cnt > 163) && (line_cnt <= 168)))))
-//																		begin
-//																	  		MP <= 220; 	//输出框
-//																		end
-//																		else
-//																			MP <= data_saaSRAM[15:8];																
-//																	end	
-//															end														
+													
 												else
 													begin
-														MP <= 26;//data_saaSRAM[15:8];																
+														MP <= data_saaSRAM[15:8];//调节这个地方可以改变亮度													
 													end			
 											end
 

@@ -1,0 +1,5 @@
+verilog work "i2c_master_bit_ctrl.v"
+verilog work "i2c_master_byte_ctrl.v"
+verilog work "i2c_master_top.v"
+verilog work "I2C_Ctrl.v"
+verilog work "adv7180_config_top.v"

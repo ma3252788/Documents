@@ -1,0 +1,757 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Sat Apr 01 11:41:01 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ADV7179_SCRESET" LOCATE = SITE "AD12" LEVEL 1;
+COMP "ADV7179_TTXREQ" LOCATE = SITE "AC13" LEVEL 1;
+COMP "rst" LOCATE = SITE "M6" LEVEL 1;
+COMP "SRAM_A_CE" LOCATE = SITE "V24" LEVEL 1;
+COMP "SRAM_B_CE" LOCATE = SITE "H3" LEVEL 1;
+COMP "SRAM_A_LB" LOCATE = SITE "J23" LEVEL 1;
+COMP "SRAM_B_LB" LOCATE = SITE "Y4" LEVEL 1;
+COMP "SRAM_A_OE" LOCATE = SITE "H23" LEVEL 1;
+COMP "SRAM_B_OE" LOCATE = SITE "W4" LEVEL 1;
+COMP "SRAM_A_UB" LOCATE = SITE "H24" LEVEL 1;
+COMP "SRAM_A_WE" LOCATE = SITE "T25" LEVEL 1;
+COMP "SRAM_B_UB" LOCATE = SITE "V3" LEVEL 1;
+COMP "SRAM_B_WE" LOCATE = SITE "F1" LEVEL 1;
+COMP "clk_59m" LOCATE = SITE "C14" LEVEL 1;
+COMP "video_zoom" LOCATE = SITE "AA5" LEVEL 1;
+COMP "cross_output" LOCATE = SITE "Y5" LEVEL 1;
+COMP "SRAM_A_A<0>" LOCATE = SITE "W24" LEVEL 1;
+COMP "SRAM_A_A<1>" LOCATE = SITE "Y23" LEVEL 1;
+COMP "SRAM_A_A<2>" LOCATE = SITE "K21" LEVEL 1;
+COMP "SRAM_A_A<3>" LOCATE = SITE "U22" LEVEL 1;
+COMP "SRAM_A_A<4>" LOCATE = SITE "V22" LEVEL 1;
+COMP "SRAM_A_A<5>" LOCATE = SITE "C26" LEVEL 1;
+COMP "SRAM_A_A<6>" LOCATE = SITE "F23" LEVEL 1;
+COMP "SRAM_A_A<7>" LOCATE = SITE "F24" LEVEL 1;
+COMP "SRAM_A_A<8>" LOCATE = SITE "G23" LEVEL 1;
+COMP "SRAM_A_A<9>" LOCATE = SITE "E25" LEVEL 1;
+COMP "SRAM_A_D<0>" LOCATE = SITE "AA24" LEVEL 1;
+COMP "SRAM_A_D<1>" LOCATE = SITE "AA23" LEVEL 1;
+COMP "SRAM_A_D<2>" LOCATE = SITE "AB24" LEVEL 1;
+COMP "SRAM_A_D<3>" LOCATE = SITE "AB23" LEVEL 1;
+COMP "SRAM_B_A<0>" LOCATE = SITE "H4" LEVEL 1;
+COMP "SRAM_A_D<4>" LOCATE = SITE "U26" LEVEL 1;
+COMP "SRAM_B_A<1>" LOCATE = SITE "G4" LEVEL 1;
+COMP "SRAM_A_D<5>" LOCATE = SITE "U25" LEVEL 1;
+COMP "SRAM_B_A<2>" LOCATE = SITE "F3" LEVEL 1;
+COMP "SRAM_A_D<6>" LOCATE = SITE "V25" LEVEL 1;
+COMP "SRAM_B_A<3>" LOCATE = SITE "F4" LEVEL 1;
+COMP "SRAM_A_D<7>" LOCATE = SITE "W26" LEVEL 1;
+COMP "SRAM_B_A<4>" LOCATE = SITE "E3" LEVEL 1;
+COMP "SRAM_A_D<8>" LOCATE = SITE "E26" LEVEL 1;
+COMP "SRAM_B_A<5>" LOCATE = SITE "M5" LEVEL 1;
+COMP "SRAM_A_D<9>" LOCATE = SITE "D25" LEVEL 1;
+COMP "SRAM_B_A<6>" LOCATE = SITE "L5" LEVEL 1;
+COMP "SRAM_B_A<7>" LOCATE = SITE "K5" LEVEL 1;
+COMP "SRAM_B_A<8>" LOCATE = SITE "W3" LEVEL 1;
+COMP "SRAM_B_A<9>" LOCATE = SITE "U1" LEVEL 1;
+COMP "SRAM_B_D<0>" LOCATE = SITE "J4" LEVEL 1;
+COMP "SRAM_B_D<1>" LOCATE = SITE "J3" LEVEL 1;
+COMP "SRAM_B_D<2>" LOCATE = SITE "K4" LEVEL 1;
+COMP "SRAM_B_D<3>" LOCATE = SITE "K3" LEVEL 1;
+COMP "SRAM_B_D<4>" LOCATE = SITE "D1" LEVEL 1;
+COMP "SRAM_B_D<5>" LOCATE = SITE "D2" LEVEL 1;
+COMP "SRAM_B_D<6>" LOCATE = SITE "E1" LEVEL 1;
+COMP "SRAM_B_D<7>" LOCATE = SITE "E2" LEVEL 1;
+COMP "SRAM_B_D<8>" LOCATE = SITE "W2" LEVEL 1;
+COMP "SRAM_B_D<9>" LOCATE = SITE "W1" LEVEL 1;
+COMP "ADV7180_P<0>" LOCATE = SITE "AF14" LEVEL 1;
+COMP "ADV7180_P<1>" LOCATE = SITE "AF13" LEVEL 1;
+COMP "ADV7180_P<2>" LOCATE = SITE "AF16" LEVEL 1;
+COMP "ADV7180_P<3>" LOCATE = SITE "AF17" LEVEL 1;
+COMP "ADV7180_P<4>" LOCATE = SITE "AF21" LEVEL 1;
+COMP "ADV7180_P<5>" LOCATE = SITE "AF22" LEVEL 1;
+COMP "ADV7180_P<6>" LOCATE = SITE "AF23" LEVEL 1;
+COMP "ADV7180_P<7>" LOCATE = SITE "AE23" LEVEL 1;
+COMP "ADV7179_P<0>" LOCATE = SITE "AD14" LEVEL 1;
+COMP "ADV7179_P<1>" LOCATE = SITE "AD15" LEVEL 1;
+COMP "ADV7179_P<2>" LOCATE = SITE "AC16" LEVEL 1;
+COMP "ADV7179_P<3>" LOCATE = SITE "AC17" LEVEL 1;
+COMP "ADV7179_P<4>" LOCATE = SITE "AD17" LEVEL 1;
+COMP "ADV7179_P<5>" LOCATE = SITE "AE12" LEVEL 1;
+COMP "ADV7179_P<6>" LOCATE = SITE "AF11" LEVEL 1;
+COMP "ADV7179_P<7>" LOCATE = SITE "AE11" LEVEL 1;
+COMP "enhance_enable" LOCATE = SITE "W5" LEVEL 1;
+COMP "ttl_en" LOCATE = SITE "V5" LEVEL 1;
+COMP "ADV7180_LLC" LOCATE = SITE "AE14" LEVEL 1;
+COMP "ADV7180_INT" LOCATE = SITE "AC19" LEVEL 1;
+COMP "ADV7180_SDA" LOCATE = SITE "AE24" LEVEL 1;
+COMP "ADV7180_SCL" LOCATE = SITE "AF24" LEVEL 1;
+COMP "ADV7180_SFL" LOCATE = SITE "AE21" LEVEL 1;
+COMP "ADV7180_RST" LOCATE = SITE "AC18" LEVEL 1;
+COMP "ADV7179_CLK" LOCATE = SITE "AE13" LEVEL 1;
+COMP "ADV7179_SDA" LOCATE = SITE "AC11" LEVEL 1;
+COMP "ADV7179_SCL" LOCATE = SITE "AD10" LEVEL 1;
+COMP "ADV7179_RST" LOCATE = SITE "AC8" LEVEL 1;
+COMP "ADV7179_TTX" LOCATE = SITE "AD13" LEVEL 1;
+COMP "SRAM_A_A<10>" LOCATE = SITE "F26" LEVEL 1;
+COMP "SRAM_A_A<11>" LOCATE = SITE "F25" LEVEL 1;
+COMP "SRAM_A_A<12>" LOCATE = SITE "G26" LEVEL 1;
+COMP "SRAM_A_A<13>" LOCATE = SITE "G25" LEVEL 1;
+COMP "SRAM_A_A<14>" LOCATE = SITE "H26" LEVEL 1;
+COMP "SRAM_A_A<15>" LOCATE = SITE "P26" LEVEL 1;
+COMP "SRAM_A_A<16>" LOCATE = SITE "P25" LEVEL 1;
+COMP "SRAM_A_A<17>" LOCATE = SITE "R26" LEVEL 1;
+COMP "SRAM_A_A<18>" LOCATE = SITE "R25" LEVEL 1;
+COMP "SRAM_A_A<19>" LOCATE = SITE "T26" LEVEL 1;
+COMP "SRAM_A_D<10>" LOCATE = SITE "D26" LEVEL 1;
+COMP "SRAM_A_D<11>" LOCATE = SITE "C25" LEVEL 1;
+COMP "SRAM_A_D<12>" LOCATE = SITE "L23" LEVEL 1;
+COMP "SRAM_A_D<13>" LOCATE = SITE "K24" LEVEL 1;
+COMP "SRAM_A_D<14>" LOCATE = SITE "K23" LEVEL 1;
+COMP "SRAM_A_D<15>" LOCATE = SITE "J24" LEVEL 1;
+COMP "SRAM_B_A<10>" LOCATE = SITE "T2" LEVEL 1;
+COMP "SRAM_B_A<11>" LOCATE = SITE "T1" LEVEL 1;
+COMP "SRAM_B_A<12>" LOCATE = SITE "R2" LEVEL 1;
+COMP "SRAM_B_A<13>" LOCATE = SITE "R1" LEVEL 1;
+COMP "SRAM_B_A<14>" LOCATE = SITE "P2" LEVEL 1;
+COMP "SRAM_B_A<15>" LOCATE = SITE "H2" LEVEL 1;
+COMP "SRAM_B_A<16>" LOCATE = SITE "H1" LEVEL 1;
+COMP "SRAM_B_A<17>" LOCATE = SITE "G2" LEVEL 1;
+COMP "SRAM_B_A<18>" LOCATE = SITE "G1" LEVEL 1;
+COMP "SRAM_B_A<19>" LOCATE = SITE "F2" LEVEL 1;
+COMP "SRAM_B_D<10>" LOCATE = SITE "V2" LEVEL 1;
+COMP "SRAM_B_D<11>" LOCATE = SITE "U2" LEVEL 1;
+COMP "SRAM_B_D<12>" LOCATE = SITE "AB4" LEVEL 1;
+COMP "SRAM_B_D<13>" LOCATE = SITE "AB3" LEVEL 1;
+COMP "SRAM_B_D<14>" LOCATE = SITE "AA4" LEVEL 1;
+COMP "SRAM_B_D<15>" LOCATE = SITE "AA3" LEVEL 1;
+COMP "ADV7180_HS" LOCATE = SITE "AE20" LEVEL 1;
+COMP "ADV7180_VS" LOCATE = SITE "AD19" LEVEL 1;
+COMP "ADV7179_HS" LOCATE = SITE "AC10" LEVEL 1;
+COMP "ADV7179_VS" LOCATE = SITE "AD9" LEVEL 1;
+COMP "ADV7180_PWDOWN" LOCATE = SITE "AD18" LEVEL 1;
+COMP "ADV7179_BLANK" LOCATE = SITE "AC9" LEVEL 1;
+NET "clk27M_DCMed1" BEL "clk27M_DCMed_BUFG.GCLKMUX" USELOCALCONNECT;
+NET "clk59M_DCMed1" BEL "clk59M_DCMed_BUFG.GCLKMUX" USELOCALCONNECT;
+PIN NEW_table_RAM/B6.A_pins<12> = BEL "NEW_table_RAM/B6.A" PINNAME CLKA;
+PIN NEW_table_RAM/B6.B_pins<12> = BEL "NEW_table_RAM/B6.B" PINNAME CLKB;
+PIN
+        U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s16_if.ram_rt1_s1_s16_i.B_pins<11>
+        = BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s16_if.ram_rt1_s1_s16_i.B"
+        PINNAME CLKB;
+TIMEGRP D_CLK = BEL "RSTW" BEL "reset_cnt_0" BEL "reset_cnt_1" BEL
+        "reset_cnt_2" BEL "reset_cnt_3" BEL "reset_cnt_4" BEL "reset_cnt_5"
+        BEL "reset_cnt_6" BEL "reset_cnt_7" BEL "reset_cnt_8" BEL
+        "reset_cnt_9" BEL "reset_cnt_10" BEL "reset_cnt_11" BEL "reset_cnt_12"
+        BEL "reset_cnt_13" BEL "reset_cnt_14" BEL "reset_cnt_15" BEL
+        "reset_cnt_16" BEL "reset_cnt_17" BEL "reset_cnt_18" BEL
+        "reset_cnt_19" BEL "reset_cnt_20" BEL "reset_cnt_21" BEL
+        "reset_cnt_22" BEL "reset_cnt_23" BEL "reset_cnt_24" BEL
+        "reset_cnt_25" BEL "adv7179_video_out_module/STATE_2" BEL
+        "adv7179_video_out_module/STATE_0" BEL
+        "adv7179_video_out_module/STATE_1" BEL
+        "adv7179_video_out_module/STATE_3" BEL
+        "adv7179_video_out_module/STATE_4" BEL
+        "adv7179_video_out_module/STATE_7" BEL
+        "adv7179_video_out_module/STATE_5" BEL
+        "adv7179_video_out_module/STATE_6" BEL
+        "adv7179_video_out_module/STATE_8" BEL
+        "adv7179_video_out_module/STATE_9" BEL
+        "adv7179_video_out_module/nextSTATE_0" BEL
+        "adv7179_video_out_module/nextSTATE_4" BEL
+        "adv7179_video_out_module/nextSTATE_7" BEL
+        "adv7179_video_out_module/nextSTATE_5" BEL
+        "adv7179_video_out_module/nextSTATE_8" BEL
+        "adv7179_video_out_module/Y0_0" BEL "adv7179_video_out_module/Y0_1"
+        BEL "adv7179_video_out_module/Y0_2" BEL
+        "adv7179_video_out_module/Y0_3" BEL "adv7179_video_out_module/Y0_4"
+        BEL "adv7179_video_out_module/Y0_5" BEL
+        "adv7179_video_out_module/Y0_6" BEL "adv7179_video_out_module/Y0_7"
+        BEL "adv7179_video_out_module/Y1_0" BEL
+        "adv7179_video_out_module/Y1_1" BEL "adv7179_video_out_module/Y1_2"
+        BEL "adv7179_video_out_module/Y1_3" BEL
+        "adv7179_video_out_module/Y1_4" BEL "adv7179_video_out_module/Y1_5"
+        BEL "adv7179_video_out_module/Y1_6" BEL
+        "adv7179_video_out_module/Y1_7" BEL "adv7179_video_out_module/Cr_0"
+        BEL "adv7179_video_out_module/Cr_1" BEL
+        "adv7179_video_out_module/Cr_2" BEL "adv7179_video_out_module/Cr_3"
+        BEL "adv7179_video_out_module/Cr_4" BEL
+        "adv7179_video_out_module/Cr_5" BEL "adv7179_video_out_module/Cr_6"
+        BEL "adv7179_video_out_module/Cr_7" BEL
+        "adv7179_video_out_module/video_zoom_dly1" BEL
+        "adv7179_video_out_module/qd_dly1_7" BEL
+        "adv7179_video_out_module/qd_dly1_6" BEL
+        "adv7179_video_out_module/qd_dly1_5" BEL
+        "adv7179_video_out_module/qd_dly1_4" BEL
+        "adv7179_video_out_module/qd_dly1_3" BEL
+        "adv7179_video_out_module/qd_dly1_2" BEL
+        "adv7179_video_out_module/qd_dly1_1" BEL
+        "adv7179_video_out_module/qd_dly1_0" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_19" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_18" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_17" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_16" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_15" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_14" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_13" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_12" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_11" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_10" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_9" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_8" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_7" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_6" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_5" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_4" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_3" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_2" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_1" BEL
+        "adv7179_video_out_module/addr_saaSRAM_buff_0" BEL
+        "adv7179_video_out_module/ce_saaSRAM" BEL
+        "adv7179_video_out_module/MP_7" BEL "adv7179_video_out_module/MP_6"
+        BEL "adv7179_video_out_module/MP_5" BEL
+        "adv7179_video_out_module/MP_4" BEL "adv7179_video_out_module/MP_3"
+        BEL "adv7179_video_out_module/MP_2" BEL
+        "adv7179_video_out_module/MP_1" BEL "adv7179_video_out_module/MP_0"
+        BEL "adv7179_video_out_module/line_cnt_8" BEL
+        "adv7179_video_out_module/line_cnt_7" BEL
+        "adv7179_video_out_module/line_cnt_6" BEL
+        "adv7179_video_out_module/line_cnt_5" BEL
+        "adv7179_video_out_module/line_cnt_4" BEL
+        "adv7179_video_out_module/line_cnt_3" BEL
+        "adv7179_video_out_module/line_cnt_2" BEL
+        "adv7179_video_out_module/line_cnt_1" BEL
+        "adv7179_video_out_module/line_cnt_0" BEL
+        "adv7179_video_out_module/qfv" BEL
+        "adv7179_video_out_module/qfv_cnt_10" BEL
+        "adv7179_video_out_module/qfv_cnt_9" BEL
+        "adv7179_video_out_module/qfv_cnt_8" BEL
+        "adv7179_video_out_module/qfv_cnt_7" BEL
+        "adv7179_video_out_module/qfv_cnt_6" BEL
+        "adv7179_video_out_module/qfv_cnt_5" BEL
+        "adv7179_video_out_module/qfv_cnt_4" BEL
+        "adv7179_video_out_module/qfv_cnt_3" BEL
+        "adv7179_video_out_module/qfv_cnt_2" BEL
+        "adv7179_video_out_module/qfv_cnt_1" BEL
+        "adv7179_video_out_module/qfv_cnt_0" BEL
+        "adv7179_video_out_module/video_zoom_dly" BEL
+        "adv7179_video_out_module/qd_dly_7" BEL
+        "adv7179_video_out_module/qd_dly_6" BEL
+        "adv7179_video_out_module/qd_dly_5" BEL
+        "adv7179_video_out_module/qd_dly_4" BEL
+        "adv7179_video_out_module/qd_dly_3" BEL
+        "adv7179_video_out_module/qd_dly_2" BEL
+        "adv7179_video_out_module/qd_dly_1" BEL
+        "adv7179_video_out_module/qd_dly_0" BEL "SAA7113_decode_uut/State_0"
+        BEL "SAA7113_decode_uut/State_1" BEL "SAA7113_decode_uut/State_2" BEL
+        "SAA7113_decode_uut/State_3" BEL "SAA7113_decode_uut/State_6" BEL
+        "SAA7113_decode_uut/State_4" BEL "SAA7113_decode_uut/State_5" BEL
+        "SAA7113_decode_uut/State_9" BEL "SAA7113_decode_uut/State_7" BEL
+        "SAA7113_decode_uut/State_8" BEL "SAA7113_decode_uut/State_12" BEL
+        "SAA7113_decode_uut/State_10" BEL "SAA7113_decode_uut/State_11" BEL
+        "SAA7113_decode_uut/returnState_0" BEL
+        "SAA7113_decode_uut/returnState_4" BEL
+        "SAA7113_decode_uut/returnState_5" BEL
+        "SAA7113_decode_uut/returnState_10" BEL
+        "SAA7113_decode_uut/returnState_11" BEL "SAA7113_decode_uut/ldata_8"
+        BEL "SAA7113_decode_uut/ldata_9" BEL "SAA7113_decode_uut/ldata_11" BEL
+        "SAA7113_decode_uut/ldata_12" BEL "SAA7113_decode_uut/ldata_10" BEL
+        "SAA7113_decode_uut/ldata_14" BEL "SAA7113_decode_uut/ldata_15" BEL
+        "SAA7113_decode_uut/ldata_13" BEL "SAA7113_decode_uut/ldata_1" BEL
+        "SAA7113_decode_uut/ldata_2" BEL "SAA7113_decode_uut/ldata_0" BEL
+        "SAA7113_decode_uut/ldata_4" BEL "SAA7113_decode_uut/ldata_5" BEL
+        "SAA7113_decode_uut/ldata_3" BEL "SAA7113_decode_uut/ldata_7" BEL
+        "SAA7113_decode_uut/addr_4newtable_tmppp_7" BEL
+        "SAA7113_decode_uut/addr_4newtable_tmppp_6" BEL
+        "SAA7113_decode_uut/addr_4newtable_tmppp_5" BEL
+        "SAA7113_decode_uut/addr_4newtable_tmppp_4" BEL
+        "SAA7113_decode_uut/addr_4newtable_tmppp_3" BEL
+        "SAA7113_decode_uut/addr_4newtable_tmppp_2" BEL
+        "SAA7113_decode_uut/addr_4newtable_tmppp_1" BEL
+        "SAA7113_decode_uut/addr_4newtable_tmppp_0" BEL
+        "SAA7113_decode_uut/ldata_6" BEL "SAA7113_decode_uut/laddr_19" BEL
+        "SAA7113_decode_uut/laddr_18" BEL "SAA7113_decode_uut/laddr_17" BEL
+        "SAA7113_decode_uut/laddr_16" BEL "SAA7113_decode_uut/laddr_15" BEL
+        "SAA7113_decode_uut/laddr_14" BEL "SAA7113_decode_uut/laddr_13" BEL
+        "SAA7113_decode_uut/laddr_12" BEL "SAA7113_decode_uut/laddr_11" BEL
+        "SAA7113_decode_uut/laddr_10" BEL "SAA7113_decode_uut/laddr_9" BEL
+        "SAA7113_decode_uut/laddr_8" BEL "SAA7113_decode_uut/laddr_7" BEL
+        "SAA7113_decode_uut/laddr_6" BEL "SAA7113_decode_uut/laddr_5" BEL
+        "SAA7113_decode_uut/laddr_4" BEL "SAA7113_decode_uut/laddr_3" BEL
+        "SAA7113_decode_uut/laddr_2" BEL "SAA7113_decode_uut/laddr_1" BEL
+        "SAA7113_decode_uut/laddr_0" BEL "SAA7113_decode_uut/LB_data_7" BEL
+        "SAA7113_decode_uut/LB_data_6" BEL "SAA7113_decode_uut/LB_data_5" BEL
+        "SAA7113_decode_uut/LB_data_4" BEL "SAA7113_decode_uut/LB_data_3" BEL
+        "SAA7113_decode_uut/LB_data_2" BEL "SAA7113_decode_uut/LB_data_1" BEL
+        "SAA7113_decode_uut/LB_data_0" BEL "SAA7113_decode_uut/RAM_CE" BEL
+        "SAA7113_decode_uut/RAM_WE" BEL "SAA7113_decode_uut/field" BEL
+        "SAA7113_decode_uut/cntr_vert_9" BEL "SAA7113_decode_uut/cntr_vert_8"
+        BEL "SAA7113_decode_uut/cntr_vert_7" BEL
+        "SAA7113_decode_uut/cntr_vert_6" BEL "SAA7113_decode_uut/cntr_vert_5"
+        BEL "SAA7113_decode_uut/cntr_vert_4" BEL
+        "SAA7113_decode_uut/cntr_vert_3" BEL "SAA7113_decode_uut/cntr_vert_2"
+        BEL "SAA7113_decode_uut/cntr_vert_1" BEL
+        "SAA7113_decode_uut/cntr_vert_0" BEL "SAA7113_decode_uut/flag" BEL
+        "SAA7113_decode_uut/cntr_hori_9" BEL "SAA7113_decode_uut/cntr_hori_8"
+        BEL "SAA7113_decode_uut/cntr_hori_7" BEL
+        "SAA7113_decode_uut/cntr_hori_6" BEL "SAA7113_decode_uut/cntr_hori_5"
+        BEL "SAA7113_decode_uut/cntr_hori_4" BEL
+        "SAA7113_decode_uut/cntr_hori_3" BEL "SAA7113_decode_uut/cntr_hori_2"
+        BEL "SAA7113_decode_uut/cntr_hori_1" BEL
+        "SAA7113_decode_uut/cntr_hori_0" BEL
+        "Equilization_alg_uut/state_rnm0_2" BEL
+        "Equilization_alg_uut/state_rnm0_0" BEL
+        "Equilization_alg_uut/state_rnm0_1" BEL
+        "Equilization_alg_uut/state_rnm0_3" BEL
+        "Equilization_alg_uut/state_rnm0_4" BEL
+        "Equilization_alg_uut/state_rnm0_7" BEL
+        "Equilization_alg_uut/state_rnm0_5" BEL
+        "Equilization_alg_uut/state_rnm0_6" BEL
+        "Equilization_alg_uut/state_rnm0_8" BEL
+        "Equilization_alg_uut/nextSTATE_0" BEL
+        "Equilization_alg_uut/nextSTATE_4" BEL
+        "Equilization_alg_uut/nextSTATE_7" BEL
+        "Equilization_alg_uut/nextSTATE_5" BEL
+        "Equilization_alg_uut/nextSTATE_8" BEL "Equilization_alg_uut/State_16"
+        BEL "Equilization_alg_uut/State_15" BEL
+        "Equilization_alg_uut/State_14" BEL "Equilization_alg_uut/State_13"
+        BEL "Equilization_alg_uut/State_12" BEL
+        "Equilization_alg_uut/State_11" BEL "Equilization_alg_uut/State_10"
+        BEL "Equilization_alg_uut/State_9" BEL "Equilization_alg_uut/State_8"
+        BEL "Equilization_alg_uut/State_7" BEL "Equilization_alg_uut/State_6"
+        BEL "Equilization_alg_uut/State_5" BEL "Equilization_alg_uut/State_4"
+        BEL "Equilization_alg_uut/State_3" BEL "Equilization_alg_uut/State_2"
+        BEL "Equilization_alg_uut/State_1" BEL "Equilization_alg_uut/State_0"
+        BEL "Equilization_alg_uut/SState_2" BEL
+        "Equilization_alg_uut/SState_3" BEL
+        "Equilization_alg_uut/addr_histRAM_a_1" BEL
+        "Equilization_alg_uut/addr_histRAM_a_2" BEL
+        "Equilization_alg_uut/addr_histRAM_a_0" BEL
+        "Equilization_alg_uut/addr_histRAM_a_4" BEL
+        "Equilization_alg_uut/addr_histRAM_a_5" BEL
+        "Equilization_alg_uut/addr_histRAM_a_3" BEL
+        "Equilization_alg_uut/addr_histRAM_a_7" BEL
+        "Equilization_alg_uut/addr_histRAM_a_6" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_31" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_30" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_29" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_28" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_27" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_26" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_25" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_24" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_23" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_22" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_21" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_20" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_19" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_18" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_17" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_16" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_15" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_14" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_13" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_12" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_11" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_10" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_9" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_8" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_7" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_6" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_5" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_4" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_3" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_2" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_1" BEL
+        "Equilization_alg_uut/Mtridata_data_tohistRAM_a_0" BEL
+        "Equilization_alg_uut/we_histRAM_a" BEL
+        "Equilization_alg_uut/new_gray_7" BEL
+        "Equilization_alg_uut/new_gray_6" BEL
+        "Equilization_alg_uut/new_gray_5" BEL
+        "Equilization_alg_uut/new_gray_4" BEL
+        "Equilization_alg_uut/new_gray_3" BEL
+        "Equilization_alg_uut/new_gray_2" BEL
+        "Equilization_alg_uut/new_gray_1" BEL
+        "Equilization_alg_uut/new_gray_0" BEL
+        "Equilization_alg_uut/Mtrien_data_tohistRAM_b" BEL
+        "Equilization_alg_uut/aclr" BEL "Equilization_alg_uut/cnt_dly_5" BEL
+        "Equilization_alg_uut/cnt_dly_4" BEL "Equilization_alg_uut/cnt_dly_3"
+        BEL "Equilization_alg_uut/cnt_dly_2" BEL
+        "Equilization_alg_uut/cnt_dly_1" BEL "Equilization_alg_uut/cnt_dly_0"
+        BEL "Equilization_alg_uut/we_histRAM_b" BEL
+        "Equilization_alg_uut/addr_histRAM_b_7" BEL
+        "Equilization_alg_uut/addr_histRAM_b_6" BEL
+        "Equilization_alg_uut/addr_histRAM_b_5" BEL
+        "Equilization_alg_uut/addr_histRAM_b_4" BEL
+        "Equilization_alg_uut/addr_histRAM_b_3" BEL
+        "Equilization_alg_uut/addr_histRAM_b_2" BEL
+        "Equilization_alg_uut/addr_histRAM_b_1" BEL
+        "Equilization_alg_uut/addr_histRAM_b_0" BEL
+        "Equilization_alg_uut/qqq_25" BEL "Equilization_alg_uut/qqq_24" BEL
+        "Equilization_alg_uut/qqq_23" BEL "Equilization_alg_uut/qqq_22" BEL
+        "Equilization_alg_uut/qqq_21" BEL "Equilization_alg_uut/qqq_20" BEL
+        "Equilization_alg_uut/qqq_19" BEL "Equilization_alg_uut/qqq_18" BEL
+        "Equilization_alg_uut/qqq_17" BEL "Equilization_alg_uut/qqq_16" BEL
+        "Equilization_alg_uut/qqq_15" BEL "Equilization_alg_uut/qqq_14" BEL
+        "Equilization_alg_uut/qqq_13" BEL "Equilization_alg_uut/qqq_12" BEL
+        "Equilization_alg_uut/qqq_11" BEL "Equilization_alg_uut/qqq_10" BEL
+        "Equilization_alg_uut/qqq_9" BEL "Equilization_alg_uut/qqq_8" BEL
+        "Equilization_alg_uut/qqq_7" BEL "Equilization_alg_uut/qqq_6" BEL
+        "Equilization_alg_uut/qqq_5" BEL "Equilization_alg_uut/qqq_4" BEL
+        "Equilization_alg_uut/qqq_3" BEL "Equilization_alg_uut/qqq_2" BEL
+        "Equilization_alg_uut/qqq_1" BEL "Equilization_alg_uut/qqq_0" BEL
+        "Equilization_alg_uut/max_gray_buff_7" BEL
+        "Equilization_alg_uut/max_gray_buff_6" BEL
+        "Equilization_alg_uut/max_gray_buff_5" BEL
+        "Equilization_alg_uut/max_gray_buff_4" BEL
+        "Equilization_alg_uut/max_gray_buff_3" BEL
+        "Equilization_alg_uut/max_gray_buff_2" BEL
+        "Equilization_alg_uut/max_gray_buff_1" BEL
+        "Equilization_alg_uut/max_gray_buff_0" BEL
+        "Equilization_alg_uut/ce_histRAM_b" BEL
+        "Equilization_alg_uut/delta_hist_17" BEL
+        "Equilization_alg_uut/delta_hist_16" BEL
+        "Equilization_alg_uut/delta_hist_15" BEL
+        "Equilization_alg_uut/delta_hist_14" BEL
+        "Equilization_alg_uut/delta_hist_13" BEL
+        "Equilization_alg_uut/delta_hist_12" BEL
+        "Equilization_alg_uut/delta_hist_11" BEL
+        "Equilization_alg_uut/delta_hist_10" BEL
+        "Equilization_alg_uut/delta_hist_9" BEL
+        "Equilization_alg_uut/delta_hist_8" BEL
+        "Equilization_alg_uut/delta_hist_7" BEL
+        "Equilization_alg_uut/delta_hist_6" BEL
+        "Equilization_alg_uut/delta_hist_5" BEL
+        "Equilization_alg_uut/delta_hist_4" BEL
+        "Equilization_alg_uut/delta_hist_3" BEL
+        "Equilization_alg_uut/delta_hist_2" BEL
+        "Equilization_alg_uut/delta_hist_1" BEL
+        "Equilization_alg_uut/delta_hist_0" BEL
+        "Equilization_alg_uut/grayLevel_7" BEL
+        "Equilization_alg_uut/grayLevel_6" BEL
+        "Equilization_alg_uut/grayLevel_5" BEL
+        "Equilization_alg_uut/grayLevel_4" BEL
+        "Equilization_alg_uut/grayLevel_3" BEL
+        "Equilization_alg_uut/grayLevel_2" BEL
+        "Equilization_alg_uut/grayLevel_1" BEL
+        "Equilization_alg_uut/grayLevel_0" BEL
+        "Equilization_alg_uut/hist_tmp_17" BEL
+        "Equilization_alg_uut/hist_tmp_16" BEL
+        "Equilization_alg_uut/hist_tmp_15" BEL
+        "Equilization_alg_uut/hist_tmp_14" BEL
+        "Equilization_alg_uut/hist_tmp_13" BEL
+        "Equilization_alg_uut/hist_tmp_12" BEL
+        "Equilization_alg_uut/hist_tmp_11" BEL
+        "Equilization_alg_uut/hist_tmp_10" BEL
+        "Equilization_alg_uut/hist_tmp_9" BEL
+        "Equilization_alg_uut/hist_tmp_8" BEL
+        "Equilization_alg_uut/hist_tmp_7" BEL
+        "Equilization_alg_uut/hist_tmp_6" BEL
+        "Equilization_alg_uut/hist_tmp_5" BEL
+        "Equilization_alg_uut/hist_tmp_4" BEL
+        "Equilization_alg_uut/hist_tmp_3" BEL
+        "Equilization_alg_uut/hist_tmp_2" BEL
+        "Equilization_alg_uut/hist_tmp_1" BEL
+        "Equilization_alg_uut/hist_tmp_0" BEL "Equilization_alg_uut/we" BEL
+        "Equilization_alg_uut/intField" BEL "Equilization_alg_uut/addr4out_9"
+        BEL "Equilization_alg_uut/addr4out_7" BEL
+        "Equilization_alg_uut/addr4out_6" BEL
+        "Equilization_alg_uut/addr4out_5" BEL
+        "Equilization_alg_uut/addr4out_4" BEL
+        "Equilization_alg_uut/addr4out_3" BEL
+        "Equilization_alg_uut/addr4out_2" BEL
+        "Equilization_alg_uut/addr4out_1" BEL
+        "Equilization_alg_uut/addr4out_0" BEL
+        "Equilization_alg_uut/qfv_cnt_10" BEL "Equilization_alg_uut/qfv_cnt_9"
+        BEL "Equilization_alg_uut/qfv_cnt_8" BEL
+        "Equilization_alg_uut/qfv_cnt_7" BEL "Equilization_alg_uut/qfv_cnt_6"
+        BEL "Equilization_alg_uut/qfv_cnt_5" BEL
+        "Equilization_alg_uut/qfv_cnt_4" BEL "Equilization_alg_uut/qfv_cnt_3"
+        BEL "Equilization_alg_uut/qfv_cnt_2" BEL
+        "Equilization_alg_uut/qfv_cnt_1" BEL "Equilization_alg_uut/qfv_cnt_0"
+        BEL "Equilization_alg_uut/hist_done" BEL
+        "adv7179_video_out_module/field" BEL
+        "adv7179_video_out_module/qfv_cnt_2_1" PIN
+        "NEW_table_RAM/B6.A_pins<12>" PIN "NEW_table_RAM/B6.B_pins<12>" BEL
+        "Equilization_alg_uut/hist_table/B8.A" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_HCMP_Q" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_WCNT_LCMP_Q" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_SCNT_CMP_Q" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_INTCAP_F.U_CAPWE1"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_TRIG1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS0/I_NOLUT6.I_SRL_T2.I_YES_RPM.I_YES_OREG.OUT_REG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_NS1/I_NOLUT6.I_SRL_T2.I_YES_RPM.I_YES_OREG.OUT_REG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/I_SRLT_NE_1.U_CDONE/I_NOLUT6.I_SRL_T2.I_YES_RPM.I_YES_OREG.OUT_REG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[9].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[8].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[7].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[6].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[5].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[4].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[3].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[2].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[1].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_NO_TSEQ.I_SRLT_NE_1.U_SCNT/G[0].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[9].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[8].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[7].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[6].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[5].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[4].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[3].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[2].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[1].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_SRLT_NE_1.U_WCNT/G[0].U_FDRE"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[9].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[9].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[8].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[7].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[6].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[5].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[4].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[3].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[2].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[1].U_iCAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_CAP_ADDR"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_G2_SQ.U_CAPCTRL/U_CAP_ADDRGEN/I_INTCAP.F_CAP_ADDR[0].U_iCAP_ADDR"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL2" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL3" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_CR" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[9].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[8].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[7].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[6].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[5].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[4].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[3].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[2].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[1].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/G_NS[0].U_NSQ" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_STATE0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ARM" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_TRIGGER" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_FULL" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_ECR" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_RISING" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_GEN_DELAY[1].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_RFDRE" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DSL1/U_DOUT0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[1].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[2].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[3].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[4].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[5].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[6].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[7].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[8].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[9].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[10].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[11].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[12].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[13].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[14].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/U_STATES[15].U_SRL.U_FDR0"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_EQ1.I_TSEQ_SIMPLE/FINAL_FDR"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_POR" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[0].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[1].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[2].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[3].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[4].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[5].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[6].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/G_RST[7].U_RST" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[2].U_FD"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_GEN_DELAY[1].U_FD"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_RFDRE" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_HALT_XFER/U_DOUT0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[4].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[3].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[2].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_GEN_DELAY[1].U_FD" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_RFDRE" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT1" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_RST/U_ARM_XFER/U_DOUT0" BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[0].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[1].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[2].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[3].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[4].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[5].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[6].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_YES_IREG.F_TW[7].U_IREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[0].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[1].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[2].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[3].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[4].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[5].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[6].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/F_TW[7].U_TREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16/I_TW_GTE4.F_TW[1].I_YES_RPM.I_OREG.U_OREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[5].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[7].I_SRLT_NE_0.FF"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[0].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[1].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[2].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[3].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[4].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[5].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[6].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/I_DQ.U_DQQ/DLY_9.DLY_9_GEN[7].I_SRLT_NE_0.DLY9/SRL16E"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/U_MU/I_OREG.I_YES_OREG.U_OREG"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[0].U_M/I_MC_NO.U_NO_MC_REG"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_DLY"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL/I_OUTREG.U_DOUT"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_STORAGE_QUAL/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TCL/I_OUTREG.U_DOUT"
+        BEL
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_TSEQ_NEQ2.U_TC_EQUATION/I_SRLT_NE_1.I_NMU_1_TO_4.U_TRIGQ"
+        BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/F_NO_TCMC.U_FDR" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[7].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[6].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[5].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[4].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[3].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[2].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[1].U_TQ" BEL
+        "U_ila_pro_0/U0/I_TQ0.G_TW[0].U_TQ" PIN
+        "U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/G_BRAM[0].U_BRAM/ram_rt1_s1_s16_if.ram_rt1_s1_s16_i.B_pins<11>";
+TIMEGRP U_CLK = BEL "U_icon_pro/U0/U_ICON/U_iDATA_CMD";
+TIMEGRP D2_CLK = BEL "U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC";
+TIMEGRP "FFS" = FFS(*);
+PATH TS_D2_TO_T2_ila_pro_0_path = FROM TIMEGRP "D2_CLK" TO TIMEGRP "FFS";
+PATH "TS_D2_TO_T2_ila_pro_0_path" TIG;
+PATH TS_J2_TO_D2_ila_pro_0_path = FROM TIMEGRP "FFS" TO TIMEGRP "D2_CLK";
+PATH "TS_J2_TO_D2_ila_pro_0_path" TIG;
+PATH TS_J3_TO_D2_ila_pro_0_path = FROM TIMEGRP "FFS" TO TIMEGRP "D2_CLK";
+PATH "TS_J3_TO_D2_ila_pro_0_path" TIG;
+PATH TS_J4_TO_D2_ila_pro_0_path = FROM TIMEGRP "FFS" TO TIMEGRP "D2_CLK";
+PATH "TS_J4_TO_D2_ila_pro_0_path" TIG;
+TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" TO TIMEGRP "U_CLK" 15 ns;
+PIN
+        U_icon_pro/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS_pins<2>
+        = BEL
+        "U_icon_pro/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS"
+        PINNAME SHIFT;
+PIN
+        "U_icon_pro/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS_pins<2>"
+        TIG;
+SCHEMATIC END;
+
